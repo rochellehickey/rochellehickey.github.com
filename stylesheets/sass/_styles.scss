@@ -1,0 +1,78 @@
+/* ==========================================================================
+Major section comment type. These will output to .css file when compiled
+========================================================================== */
+
+body {
+  background: $lightest url('../images/bg-tile.png') repeat left top;
+}
+
+section.container {
+  background: $lightest;
+  @include border-radius(0 0 3px 3px);
+  @include box-shadow(0 0 15px #d8d8d6);
+  margin: 0 auto;
+  width: grid-width(12);
+}
+
+header {
+
+  a.logo {
+    background: url('../images/rochelle-hickey-design-logo.png') no-repeat bottom center;
+    display: block;
+    height: 163px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 31px;
+    text-indent: -9999px;
+    width: 134px;
+  }
+}
+
+section.content {
+  padding: 80px 160px 160px 160px;
+
+  p {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 15px;
+  }
+
+  ul {
+    list-style-type: none;
+    margin-left: 0;
+
+    li span.contact-label {
+      color: $labels;
+      font-family: Verdana, Helvetica, Arial, sans-serif;
+      font-size: 10px;
+      font-weight: bold;
+      padding-right: 6px;
+      text-transform: uppercase;
+    }
+
+    li a {
+      @include border-radius(2px);
+      color: $primary;
+      padding: 2px 4px 0 4px;
+      text-decoration: none;
+      @include transition(all, 0.15s, linear);
+
+      &:hover {
+        background: $primary;
+        color: $lightest;
+      }
+    }
+  }
+}
+
+footer {
+  height: 100px;
+  text-align: center;
+  width: 100%;
+
+  p {
+    background: url('../images/footer-ornament.png')no-repeat bottom center;
+    font-size: 12px;
+    padding-bottom: 40px;
+  }
+}

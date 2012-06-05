@@ -1,0 +1,291 @@
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible {
+  visibility: hidden; }
+
+/* ==========================================================================
+Reset adapted from Twitter Bootstrap
+https://github.com/twitter/bootstrap/
+========================================================================== */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block; }
+
+audio,
+canvas,
+video {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
+  *display: inline;
+  *zoom: 1; }
+
+audio:not([controls]) {
+  display: none; }
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+a:focus {
+  outline: thin dotted #333333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px; }
+
+a:hover,
+a:active {
+  outline: 0; }
+
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+  -ms-interpolation-mode: bicubic; }
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font-size: 100%;
+  vertical-align: middle; }
+
+button,
+input {
+  *overflow: visible;
+  line-height: normal; }
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button; }
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+body {
+  color: #dd4197;
+  font-family: "Linden Hill", Georgia, serif; }
+
+p {
+  margin: 0 0 24px 0;
+  font-size: 16px;
+  line-height: 24px; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: bold;
+  color: #dd4197;
+  text-rendering: optimizelegibility; }
+
+h1 {
+  font-size: 32px;
+  line-height: 48px; }
+
+h2 {
+  font-size: 24px;
+  line-height: 48px; }
+
+h3 {
+  line-height: 36px;
+  font-size: 18px; }
+
+h4, h5, h6 {
+  line-height: 24px; }
+
+h4 {
+  font-size: 14px; }
+
+h5 {
+  font-size: 12px; }
+
+h6 {
+  font-size: 11px; }
+
+ul, ol {
+  padding: 0;
+  margin: 0 0 24px 25px; }
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0; }
+
+ul {
+  list-style: disc; }
+
+ol {
+  list-style: decimal; }
+
+li {
+  line-height: 24px; }
+
+hr {
+  margin: 24px 0;
+  border: 0;
+  border-top: 1px solid #b1b3b6;
+  border-bottom: 1px solid white; }
+
+strong {
+  font-weight: bold; }
+
+em {
+  font-style: italic; }
+
+abbr {
+  font-size: 90%;
+  text-transform: uppercase; }
+
+/* ==========================================================================
+Major section comment type. These will output to .css file when compiled
+========================================================================== */
+body {
+  background: white url("../images/bg-tile.png") repeat left top; }
+
+section.container {
+  background: white;
+  -webkit-border-radius: 0 0 3px 3px;
+  -moz-border-radius: 0 0 3px 3px;
+  -ms-border-radius: 0 0 3px 3px;
+  -o-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
+  -webkit-box-shadow: 0 0 15px #d8d8d6;
+  -moz-box-shadow: 0 0 15px #d8d8d6;
+  box-shadow: 0 0 15px #d8d8d6;
+  margin: 0 auto;
+  width: 940px; }
+
+header a.logo {
+  background: url("../images/rochelle-hickey-design-logo.png") no-repeat bottom center;
+  display: block;
+  height: 163px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 31px;
+  text-indent: -9999px;
+  width: 134px; }
+
+section.content {
+  padding: 80px 160px 160px 160px; }
+  section.content p {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 15px; }
+  section.content ul {
+    list-style-type: none;
+    margin-left: 0; }
+    section.content ul li span.contact-label {
+      color: #b1b3b6;
+      font-family: Verdana, Helvetica, Arial, sans-serif;
+      font-size: 10px;
+      font-weight: bold;
+      padding-right: 6px;
+      text-transform: uppercase; }
+    section.content ul li a {
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      -ms-border-radius: 2px;
+      -o-border-radius: 2px;
+      border-radius: 2px;
+      color: #dd4197;
+      padding: 2px 4px 0 4px;
+      text-decoration: none;
+      -webkit-transition-property: all;
+      -moz-transition-property: all;
+      -ms-transition-property: all;
+      -o-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 0.15s;
+      -moz-transition-duration: 0.15s;
+      -ms-transition-duration: 0.15s;
+      -o-transition-duration: 0.15s;
+      transition-duration: 0.15s;
+      -webkit-transition-timing-function: linear;
+      -moz-transition-timing-function: linear;
+      -ms-transition-timing-function: linear;
+      -o-transition-timing-function: linear;
+      transition-timing-function: linear;
+      -webkit-transition-delay: 0;
+      -moz-transition-delay: 0;
+      -ms-transition-delay: 0;
+      -o-transition-delay: 0;
+      transition-delay: 0; }
+      section.content ul li a:hover {
+        background: #dd4197;
+        color: white; }
+
+footer {
+  height: 100px;
+  text-align: center;
+  width: 100%; }
+  footer p {
+    background: url("../images/footer-ornament.png") no-repeat bottom center;
+    font-size: 12px;
+    padding-bottom: 40px; }
