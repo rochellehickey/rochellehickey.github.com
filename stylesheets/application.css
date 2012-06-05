@@ -134,9 +134,9 @@ body {
   font-family: "Linden Hill", Georgia, serif; }
 
 p {
-  margin: 0 0 24px 0;
-  font-size: 16px;
-  line-height: 24px; }
+  margin: 0 0 20px 0;
+  font-size: 14px;
+  line-height: 20px; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -146,18 +146,18 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 32px;
-  line-height: 48px; }
+  line-height: 40px; }
 
 h2 {
   font-size: 24px;
-  line-height: 48px; }
+  line-height: 40px; }
 
 h3 {
-  line-height: 36px;
+  line-height: 30px;
   font-size: 18px; }
 
 h4, h5, h6 {
-  line-height: 24px; }
+  line-height: 20px; }
 
 h4 {
   font-size: 14px; }
@@ -170,7 +170,7 @@ h6 {
 
 ul, ol {
   padding: 0;
-  margin: 0 0 24px 25px; }
+  margin: 0 0 20px 25px; }
 
 ul ul,
 ul ol,
@@ -185,10 +185,10 @@ ol {
   list-style: decimal; }
 
 li {
-  line-height: 24px; }
+  line-height: 20px; }
 
 hr {
-  margin: 24px 0;
+  margin: 20px 0;
   border: 0;
   border-top: 1px solid #b1b3b6;
   border-bottom: 1px solid white; }
@@ -209,7 +209,7 @@ Major section comment type. These will output to .css file when compiled
 body {
   background: white url("../images/bg-tile.png") repeat left top; }
 
-section.container {
+div.container {
   background: white;
   -webkit-border-radius: 0 0 3px 3px;
   -moz-border-radius: 0 0 3px 3px;
@@ -220,66 +220,99 @@ section.container {
   -moz-box-shadow: 0 0 15px #d8d8d6;
   box-shadow: 0 0 15px #d8d8d6;
   margin: 0 auto;
+  padding: 0 80px;
   width: 940px; }
+  div.container section {
+    zoom: 1;
+    margin-bottom: 60px; }
+    div.container section:before, div.container section:after {
+      content: "";
+      display: table; }
+    div.container section:after {
+      clear: both; }
+  div.container section.portfolio p {
+    float: left;
+    margin-right: 20px;
+    width: 220px; }
+  div.container section.portfolio div.image-placeholder {
+    background: #eee;
+    float: right;
+    height: 200px;
+    width: 540px; }
+  div.container section.last {
+    margin-bottom: 80px; }
+
+a {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  color: #dd4197;
+  padding: 2px 4px 0 4px;
+  text-decoration: none;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -ms-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.15s;
+  -moz-transition-duration: 0.15s;
+  -ms-transition-duration: 0.15s;
+  -o-transition-duration: 0.15s;
+  transition-duration: 0.15s;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -ms-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-delay: 0;
+  -moz-transition-delay: 0;
+  -ms-transition-delay: 0;
+  -o-transition-delay: 0;
+  transition-delay: 0; }
+  a:hover {
+    background: #dd4197;
+    color: white; }
 
 header a.logo {
   background: url("../images/rochelle-hickey-design-logo.png") no-repeat bottom center;
   display: block;
-  height: 163px;
+  height: 183px;
   margin: 0 auto;
   overflow: hidden;
-  padding-top: 31px;
   text-indent: -9999px;
   width: 134px; }
+header nav {
+  font-size: 20px;
+  margin-top: 30px;
+  text-align: center; }
+  header nav ul {
+    list-style-type: none; }
+    header nav ul li {
+      display: -moz-inline-box;
+      -moz-box-orient: vertical;
+      display: inline-block;
+      vertical-align: baseline;
+      zoom: 1;
+      *display: inline;
+      *vertical-align: auto;
+      padding: 0 20px; }
 
-section.content {
-  padding: 80px 160px 160px 160px; }
-  section.content p {
-    font-size: 18px;
-    line-height: 27px;
-    margin-bottom: 15px; }
-  section.content ul {
-    list-style-type: none;
-    margin-left: 0; }
-    section.content ul li span.contact-label {
-      color: #b1b3b6;
-      font-family: Verdana, Helvetica, Arial, sans-serif;
-      font-size: 10px;
-      font-weight: bold;
-      padding-right: 6px;
-      text-transform: uppercase; }
-    section.content ul li a {
-      -webkit-border-radius: 2px;
-      -moz-border-radius: 2px;
-      -ms-border-radius: 2px;
-      -o-border-radius: 2px;
-      border-radius: 2px;
-      color: #dd4197;
-      padding: 2px 4px 0 4px;
-      text-decoration: none;
-      -webkit-transition-property: all;
-      -moz-transition-property: all;
-      -ms-transition-property: all;
-      -o-transition-property: all;
-      transition-property: all;
-      -webkit-transition-duration: 0.15s;
-      -moz-transition-duration: 0.15s;
-      -ms-transition-duration: 0.15s;
-      -o-transition-duration: 0.15s;
-      transition-duration: 0.15s;
-      -webkit-transition-timing-function: linear;
-      -moz-transition-timing-function: linear;
-      -ms-transition-timing-function: linear;
-      -o-transition-timing-function: linear;
-      transition-timing-function: linear;
-      -webkit-transition-delay: 0;
-      -moz-transition-delay: 0;
-      -ms-transition-delay: 0;
-      -o-transition-delay: 0;
-      transition-delay: 0; }
-      section.content ul li a:hover {
-        background: #dd4197;
-        color: white; }
+section#intro p {
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 15px; }
+section#intro ul {
+  list-style-type: none;
+  margin-left: 0; }
+  section#intro ul li span.contact-label {
+    color: #b1b3b6;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    padding-right: 6px;
+    text-transform: uppercase; }
 
 footer {
   height: 100px;

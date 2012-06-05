@@ -6,12 +6,49 @@ body {
   background: $lightest url('../images/bg-tile.png') repeat left top;
 }
 
-section.container {
+div.container {
   background: $lightest;
   @include border-radius(0 0 3px 3px);
   @include box-shadow(0 0 15px #d8d8d6);
   margin: 0 auto;
+  padding: 0 80px;
   width: grid-width(12);
+
+  section {
+    @include clearfix;
+    margin-bottom: 60px;
+  }
+
+  section.portfolio {
+    p {
+      float: left;
+      margin-right: $gw-gutter;
+      width: grid-width(3);
+    }
+    div.image-placeholder {
+      background: #eee;
+      float: right;
+      height: 200px;
+      width: grid-width(7);
+    }
+  }
+
+  section.last {
+    margin-bottom: 80px;
+  }
+}
+
+a {
+  @include border-radius(2px);
+  color: $primary;
+  padding: 2px 4px 0 4px;
+  text-decoration: none;
+  @include transition(all, 0.15s, linear);
+
+  &:hover {
+    background: $primary;
+    color: $lightest;
+  }
 }
 
 header {
@@ -19,18 +56,30 @@ header {
   a.logo {
     background: url('../images/rochelle-hickey-design-logo.png') no-repeat bottom center;
     display: block;
-    height: 163px;
+    height: 183px;
     margin: 0 auto;
     overflow: hidden;
-    padding-top: 31px;
     text-indent: -9999px;
     width: 134px;
   }
+
+  nav {
+    font-size: 20px;
+    margin-top: 30px;
+    text-align: center;
+
+    ul {
+      list-style-type: none;
+
+      li {
+        @include inline-block();
+        padding: 0 20px;
+      }
+    }
+  }
 }
 
-section.content {
-  padding: 80px 160px 160px 160px;
-
+section#intro {
   p {
     font-size: 18px;
     line-height: 27px;
@@ -48,19 +97,6 @@ section.content {
       font-weight: bold;
       padding-right: 6px;
       text-transform: uppercase;
-    }
-
-    li a {
-      @include border-radius(2px);
-      color: $primary;
-      padding: 2px 4px 0 4px;
-      text-decoration: none;
-      @include transition(all, 0.15s, linear);
-
-      &:hover {
-        background: $primary;
-        color: $lightest;
-      }
     }
   }
 }
