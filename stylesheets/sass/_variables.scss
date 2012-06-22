@@ -3,6 +3,7 @@
 
 // Colors
 $magenta:                     #dd4197;
+$lightPink:                   #fbf4f7;
 $gray:                        #b1b3b6;
 $white:                       #fff;
 $black:                       #000;
@@ -10,6 +11,7 @@ $black:                       #000;
 // Color Scheme
 $primary:                     $magenta;
 $labels:                      $gray;
+$background:                  $lightPink;
 $lightest:                    $white;
 $darkest:                     $black;
 
@@ -17,8 +19,8 @@ $darkest:                     $black;
 $baseFontSize:                14px;
 $lineHeight:                  20px;
 $baseColor:                   $primary;
-$headerFontFamily:            'Linden Hill', Georgia, serif;
-$textFontFamily:              'Linden Hill', Georgia, serif;
+$headerFontFamily:            "museo-slab", "Helvetica Neue", Helvetica, sans-serif;
+$textFontFamily:              "museo-slab", "Helvetica Neue", Helvetica, sans-serif;
 //$linkColor:                   $blueDark;
 //$linkColorHover:              darken($linkColor, 15%);
 
