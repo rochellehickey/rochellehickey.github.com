@@ -1,16 +1,10 @@
 /* ==========================================================================
-Reset adapted from Twitter Bootstrap
-https://github.com/twitter/bootstrap/
+Reset Styles
 ========================================================================== */
 
-* {
-  @include box-sizing(border-box); // via Paul Irish
-}
+* { @include box-sizing(border-box); } // via Paul Irish
 
-html, body {
-  margin: 0;
-  padding: 0;
-}
+html, body { margin: 0; padding: 0; }
 
 article,
 aside,
@@ -25,18 +19,6 @@ section {
   display: block;
 }
 
-audio,
-canvas,
-video {
-  @include inline-block();
-  *display: inline;
-  *zoom: 1;
-}
-
-audio:not([controls]) {
-  display: none;
-}
-
 html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
@@ -47,7 +29,7 @@ a:focus {
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
-// Hover & Active
+
 a:hover,
 a:active {
   outline: 0;

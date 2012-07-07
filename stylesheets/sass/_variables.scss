@@ -1,5 +1,4 @@
-// Variables adapted from Twitter Bootstrap ============================== //
-// https://github.com/twitter/bootstrap/ ================================= //
+// Variables ======================================================================= //
 
 // Colors
 $magenta:                     #dd4197;
@@ -21,14 +20,7 @@ $lineHeight:                  20px;
 $baseColor:                   $primary;
 $headerFontFamily:            "museo-slab", "Helvetica Neue", Helvetica, sans-serif;
 $textFontFamily:              "museo-slab", "Helvetica Neue", Helvetica, sans-serif;
-//$linkColor:                   $blueDark;
-//$linkColorHover:              darken($linkColor, 15%);
 
-// 12 column 940px grid using Bourbon's grid function =========================================================
+// 12 column 940px grid using Bourbon's grid function ============================== //
 $gw-column:                   60px;
 $gw-gutter:                   20px;
-
-//  div {
-//    width: grid-width(4);         // returns 300px;
-//    margin-left: $gw-gutter;      // returns 20px;
-//  }

@@ -1,5 +1,5 @@
 /* ==========================================================================
-Major section comment type. These will output to .css file when compiled
+Site Styles
 ========================================================================== */
 
 body {
@@ -22,16 +22,10 @@ div#container {
   }
 
   section.portfolio {
-    p {
-      float: left;
-      margin-right: $gw-gutter;
-      width: grid-width(3);
-    }
-    div.image-placeholder {
+
+    div.slide-holder {
       background: #eee;
-      float: right;
-      height: 200px;
-      width: grid-width(7);
+      width: grid-width(10);
     }
   }
 
