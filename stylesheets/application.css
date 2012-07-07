@@ -428,6 +428,10 @@ div#container {
     width: 780px; }
   div#container section.last {
     margin-bottom: 80px; }
+  div#container section#fake {
+    margin: 0;
+    padding: 0;
+    height: 0; }
 
 a {
   -webkit-border-radius: 2px;

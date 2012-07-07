@@ -13,8 +13,7 @@
 $(document).ready(function(){
   $("nav").onePageNav();
   $("h2.has-back-to-top").localScroll();
-  $("#print-slides").orbit();
-  $("#web-slides").orbit();
+  $("#design-slides").orbit();
   $("#photography-slides").orbit();
   $("#fine-art-slides").orbit();
 });
