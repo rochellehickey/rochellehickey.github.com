@@ -43,7 +43,7 @@ div#container {
 a {
   @include border-radius(2px);
   color: $primary;
-  padding: 2px 4px 0 4px;
+  padding: 2px 4px;
   text-decoration: none;
   @include transition(all, 0.15s, linear);
 
@@ -87,21 +87,31 @@ header {
 
 section#intro {
   p {
+    color: darken($accent, 15%);
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 12px;
+  }
+
+  p.lead {
+    font-weight: bold;
   }
 
   ul {
     list-style-type: none;
     margin-left: 0;
 
-    li span.contact-label {
-      color: $labels;
-      font-size: 10px;
-      font-weight: bold;
-      padding-right: 6px;
-      text-transform: uppercase;
+    li {
+      font-size: 14px;
+      margin: 0 0 4px 0;
+
+      span.contact-label {
+        color: $labels;
+        font-size: 10px;
+        font-weight: bold;
+        padding-right: 6px;
+        text-transform: uppercase;
+      }
     }
   }
 }

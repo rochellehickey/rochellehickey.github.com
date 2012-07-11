@@ -440,7 +440,7 @@ a {
   -o-border-radius: 2px;
   border-radius: 2px;
   color: #dd4197;
-  padding: 2px 4px 0 4px;
+  padding: 2px 4px;
   text-decoration: none;
   -webkit-transition-property: all;
   -moz-transition-property: all;
@@ -493,18 +493,24 @@ header nav {
       display: none; }
 
 section#intro p {
+  color: #898c91;
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 12px; }
+section#intro p.lead {
+  font-weight: bold; }
 section#intro ul {
   list-style-type: none;
   margin-left: 0; }
-  section#intro ul li span.contact-label {
-    color: #b1b3b6;
-    font-size: 10px;
-    font-weight: bold;
-    padding-right: 6px;
-    text-transform: uppercase; }
+  section#intro ul li {
+    font-size: 14px;
+    margin: 0 0 4px 0; }
+    section#intro ul li span.contact-label {
+      color: #b1b3b6;
+      font-size: 10px;
+      font-weight: bold;
+      padding-right: 6px;
+      text-transform: uppercase; }
 
 h2 {
   zoom: 1; }
