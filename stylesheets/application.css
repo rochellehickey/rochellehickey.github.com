@@ -138,7 +138,7 @@ h1 {
   line-height: 40px; }
 
 h2 {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 40px; }
 
 h3 {
@@ -409,9 +409,9 @@ div#container {
   -ms-border-radius: 0 0 3px 3px;
   -o-border-radius: 0 0 3px 3px;
   border-radius: 0 0 3px 3px;
-  -webkit-box-shadow: 0 2px 8px #d8d8d6;
-  -moz-box-shadow: 0 2px 8px #d8d8d6;
-  box-shadow: 0 2px 8px #d8d8d6;
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   margin: 0 auto 60px auto;
   padding: 0 80px;
   width: 940px; }
@@ -466,66 +466,117 @@ a {
     background: #dd4197;
     color: white; }
 
-header a.logo {
-  background: url("../images/rochelle-hickey-design-logo.png") no-repeat bottom center;
-  display: block;
-  height: 183px;
-  margin: 0 auto;
-  overflow: hidden;
-  text-indent: -9999px;
-  width: 134px; }
-header nav {
-  font-size: 20px;
-  margin-top: 30px;
-  text-align: center; }
-  header nav ul {
-    list-style-type: none; }
-    header nav ul li {
-      display: -moz-inline-box;
-      -moz-box-orient: vertical;
-      display: inline-block;
-      vertical-align: baseline;
-      zoom: 1;
-      *display: inline;
-      *vertical-align: auto;
-      padding: 0 20px; }
-    header nav ul li.fake {
-      display: none; }
-
-section#intro p {
-  color: #898c91;
-  font-size: 16px;
-  line-height: 24px;
-  margin-bottom: 12px; }
-section#intro p.lead {
-  font-weight: bold; }
-section#intro ul {
-  list-style-type: none;
-  margin-left: 0; }
-  section#intro ul li {
-    font-size: 14px;
-    margin: 0 0 4px 0; }
-    section#intro ul li span.contact-label {
-      color: #b1b3b6;
-      font-size: 10px;
-      font-weight: bold;
-      padding-right: 6px;
-      text-transform: uppercase; }
-
-h2 {
-  zoom: 1; }
-  h2:before, h2:after {
+header {
+  zoom: 1;
+  margin: 0 0 58px 0;
+  position: absolute;
+  width: 100%; }
+  header:before, header:after {
     content: "";
     display: table; }
-  h2:after {
+  header:after {
     clear: both; }
-  h2 a.back-to-top {
+  header .center {
+    background: white;
+    margin: 0 auto;
+    padding: 0 80px;
+    width: 940px; }
+  header a.logo {
+    background: url("../images/rochelle-hickey-design-logo.png") no-repeat center center;
+    display: block;
+    height: 163px;
+    float: left;
+    margin: 33px 0 0 0;
+    overflow: hidden;
+    padding: 0;
+    text-indent: -9999px;
+    width: 134px; }
+  header a.horizontal-logo {
+    display: none;
+    opacity: 0; }
+  header nav {
     float: right;
-    font-size: 12px;
-    font-weight: normal;
-    font-weight: 300;
-    line-height: 20px;
-    margin-top: 11px; }
+    font-size: 18px;
+    margin-top: 138px; }
+    header nav ul {
+      list-style-type: none;
+      margin: 0; }
+      header nav ul li {
+        display: -moz-inline-box;
+        -moz-box-orient: vertical;
+        display: inline-block;
+        vertical-align: baseline;
+        zoom: 1;
+        *display: inline;
+        *vertical-align: auto;
+        padding: 0 0 0 20px; }
+      header nav ul li.fake {
+        display: none; }
+
+header.affix {
+  background: white;
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  height: 79px;
+  margin: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  -webkit-transition-property: height;
+  -moz-transition-property: height;
+  -ms-transition-property: height;
+  -o-transition-property: height;
+  transition-property: height;
+  -webkit-transition-duration: 0.05s;
+  -moz-transition-duration: 0.05s;
+  -ms-transition-duration: 0.05s;
+  -o-transition-duration: 0.05s;
+  transition-duration: 0.05s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -ms-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-delay: 0;
+  -moz-transition-delay: 0;
+  -ms-transition-delay: 0;
+  -o-transition-delay: 0;
+  transition-delay: 0; }
+  header.affix a.horizontal-logo {
+    background: url("../images/rochelle-hickey-design-logo-horizontal.png") no-repeat center center;
+    display: block;
+    float: left;
+    height: 63px;
+    margin: 8px 0;
+    opacity: 1;
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 332px; }
+  header.affix a.logo {
+    display: none; }
+  header.affix nav {
+    margin-top: 37px; }
+
+section#intro {
+  padding-top: 254px; }
+  section#intro p {
+    color: #898c91;
+    margin-bottom: 12px; }
+  section#intro p.lead {
+    font-weight: bold; }
+  section#intro ul {
+    list-style-type: none;
+    margin-left: 0; }
+    section#intro ul li {
+      font-size: 14px;
+      margin: 0 0 2px 0; }
+      section#intro ul li span.contact-label {
+        color: #b1b3b6;
+        font-size: 10px;
+        font-weight: bold;
+        padding-right: 6px;
+        text-transform: uppercase; }
 
 footer {
   height: 100px;

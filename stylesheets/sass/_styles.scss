@@ -11,7 +11,7 @@ body {
 div#container {
   background: $lightest;
   @include border-radius(0 0 3px 3px);
-  @include box-shadow(0 2px 8px #d8d8d6);
+  @include box-shadow(0 2px 8px rgba($darkest, 0.15));
   margin: 0 auto 60px auto;
   padding: 0 80px;
   width: grid-width(12);
@@ -54,28 +54,47 @@ a {
 }
 
 header {
+  @include clearfix;
+  margin: 0 0 58px 0;
+  position: absolute;
+  width: 100%;
+
+  .center {
+    background: $lightest;
+    margin: 0 auto;
+    padding: 0 80px;
+    width: 940px;
+  }
 
   a.logo {
-    background: url('../images/rochelle-hickey-design-logo.png') no-repeat bottom center;
+    background: url('../images/rochelle-hickey-design-logo.png') no-repeat center center;
     display: block;
-    height: 183px;
-    margin: 0 auto;
+    height: 163px;
+    float: left;
+    margin: 33px 0 0 0;
     overflow: hidden;
+    padding: 0;
     text-indent: -9999px;
     width: 134px;
   }
 
+  a.horizontal-logo {
+    display: none;
+    opacity: 0;
+  }
+
   nav {
-    font-size: 20px;
-    margin-top: 30px;
-    text-align: center;
+    float: right;
+    font-size: 18px;
+    margin-top: 138px;
 
     ul {
       list-style-type: none;
+      margin: 0;
 
       li {
         @include inline-block();
-        padding: 0 20px;
+        padding: 0 0 0 20px;
       }
 
       li.fake {
@@ -85,11 +104,42 @@ header {
   }
 }
 
+header.affix {
+  background: $lightest;
+  @include box-shadow(0 2px 8px rgba($darkest, 0.15));
+  height: 79px;
+  margin: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  @include transition(height, 0.05s, ease-in-out);
+
+  a.horizontal-logo {
+    background: url('../images/rochelle-hickey-design-logo-horizontal.png') no-repeat center center;
+    display: block;
+    float: left;
+    height: 63px;
+    margin: 8px 0;
+    opacity: 1;
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 332px;
+  }
+
+  a.logo {
+    display: none;
+  }
+
+  nav {
+    margin-top: 37px;
+  }
+}
+
 section#intro {
+  padding-top: 254px;
+
   p {
     color: darken($accent, 15%);
-    font-size: 16px;
-    line-height: 24px;
     margin-bottom: 12px;
   }
 
@@ -103,7 +153,7 @@ section#intro {
 
     li {
       font-size: 14px;
-      margin: 0 0 4px 0;
+      margin: 0 0 2px 0;
 
       span.contact-label {
         color: $labels;
@@ -113,19 +163,6 @@ section#intro {
         text-transform: uppercase;
       }
     }
-  }
-}
-
-h2 {
-  @include clearfix;
-
-  a.back-to-top {
-    float: right;
-    font-size: 12px;
-    font-weight: normal;
-    font-weight: 300;
-    line-height: 20px;
-    margin-top: 11px;
   }
 }
 
