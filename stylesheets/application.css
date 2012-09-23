@@ -417,7 +417,7 @@ div#container {
   width: 940px; }
   div#container section {
     zoom: 1;
-    margin-bottom: 60px; }
+    padding-top: 80px; }
     div#container section:before, div#container section:after {
       content: "";
       display: table; }
@@ -428,10 +428,6 @@ div#container {
     width: 780px; }
   div#container section.last {
     margin-bottom: 80px; }
-  div#container section#fake {
-    margin: 0;
-    padding: 0;
-    height: 0; }
 
 a {
   -webkit-border-radius: 2px;
@@ -558,20 +554,20 @@ header.affix {
   header.affix nav {
     margin-top: 37px; }
 
-section#intro {
+div#container section#intro {
   padding-top: 254px; }
-  section#intro p {
+  div#container section#intro p {
     color: #898c91;
     margin-bottom: 12px; }
-  section#intro p.lead {
+  div#container section#intro p.lead {
     font-weight: bold; }
-  section#intro ul {
+  div#container section#intro ul {
     list-style-type: none;
     margin-left: 0; }
-    section#intro ul li {
+    div#container section#intro ul li {
       font-size: 14px;
       margin: 0 0 2px 0; }
-      section#intro ul li span.contact-label {
+      div#container section#intro ul li span.contact-label {
         color: #b1b3b6;
         font-size: 10px;
         font-weight: bold;

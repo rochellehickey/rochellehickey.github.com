@@ -18,7 +18,7 @@ div#container {
 
   section {
     @include clearfix;
-    margin-bottom: 60px;
+    padding-top: 80px;
   }
 
   section.portfolio {
@@ -31,12 +31,6 @@ div#container {
 
   section.last {
     margin-bottom: 80px;
-  }
-
-  section#fake {
-    margin: 0;
-    padding: 0;
-    height: 0;
   }
 }
 
@@ -135,7 +129,7 @@ header.affix {
   }
 }
 
-section#intro {
+div#container section#intro {
   padding-top: 254px;
 
   p {
