@@ -391,6 +391,48 @@ ul.orbit-bullets {
   zoom: 1; }
 
 /* ==========================================================================
+Reveal Modal Styles
+========================================================================== */
+.reveal-modal-bg {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: black;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2000;
+  display: none;
+  top: 0;
+  left: 0; }
+
+.reveal-modal {
+  background: white;
+  visibility: hidden;
+  display: none;
+  top: 100px;
+  left: 50%;
+  margin-left: -260px;
+  width: 520px;
+  position: absolute;
+  z-index: 3000;
+  padding: 30px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); }
+  .reveal-modal *:first-child {
+    margin-top: 0; }
+  .reveal-modal *:last-child {
+    margin-bottom: 0; }
+  .reveal-modal .close-reveal-modal {
+    font-size: 16px;
+    line-height: .5;
+    position: absolute;
+    top: 8px;
+    right: 11px;
+    color: #b1b3b6;
+    font-weight: bold;
+    cursor: pointer; }
+
+/* ==========================================================================
 Site Styles
 ========================================================================== */
 body {
