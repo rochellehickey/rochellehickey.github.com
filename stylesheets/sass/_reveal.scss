@@ -20,8 +20,6 @@ Reveal Modal Styles
   display: none;
   top: 100px;
   left: 50%;
-  margin-left: -260px;
-  width: 520px;
   position: absolute;
   z-index: 3000;
   padding: 30px;
@@ -45,4 +43,7 @@ Reveal Modal Styles
     font-weight: bold;
     cursor: pointer;
   }
+
+  &.portrait   { width: 500px; margin-left: -250px; }
+  &.landscape   { width: 700px; margin-left: -350px; }
 }

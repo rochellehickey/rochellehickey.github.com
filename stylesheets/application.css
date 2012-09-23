@@ -410,8 +410,6 @@ Reveal Modal Styles
   display: none;
   top: 100px;
   left: 50%;
-  margin-left: -260px;
-  width: 520px;
   position: absolute;
   z-index: 3000;
   padding: 30px;
@@ -431,6 +429,12 @@ Reveal Modal Styles
     color: #b1b3b6;
     font-weight: bold;
     cursor: pointer; }
+  .reveal-modal.portrait {
+    width: 500px;
+    margin-left: -250px; }
+  .reveal-modal.landscape {
+    width: 700px;
+    margin-left: -350px; }
 
 /* ==========================================================================
 Site Styles
