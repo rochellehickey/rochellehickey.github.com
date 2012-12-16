@@ -216,7 +216,7 @@ header nav ul li {
   padding: 0 0 0 1.25em;
 }
 
-header.affix {
+header.short {
   background: #fff;
   height: 4.9375em;
   margin: 0;
@@ -233,7 +233,7 @@ header.affix {
           transition: height 0.05s ease-in-out 0;
 }
 
-header.affix a.horizontal-logo {
+header.short a.horizontal-logo {
   background: url("../img/rochelle-hickey-design-logo-horizontal.png") no-repeat center center;
   display: block;
   float: left;
@@ -245,11 +245,11 @@ header.affix a.horizontal-logo {
   width: 20.75em;
 }
 
-header.affix a.logo {
+header.short a.logo {
   display: none;
 }
 
-header.affix nav {
+header.short nav {
   margin-top: 2.3125em;
 }
 

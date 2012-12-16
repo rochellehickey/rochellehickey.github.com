@@ -7,13 +7,21 @@ $(document).ready(function(){
   $("#fine-art-slides").orbit();
 });
 
-/* bootstrap-affix.js v2.1.1 =================================================================== */
-!function(a){"use strict";var b=function(b,c){this.options=a.extend({},a.fn.affix.defaults,c);this.$window=a(window).on("scroll.affix.data-api",a.proxy(this.checkPosition,this));this.$element=a(b);this.checkPosition()};b.prototype.checkPosition=function(){if(!this.$element.is(":visible"))return;var b=a(document).height(),c=this.$window.scrollTop(),d=this.$element.offset(),e=this.options.offset,f=e.bottom,g=e.top,h="affix affix-top affix-bottom",i;if(typeof e!="object")f=g=e;if(typeof g=="function")g=e.top();if(typeof f=="function")f=e.bottom();i=this.unpin!=null&&c+this.unpin<=d.top?false:f!=null&&d.top+this.$element.height()>=b-f?"bottom":g!=null&&c<=g?"top":false;if(this.affixed===i)return;this.affixed=i;this.unpin=i=="bottom"?d.top-c:null;this.$element.removeClass(h).addClass("affix"+(i?"-"+i:""))};a.fn.affix=function(c){return this.each(function(){var d=a(this),e=d.data("affix"),f=typeof c=="object"&&c;if(!e)d.data("affix",e=new b(this,f));if(typeof c=="string")e[c]()})};a.fn.affix.Constructor=b;a.fn.affix.defaults={offset:0};a(window).on("load",function(){a('[data-spy="affix"]').each(function(){var b=a(this),c=b.data();c.offset=c.offset||{};c.offsetBottom&&(c.offset.bottom=c.offsetBottom);c.offsetTop&&(c.offset.top=c.offsetTop);b.affix(c)})})}(window.jQuery);
+/* Change header styling on scroll ============================================================= */
+$(window).scroll(function() {
+  var scrollBoundary = 350, // offset in px at which change should occur
+      scroll = $(window).scrollTop();
+  if ( scroll <= scrollBoundary ) {
+    $('header').removeClass('short');
+  } else if ( scroll >= scrollBoundary ) {
+    $('header').addClass('short');
+  }
+});
 
 /* Add .scroll-on-click to an element to get animated scrolling ================================ */
-  $('.scroll-on-click').click(function() {
-    var target = $(this).attr("href"),
-        distance = $(target).offset().top;
-    $('html, body').animate({ scrollTop: distance }, 250 );
-    return false;
-  });
+$('.scroll-on-click').click(function() {
+  var target = $(this).attr("href"),
+      distance = $(target).offset().top;
+  $('html, body').animate({ scrollTop: distance }, 250 );
+  return false;
+});
