@@ -326,7 +326,8 @@ html[xmlns] .slides {display: block;}
 .flexslider .slides {zoom: 1;}
 .flexslider li {position: relative; margin: 0; padding: 0;}
 .flexslider li img {margin:0; padding:0;:}
-.flexslider span.caption {position:absolute; bottom: 0; z-index: 1000; background-color: rgba(0,0,0,0.5); display:block; color: #fff; padding: 0.25em 0.5em; width: 100%;}
+.flexslider span.caption {position:absolute; bottom: 0; z-index: 1000; background-color: rgba(0,0,0,0.75); display:block; color: #fff; padding: 0.25em 0.5em; width: 100%; -webkit-transition: padding 0.25s; -moz-transition: padding 0.25s; -ms-transition: padding 0.25s; -o-transition: padding 0.25s; transition: padding 0.25s;}
+.flexslider a:hover span.caption {padding-bottom: 1em;}
 
 /* Direction Nav */
 .flex-direction-nav {*height: 0;}
