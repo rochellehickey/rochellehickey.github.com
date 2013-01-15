@@ -284,6 +284,10 @@ header.short nav {
   text-transform: uppercase;
 }
 
+a.hide-for-lightbox {
+  display: none;
+}
+
 footer {
   height: 6.25em;
   text-align: center;
