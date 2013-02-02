@@ -84,11 +84,11 @@ Site Styles
 ========================================================================== */
 body {
   background-color: #fbf4f7;
-  background-image: -webkit-linear-gradient(90deg, transparent 50%, white 50%);
-  background-image:    -moz-linear-gradient(90deg, transparent 50%, white 50%);
-  background-image:     -ms-linear-gradient(90deg, transparent 50%, white 50%);
-  background-image:      -o-linear-gradient(90deg, transparent 50%, white 50%);
-  background-image:         linear-gradient(90deg, transparent 50%, white 50%);
+  background-image: -webkit-linear-gradient(left, transparent 50%, white 50%);
+  background-image:    -moz-linear-gradient(left, transparent 50%, white 50%);
+  background-image:     -ms-linear-gradient(left, transparent 50%, white 50%);
+  background-image:      -o-linear-gradient(left, transparent 50%, white 50%);
+  background-image:         linear-gradient(to right, transparent 50%, white 50%);
   background-size: 54px;
 }
 
