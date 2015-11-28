@@ -1,21 +1,61 @@
 /* ==========================================================================
 Reset Styles
 ========================================================================== */
-* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-html, body { margin: 0; padding: 0; }
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
-html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
-a:focus { outline: thin dotted #333333; outline: 5px auto -webkit-focus-ring-color; outline-offset: -2px; }
-a:hover, a:active { outline: 0; }
-img { max-width: 100%; height: auto; border: 0;  -ms-interpolation-mode: bicubic; }
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+a:focus {
+  outline: thin dotted #333333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+a:hover,
+a:active {
+  outline: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
 
 /* ==========================================================================
 Type Styles
 ========================================================================== */
 body {
   color: #dd4197;
-  font-family: "museo-slab", "Helvetica Neue", Helvetica, sans-serif;
-  font-weight: normal;
+  font-family: "Roboto Slab", sans-serif;
   font-weight: 300;
 }
 
@@ -27,10 +67,8 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  font-weight: bold;
   font-weight: 700;
   color: #dd4197;
-  text-rendering: optimizelegibility;
 }
 
 h1 {
@@ -71,12 +109,7 @@ li {
 }
 
 strong {
-  font-weight: bold;
   font-weight: 700;
-}
-
-em {
-  font-style: italic;
 }
 
 /* ==========================================================================
@@ -84,24 +117,14 @@ Site Styles
 ========================================================================== */
 body {
   background-color: #fbf4f7;
-  background-image: -webkit-linear-gradient(left, transparent 50%, white 50%);
-  background-image:    -moz-linear-gradient(left, transparent 50%, white 50%);
-  background-image:     -ms-linear-gradient(left, transparent 50%, white 50%);
-  background-image:      -o-linear-gradient(left, transparent 50%, white 50%);
-  background-image:         linear-gradient(to right, transparent 50%, white 50%);
+  background-image: linear-gradient(to right, transparent 50%, white 50%);
   background-size: 54px;
 }
 
 #container {
   background: #fff;
-  -webkit-border-radius: 0 0 3px 3px;
-     -moz-border-radius: 0 0 3px 3px;
-      -ms-border-radius: 0 0 3px 3px;
-       -o-border-radius: 0 0 3px 3px;
-          border-radius: 0 0 3px 3px;
-  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-     -moz-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 0 0 3px 3px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   margin: 0 auto 3.75em auto;
   padding: 0 5em;
   width: 58.75em; /* 940px */
@@ -128,31 +151,11 @@ a {
   color: #dd4197;
   padding: 2px 4px;
   text-decoration: none;
-  -webkit-border-radius: 2px;
-     -moz-border-radius: 2px;
-      -ms-border-radius: 2px;
-       -o-border-radius: 2px;
-          border-radius: 2px;
-  -webkit-transition-property: all;
-     -moz-transition-property: all;
-      -ms-transition-property: all;
-       -o-transition-property: all;
-          transition-property: all;
-  -webkit-transition-duration: 0.15s;
-     -moz-transition-duration: 0.15s;
-      -ms-transition-duration: 0.15s;
-       -o-transition-duration: 0.15s;
-          transition-duration: 0.15s;
-  -webkit-transition-timing-function: linear;
-     -moz-transition-timing-function: linear;
-      -ms-transition-timing-function: linear;
-       -o-transition-timing-function: linear;
-          transition-timing-function: linear;
-  -webkit-transition-delay: 0;
-     -moz-transition-delay: 0;
-      -ms-transition-delay: 0;
-       -o-transition-delay: 0;
-          transition-delay: 0;
+  border-radius: 2px;
+  transition-property: all;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  transition-delay: 0;
 }
 
 a:hover {
@@ -206,13 +209,8 @@ header nav ul {
 }
 
 header nav ul li {
-  display: -moz-inline-box;
-  -moz-box-orient: vertical;
   display: inline-block;
   vertical-align: baseline;
-  zoom: 1;
-  *display: inline;
-  *vertical-align: auto;
   padding: 0 0 0 1.25em;
 }
 
@@ -223,14 +221,8 @@ header.short {
   position: fixed;
   width: 100%;
   z-index: 1000;
-  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-     -moz-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  -webkit-transition: height 0.05s ease-in-out 0;
-     -moz-transition: height 0.05s ease-in-out 0;
-      -ms-transition: height 0.05s ease-in-out 0;
-       -o-transition: height 0.05s ease-in-out 0;
-          transition: height 0.05s ease-in-out 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: height 0.05s ease-in-out 0;
 }
 
 header.short a.horizontal-logo {
@@ -263,7 +255,7 @@ header.short nav {
 }
 
 #container #intro p.lead {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 #container #intro ul {
@@ -279,7 +271,7 @@ header.short nav {
 #container #intro ul li span.contact-label {
   color: #b1b3b6;
   font-size: 0.625em;
-  font-weight: bold;
+  font-weight: 700;
   padding-right: 0.375em;
   text-transform: uppercase;
 }
@@ -348,7 +340,7 @@ html[xmlns] .slides {display: block;}
 .flex-direction-nav .flex-disabled {opacity: .3!important; filter:alpha(opacity=30); cursor: default;}
 
 /* Control Nav */
-.flex-control-nav {width: 100%; position: absolute; bottom: -40px; text-align: center;}
+.flex-control-nav {margin: 0; width: 100%; position: absolute; bottom: -40px; text-align: center;}
 .flex-control-nav li {margin: 0 6px; display: inline-block; zoom: 1; *display: inline;}
 .flex-control-paging li a {width: 11px; height: 11px; display: block; background: #666; background: rgba(0,0,0,0.5); cursor: pointer; text-indent: -9999px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; box-shadow: inset 0 0 3px rgba(0,0,0,0.3);}
 .flex-control-paging li a:hover { background: #333; background: rgba(0,0,0,0.7); }
