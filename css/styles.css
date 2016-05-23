@@ -62,7 +62,7 @@ body {
 }
 
 p {
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.667;
   margin: 0 0 1.667em 0;
 }
@@ -71,6 +71,7 @@ a {
   color: #dd4197;
   padding: 2px 4px;
   text-decoration: none;
+  border-bottom: 1px dotted #dd4197;
   border-radius: 2px;
   transition-property: all;
   transition-duration: 0.15s;
@@ -91,7 +92,8 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 2rem;
-  line-height: 1.667;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
 }
 
 h2 {
@@ -166,14 +168,19 @@ section:after {
 
 .home-logo {
   background: url("../img/rochelle-hickey-design-logo.png") no-repeat center center;
+  margin: 0.5em 0 0 0;
   display: block;
-  height: 163px;
-  width: 134px;
+  width: 17.4%;
+  height: 0;
+  padding-bottom: 21.1%;
   float: left;
-  margin: 0 3em 0 0;
-  padding: 0;
   text-indent: -9999px;
   overflow: hidden;
+}
+
+.intro-text-wrap {
+  float: right;
+  width: 75%;
 }
 
 .global {
@@ -197,6 +204,7 @@ section:after {
   overflow: hidden;
   text-indent: -9999px;
   width: 20.75em;
+  border: none;
 }
 
 .global .center {
@@ -204,6 +212,10 @@ section:after {
   margin: 0 auto;
   padding: 0 5em;
   width: 58.75em; /* 940px */
+}
+
+.intro {
+  padding-top: 4em;
 }
 
 .intro p {
@@ -221,7 +233,7 @@ section:after {
 
 .intro ul li {
   font-size: 1rem;
-  margin: 0 0 0.125em 0;
+  margin: 0 0 0.25em 0;
 }
 
 .intro .contact-label {
@@ -230,6 +242,10 @@ section:after {
   font-weight: 700;
   padding-right: 0.375em;
   text-transform: uppercase;
+}
+
+.portfolio {
+  padding-left: 25%;
 }
 
 .project-listing {
@@ -249,6 +265,7 @@ section:after {
 .project-listing-item a {
   display: block;
   padding: 1em;
+  border: none;
 }
 
 .project-listing-item a:hover {
@@ -277,7 +294,7 @@ section:after {
 }
 
 .project-intro p {
-  font-size: 1.2rem;
+  width: 75%;
 }
 
 .project-body {
@@ -285,7 +302,15 @@ section:after {
 }
 
 figure {
-  margin: 0 0 1em 0;
+  margin: 0 0 3rem 0;
+}
+
+figure img {
+  margin-bottom: 1rem;
+}
+
+figcaption p {
+  width: 75%;
 }
 
 footer {
