@@ -4,16 +4,15 @@
 
 
 %headline--primary {
-  font-size: em(32px);
+  font-size: 2rem;
   font-weight: $font-weight-bold;
+  margin: 40px;
   color: $primary-hdln-color;
-  margin-left: 20px;
 }
 
 %headline--secondary {
-  margin-top: em(50px);
-  margin-bottom: em(30px);
-  font-size: em(18px);
-  font-weight: $font-weight-light;
+  font-size: 1.5rem;
+  font-weight: $font-weight-regular;
+  margin: 20px 0;
   color: $secondary-hdln-color;
 }

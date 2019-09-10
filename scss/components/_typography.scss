@@ -3,9 +3,49 @@
 // -------------------------------------
 
 
+h1 {
+  font-family: $font-stack-header;
+  font-size: $primary-hdln-size;
+  line-height: $primary-hdln-line-height;
+  color: $siena;
+}
+
+h2 {
+  font-family: $font-stack-header;
+  font-size: $secondary-hdln-size;
+  line-height: $secondary-hdln-line-height;
+  color: $siena;
+}
+
+h3 {
+  font-family: $font-stack;
+  font-size: $copy-size;
+  color: $rosy-brown;
+}
+
+p,
+li {
+  font-family: $font-stack;
+  font-weight: $font-weight-regular;
+  font-size: $copy-size;
+  line-height: $copy-size-line-height;
+  color: $brown;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+// ---------- Classes -----------
+
 .form__input[placeholder] {
   font-family: $font-stack;
 }
+
+// --------- Extends ------------
 
 .headline--primary {
   @extend %headline--primary;
@@ -13,15 +53,6 @@
 
 .headline--secondary {
   @extend %headline--secondary;
-}
-
-.blockquote {
-  @extend %corner-radius;
-  font-weight: $font-weight-light;
-  font-size: em(26px);
-  font-style: italic;
-  padding-left: em(10px);
-  border-left: em(5px) solid $blockquote-bdr-color;
 }
 
 .link {

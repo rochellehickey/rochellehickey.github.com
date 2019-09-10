@@ -11,12 +11,20 @@ $font-stack-header: 'Meddon', cursive;
 $font-weight-regular : 500;
 $font-weight-bold    : 700;
 
+$primary-hdln-size   : 2.4rem;
+$secondary-hdln-size : 1.6rem;
+$copy-size           : 1.3rem;
+
+$primary-hdln-line-height: 2.8rem;
+$secondary-hdln-line-height: 2rem;
+$copy-size-line-height: 1.8rem;
+
 
 // ------------- BREAKPOINTS -----------
 
-$media-screen-sm   : 320px;
-$media-screen-med  : 728px;
-$media-screen-lg   : 1024px;
+$media-screen-sm  : 320px;
+$media-screen-med : 728px;
+$media-screen-lg  : 1024px;
 
 
 // --------------- COLORS --------------
@@ -27,16 +35,14 @@ $cadet-blue  : #7FBDB7;
 $rosy-brown  : #A57B86;
 $siena       : #6C2E3F;
 $brown       : #382929;
+$white       : #FFF;
 
-$cyan-light      : lighten(#64ddfb, 10%);
-
-$violet-dark     : darken(#927bc1, 10%);
-
-
+$cyan-light  : lighten(#64ddfb, 10%);
+$violet-dark : darken(#927bc1, 10%);
 
 
 $font-color           : $brown;
-$font-nav-color       : $siena;
+$font-nav-color       : $dark-salmon;
 
 $primary-hdln-color   : $siena;
 $secondary-hdln-color : $rosy-brown;

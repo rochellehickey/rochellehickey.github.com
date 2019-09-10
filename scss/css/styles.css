@@ -1,0 +1,114 @@
+.headline--primary {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 40px;
+  color: #6C2E3F;
+}
+
+.headline--secondary {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 20px 0;
+  color: #A57B86;
+}
+
+.link {
+  color: #7FBDB7;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px dotted #7FBDB7;
+}
+
+.list-navigation a {
+  text-decoration: none;
+  color: #EBA2A0;
+  padding: 8px 16px;
+}
+.list-navigation a:hover {
+  color: #FFF;
+  background: #EBA2A0;
+}
+.list-navigation a:active {
+  color: #FFF;
+  background: #EBA2A0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+}
+
+header {
+  width: 90%;
+  margin: 40px auto 20px auto;
+  text-align: center;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+nav {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* ------------------------------------- */
+/*           COMPONENTS INDEX            */
+/* ------------------------------------- */
+h1 {
+  font-family: "Meddon", cursive;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  color: #6C2E3F;
+}
+
+h2 {
+  font-family: "Meddon", cursive;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #6C2E3F;
+}
+
+h3 {
+  font-family: "Halant", serif;
+  font-size: 1.3rem;
+  color: #A57B86;
+}
+
+p,
+li {
+  font-family: "Halant", serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  color: #382929;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form__input[placeholder] {
+  font-family: "Halant", serif;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-top: 1px solid #EBA2A0;
+  border-bottom: 1px solid #EBA2A0;
+}
+
+.nav {
+  padding: 10px 0;
+}
+
+/*# sourceMappingURL=styles.css.map */

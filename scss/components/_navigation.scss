@@ -1,0 +1,19 @@
+// -------------------------------------
+//               NAVIGATION
+// -------------------------------------
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-top: 1px solid $dark-salmon;
+  border-bottom: 1px solid $dark-salmon;
+}
+
+.nav {
+  padding: 10px 0;
+}
+
+.list-navigation a {
+  @extend %nav__item--link;
+}
