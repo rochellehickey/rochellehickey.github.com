@@ -12,12 +12,18 @@ $font-weight-regular : 500;
 $font-weight-bold    : 700;
 
 $primary-hdln-size   : 2.4rem;
-$secondary-hdln-size : 1.6rem;
+$secondary-hdln-size : 1.8rem;
+$tertiary-hdln-size  : 1.3rem;
 $copy-size           : 1.3rem;
+$date-size           : 1rem;
+$copyright-size      : .9rem;
 
-$primary-hdln-line-height: 2.8rem;
-$secondary-hdln-line-height: 2rem;
-$copy-size-line-height: 1.8rem;
+$primary-hdln-line-height   : 2.8rem;
+$secondary-hdln-line-height : 2rem;
+$tertiary-hdln-line-height  : 1.8rem;
+$copy-size-line-height      : 1.8rem;
+$date-size-line-height      : 1.2rem;
+$copyright-line-height      : 1rem;
 
 
 // ------------- BREAKPOINTS -----------
@@ -43,8 +49,14 @@ $violet-dark : darken(#927bc1, 10%);
 
 $font-color           : $brown;
 $font-nav-color       : $dark-salmon;
+$footer-bg-color      : $siena;
 
-$primary-hdln-color   : $siena;
-$secondary-hdln-color : $rosy-brown;
+$primary-hdln-color   : $rosy-brown;
+$secondary-hdln-color : $siena;
+$tertiary-hdln-color  : $siena;
+$footer-text-color      : $white;
 
 $link-color           : $cadet-blue;
+$button-color         : $cadet-blue;
+$button-text-color    : $white;
+$card-color           : $thistle;

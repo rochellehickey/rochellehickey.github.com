@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rochelle Hickey Front-End Web Developer</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="scss/css/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Halant:500,700|Meddon&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="images/icons/fontawesome-free-5.10.2-web/css/all.css">
 </head>
@@ -19,9 +19,9 @@
 
       <nav>
         <ul class="navigation">
-          <li class="list-navigation"><a href="index.html">Home</a></li>
-          <li class="list-navigation"><a href="work.html">Work</a></li>
-          <li class="list-navigation"><a href="#">Experience</a></li>
+          <li class="list-navigation nav"><a href="index.html">Home</a></li>
+          <li class="list-navigation nav"><a href="work.html">Work</a></li>
+          <li class="list-navigation nav"><a href="#">Experience</a></li>
         </ul>
       </nav>
 
@@ -32,9 +32,9 @@
         <h2>Experience</h2>
         <button>Print Resume</button>
         <button>Download Resume</button>
-        <section>
-          <h3>Freelance — Graphic Designer/Consultant</h3>
-          <p><em>June 2008 – present</em></p>
+        <section class="card">
+          <h3 class="experience-header">Freelance <br /> Graphic Designer / Consultant</h3>
+          <p class="job-dates">June 2008 – present</p>
           <ul>
             <li>Meg Flanagan Education Solutions (formerly MilKids Education Consultant)</li>
             <li>Julia Gilstein Editing</li>
@@ -43,27 +43,27 @@
             <li>Cei Builders Inc.</li>
           </ul>
         </section>
-        <section>
-          <h3>Jobs for the Future — Graphic Designer</h3>
-          <p><em>September 2011 – December 2015</em></p>
+        <section class="card">
+          <h3 class="experience-header">Jobs for the Future <br /> Graphic Designer</h3>
+          <p class="job-dates">September 2011 – December 2015</p>
           <ul>
             <li>Conceptualize and create print, web, and email products</li>
             <li>Adhere to JFF branding standards in print, web, and email products</li>
             <li>Write clean HTML code and keep consistency throughout www.jff.org pages maintained in Drupal CMS</li>
           </ul>
         </section>
-        <section>
-          <h3>Jobs for the Future — Design Assistant</h3>
-          <p><em>March 2009 – September 2011</em></p>
+        <section class="card">
+          <h3 class="experience-header">Jobs for the Future <br /> Design Assistant</h3>
+          <p class="job-dates">March 2009 – September 2011</p>
           <ul>
             <li>Collaborate in creation of print and web products</li>
             <li>Provide general administrative and production support</li>
             <li>Organize and keep data on the publication inventory room</li>
           </ul>
         </section>
-        <section>
-          <h3>Claire T. Carney Library — Assistant Librarian</h3>
-          <p><em>August 2004 – June 2008</em></p>
+        <section class="card">
+          <h3 class="experience-header">Claire T. Carney Library <br /> Assistant Librarian</h3>
+          <p class="job-dates">August 2004 – June 2008</p>
           <ul>
             <li>Maintain Electronic Reserves System</li>
             <li>Manage money transactions with patrons</li>
@@ -73,26 +73,39 @@
       </article>
       <article class="education">
         <h2>Education</h2>
-        <h3>Treehouse</h3>
-        <p>teamtreehouse.com</p>
-        <p><em>January 2018 – October 2019</em></p>
-        <h3>University of Massachusetts Dartmouth</h3>
-        <p>Dartmouth, MA</p>
-        <p>BFA in Visual Design/Letterform, Art History Minor</p>
-        <p>GPA 3.717, Magna Cum Laude</p>
-        <p><em>September 2004 – May 2008</em></p>
+        <section class="card">
+          <h3 class="experience-header">Treehouse</h3>
+          <p class="job-dates">January 2018 – October 2019</p>
+          <p>teamtreehouse.com</p>
+        </section>
+        <section class="card">
+          <h3 class="experience-header">University of Massachusetts Dartmouth</h3>
+          <p class="job-dates">September 2004 – May 2008</p>
+          <p>BFA in Visual Design/Letterform with an Art History Minor</p>
+          <p>GPA 3.717, Magna Cum Laude</p>
+        </section>
       </article>
 
       <article class="skills">
         <h2>Skills</h2>
-        <ul>
-          <li>HTML, CSS, JavaScript</li>
-          <li>Adobe Creative Suite (InDesign, Illustrator, Photoshop, Acrobat Reader; basic DreamWeaver)</li>
-          <li>Microsoft Office (Word, PowerPoint, Outlook; basic Excel)</li>
-          <li>Strong organizational skills</li>
-          <li>Excellent verbal and communication skills</li>
-          <li>Attention to detail in a fast-paced work environment</li>
-        </ul>
+        <section class="card">
+          <p>HTML, CSS, JavaScript</p>
+        </section>
+        <section class="card">
+          <p>Adobe Creative Suite (InDesign, Illustrator, Photoshop, Acrobat Reader; basic DreamWeaver)</p>
+        </section>
+        <section class="card">
+          <p>Microsoft Office (Word, PowerPoint, Outlook; basic Excel)</p>
+        </section>
+        <section class="card">
+          <p>Strong organizational skills</p>
+        </section>
+        <section class="card">
+          <p>Excellent verbal and communication skills</p>
+        </section>
+        <section class="card">
+          <p>Attention to detail in a fast-paced work environment</p>
+        </section>
       </article>
 
     </main>

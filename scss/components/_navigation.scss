@@ -3,6 +3,9 @@
 // -------------------------------------
 
 .navigation {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -12,6 +15,7 @@
 
 .nav {
   padding: 10px 0;
+
 }
 
 .list-navigation a {

@@ -7,20 +7,23 @@ h1 {
   font-family: $font-stack-header;
   font-size: $primary-hdln-size;
   line-height: $primary-hdln-line-height;
-  color: $siena;
+  color: $primary-hdln-color;
 }
 
 h2 {
   font-family: $font-stack-header;
   font-size: $secondary-hdln-size;
   line-height: $secondary-hdln-line-height;
-  color: $siena;
+  color: $secondary-hdln-color;
+  margin: 60px 0 10px 0;
 }
 
 h3 {
   font-family: $font-stack;
-  font-size: $copy-size;
-  color: $rosy-brown;
+  font-size: $tertiary-hdln-size;
+  line-height: $tertiary-hdln-line-height;
+  color: $tertiary-hdln-color;
+  margin: 20px 0 0 0;
 }
 
 p,
@@ -32,14 +35,22 @@ li {
   color: $brown;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
+
+// ---------- Classes -----------
+
+.job-dates {
+  font-style: italic;
+  font-size: $date-size;
+  padding-top: 0;
   margin: 0;
 }
 
-
-// ---------- Classes -----------
+.copyright {
+  font-style: italic;
+  font-size: $copyright-size;
+  line-height: $copyright-line-height;
+  color: $footer-text-color;
+}
 
 .form__input[placeholder] {
   font-family: $font-stack;

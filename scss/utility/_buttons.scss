@@ -1,0 +1,15 @@
+// -------------------------------------
+//                BUTTONS
+// -------------------------------------
+
+button {
+  padding: 10px;
+  margin: 8px 0;
+  text-align: center;
+  border: none;
+  width: 100%;
+  color: $button-text-color;
+  background: $button-color;
+  text-transform: uppercase;
+}
+

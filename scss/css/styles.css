@@ -2,14 +2,14 @@
   font-size: 2rem;
   font-weight: 700;
   margin: 40px;
-  color: #6C2E3F;
+  color: #A57B86;
 }
 
 .headline--secondary {
   font-size: 1.5rem;
   font-weight: 500;
   margin: 20px 0;
-  color: #A57B86;
+  color: #6C2E3F;
 }
 
 .link {
@@ -35,26 +35,40 @@
 
 * {
   box-sizing: border-box;
-}
-
-html {
   margin: 0;
 }
 
 header {
-  width: 90%;
+  width: 100%;
   margin: 40px auto 20px auto;
   text-align: center;
 }
 
 main {
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
 }
 
 nav {
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
+}
+
+section ul {
+  padding-bottom: 15px;
+}
+
+section p {
+  padding: 15px 0;
+}
+
+footer {
+  width: 100%;
+  padding: 10px;
+  margin: 40px 0 0 0;
+  display: flex;
+  flex-direction: row;
+  background: #6C2E3F;
 }
 
 /* ------------------------------------- */
@@ -64,20 +78,23 @@ h1 {
   font-family: "Meddon", cursive;
   font-size: 2.4rem;
   line-height: 2.8rem;
-  color: #6C2E3F;
+  color: #A57B86;
 }
 
 h2 {
   font-family: "Meddon", cursive;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   line-height: 2rem;
   color: #6C2E3F;
+  margin: 60px 0 10px 0;
 }
 
 h3 {
   font-family: "Halant", serif;
   font-size: 1.3rem;
-  color: #A57B86;
+  line-height: 1.8rem;
+  color: #6C2E3F;
+  margin: 20px 0 0 0;
 }
 
 p,
@@ -89,10 +106,18 @@ li {
   color: #382929;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
+.job-dates {
+  font-style: italic;
+  font-size: 1rem;
+  padding-top: 0;
   margin: 0;
+}
+
+.copyright {
+  font-style: italic;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  color: #FFF;
 }
 
 .form__input[placeholder] {
@@ -100,6 +125,9 @@ ul {
 }
 
 .navigation {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -109,6 +137,23 @@ ul {
 
 .nav {
   padding: 10px 0;
+}
+
+button {
+  padding: 10px;
+  margin: 8px 0;
+  text-align: center;
+  border: none;
+  width: 100%;
+  color: #FFF;
+  background: #7FBDB7;
+  text-transform: uppercase;
+}
+
+.card {
+  background: #EDE0DD;
+  padding: 5px 20px;
+  margin: 20px 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
