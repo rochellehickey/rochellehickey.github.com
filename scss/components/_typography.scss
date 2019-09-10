@@ -1,0 +1,29 @@
+// -------------------------------------
+//              TYPOGRAPHY
+// -------------------------------------
+
+
+.form__input[placeholder] {
+  font-family: $font-stack;
+}
+
+.headline--primary {
+  @extend %headline--primary;
+}
+
+.headline--secondary {
+  @extend %headline--secondary;
+}
+
+.blockquote {
+  @extend %corner-radius;
+  font-weight: $font-weight-light;
+  font-size: em(26px);
+  font-style: italic;
+  padding-left: em(10px);
+  border-left: em(5px) solid $blockquote-bdr-color;
+}
+
+.link {
+  @extend %link;
+}

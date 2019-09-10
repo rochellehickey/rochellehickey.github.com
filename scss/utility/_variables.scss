@@ -1,0 +1,44 @@
+// -------------------------------------
+//           VARIABLES PARTIAL
+// -------------------------------------
+
+
+// ---------------- FONTS --------------
+
+$font-stack: 'Halant', serif;
+$font-stack-header: 'Meddon', cursive;
+
+$font-weight-regular : 500;
+$font-weight-bold    : 700;
+
+
+// ------------- BREAKPOINTS -----------
+
+$media-screen-sm   : 320px;
+$media-screen-med  : 728px;
+$media-screen-lg   : 1024px;
+
+
+// --------------- COLORS --------------
+
+$thistle     : #EDE0DD;
+$dark-salmon : #EBA2A0;
+$cadet-blue  : #7FBDB7;
+$rosy-brown  : #A57B86;
+$siena       : #6C2E3F;
+$brown       : #382929;
+
+$cyan-light      : lighten(#64ddfb, 10%);
+
+$violet-dark     : darken(#927bc1, 10%);
+
+
+
+
+$font-color           : $brown;
+$font-nav-color       : $siena;
+
+$primary-hdln-color   : $siena;
+$secondary-hdln-color : $rosy-brown;
+
+$link-color           : $cadet-blue;
