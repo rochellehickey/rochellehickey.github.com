@@ -38,6 +38,16 @@ li {
 
 // ---------- Classes -----------
 
+.logo-title {
+  font-size: $logo-title-size;
+  line-height: $logo-title-line-height;
+  text-transform: uppercase;
+  padding-top: 10px;
+  margin: 6px auto 40px auto;
+  border-top: 1px solid $brown;
+  width: 80%;
+}
+
 .job-dates {
   font-style: italic;
   font-size: $date-size;
