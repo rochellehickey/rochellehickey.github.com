@@ -1,0 +1,20 @@
+// -------------------------------------
+//              IMAGES
+// -------------------------------------
+
+.profile-image {
+  margin: 0 30px 0 0;
+  display: inline-block;
+  width: 100px;
+  height: auto;
+}
+
+.thumbnail {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  margin: 0 auto;
+  position: absolute;
+  right: 60px;
+  z-index: 1;
+}

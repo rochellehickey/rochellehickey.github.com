@@ -35,6 +35,10 @@ li {
   color: $brown;
 }
 
+p {
+  margin: 20px 0;
+}
+
 
 // ---------- Classes -----------
 
@@ -53,6 +57,14 @@ li {
   font-size: $date-size;
   padding-top: 0;
   margin: 0;
+}
+
+.card p {
+  margin: 0;
+}
+
+.web-project-description {
+  font-style: italic;
 }
 
 .copyright {
