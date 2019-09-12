@@ -59,12 +59,13 @@ section ul {
 }
 
 footer {
-  width: 100%;
+  width: 85%;
   padding: 10px;
-  margin: 40px 0 0 0;
+  margin: 40px auto 20px auto;
+  text-align: center;
   display: flex;
-  flex-direction: row;
-  background: #6C2E3F;
+  flex-direction: column;
+  border-top: 1px solid #6C2E3F;
 }
 
 /* ------------------------------------- */
@@ -135,7 +136,7 @@ p {
   font-style: italic;
   font-size: 0.9rem;
   line-height: 1rem;
-  color: #FFF;
+  color: #6C2E3F;
 }
 
 .form__input[placeholder] {
@@ -197,6 +198,22 @@ button {
   height: 200px;
   object-fit: cover;
   margin: 0 auto;
+}
+
+.footer-contact-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer-contact {
+  width: 6%;
+  height: auto;
+}
+
+.contact-footer-icon {
+  fill: #A57B86;
 }
 
 /*# sourceMappingURL=styles.css.map */

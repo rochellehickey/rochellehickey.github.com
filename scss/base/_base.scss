@@ -30,10 +30,11 @@ section ul {
 }
 
 footer {
-  width: 100%;
+  width: 85%;
   padding: 10px;
-  margin: 40px 0 0 0;
+  margin: 40px auto 20px auto;
+  text-align: center;
   display: flex;
-  flex-direction: row;
-  background: $footer-bg-color;
+  flex-direction: column;
+  border-top: 1px solid $footer-line-color;
 }
