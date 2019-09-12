@@ -37,17 +37,13 @@ $media-screen-lg  : 1024px;
 
 // --------------- COLORS --------------
 
-$thistle     : #EDE0DD;
-$dark-salmon : #EBA2A0;
-$cadet-blue  : #7FBDB7;
-$rosy-brown  : #A57B86;
-$siena       : #6C2E3F;
-$brown       : #382929;
-$white       : #FFF;
-
-$cyan-light  : lighten(#64ddfb, 10%);
-$violet-dark : darken(#927bc1, 10%);
-
+$thistle         : #EDE0DD;
+$dark-salmon     : #EBA2A0;
+$succulent-green : #92A67F;
+$rosy-brown      : #A57B86;
+$siena           : #6C2E3F;
+$brown           : #382929;
+$white           : #FFF;
 
 $font-color           : $brown;
 $font-nav-color       : $dark-salmon;
@@ -59,7 +55,7 @@ $secondary-hdln-color : $siena;
 $tertiary-hdln-color  : $siena;
 $footer-text-color    : $siena;
 
-$link-color           : $cadet-blue;
-$button-color         : $cadet-blue;
+$link-color           : $succulent-green;
+$button-color         : $succulent-green;
 $button-text-color    : $white;
 $card-color           : $thistle;

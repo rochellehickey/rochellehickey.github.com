@@ -9,11 +9,11 @@
   justify-content: space-around;
 }
 
-.footer-contact {
-  width: 6%;
-  height: auto;
+.footer-contact a {
+  text-decoration: none;
 }
 
-.contact-footer-icon {
-  fill: $footer-svg-color;
+.footer-contact {
+  width: 25%;
+  height: auto;
 }

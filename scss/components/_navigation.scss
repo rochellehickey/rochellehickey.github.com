@@ -2,7 +2,8 @@
 //               NAVIGATION
 // -------------------------------------
 
-.navigation {
+.navigation,
+.sub-navigation {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -13,9 +14,13 @@
   border-bottom: 1px solid $dark-salmon;
 }
 
-.nav {
-  padding: 10px 0;
+.sub-navigation {
+  border-top: none;
+}
 
+.nav,
+.sub-nav {
+  padding: 10px 0;
 }
 
 .list-navigation a {
