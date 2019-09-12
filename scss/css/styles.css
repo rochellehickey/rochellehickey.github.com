@@ -58,10 +58,6 @@ section ul {
   padding-bottom: 15px;
 }
 
-section p {
-  padding: 15px 0;
-}
-
 footer {
   width: 100%;
   padding: 10px;
@@ -178,26 +174,15 @@ button {
   margin: 20px 0;
 }
 
-.web-container {
+.project-container {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
-.web-project {
-  margin: 20px 0;
-  height: 300px;
-}
-
-.web-project-description {
-  width: 273px;
-  height: auto;
-  padding-top: 60px;
-  margin: 0;
-  background: #EDE0DD;
-  border: 30px solid #EDE0DD;
-  position: relative;
-  top: 125px;
+.project {
+  display: block;
+  text-decoration: none;
 }
 
 .profile-image {
@@ -210,11 +195,8 @@ button {
 .thumbnail {
   width: 200px;
   height: 200px;
-  overflow: hidden;
+  object-fit: cover;
   margin: 0 auto;
-  position: absolute;
-  right: 60px;
-  z-index: 1;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -12,9 +12,6 @@
 .thumbnail {
   width: 200px;
   height: 200px;
-  overflow: hidden;
+  object-fit: cover;
   margin: 0 auto;
-  position: absolute;
-  right: 60px;
-  z-index: 1;
 }

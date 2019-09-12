@@ -13,26 +13,19 @@
 
 // ------------ Work ---------------
 
-.web-container {
+.project-container {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
-.web-project {
-  margin: 20px 0;
-  height: 300px;
+.project {
+  display: block;
+  text-decoration: none;
 }
 
 .web-project-description {
-  width: 273px;
-  height: auto;
-  padding-top: 60px;
-  margin: 0;
-  background: $thistle;
-  border: 30px solid $thistle;
-  position: relative;
-  top: 125px;
+
 }
 
 .web-project-title-description {
