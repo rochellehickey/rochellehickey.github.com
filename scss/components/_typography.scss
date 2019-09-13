@@ -70,6 +70,12 @@ p {
   padding: 10px 0 20px 0;
 }
 
+.breadcrumb {
+  font-size: $breadcrumb-size;
+  line-height: $breadcrumb-line-height;
+  font-style: italic;
+}
+
 .copyright {
   font-style: italic;
   font-size: $copyright-size;

@@ -13,3 +13,6 @@ button {
   text-transform: uppercase;
 }
 
+button a {
+  @extend %button-link;
+}

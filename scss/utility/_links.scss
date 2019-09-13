@@ -8,3 +8,8 @@
   text-decoration: none;
   border-bottom: 1px dotted $link-color;
 }
+
+%button-link {
+  text-decoration: none;
+  color: $button-text-color;
+}

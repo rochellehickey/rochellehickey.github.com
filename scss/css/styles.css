@@ -19,6 +19,11 @@
   border-bottom: 1px dotted #92A67F;
 }
 
+button a {
+  text-decoration: none;
+  color: #FFF;
+}
+
 .list-navigation a {
   text-decoration: none;
   color: #EBA2A0;
@@ -135,6 +140,12 @@ p {
   padding: 10px 0 20px 0;
 }
 
+.breadcrumb {
+  font-size: 0.9rem;
+  line-height: 1.8rem;
+  font-style: italic;
+}
+
 .copyright {
   font-style: italic;
   font-size: 0.9rem;
@@ -215,6 +226,19 @@ button {
   height: 200px;
   object-fit: cover;
   margin: 0 auto;
+}
+
+.project-header-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.project-page-image {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
 }
 
 .footer-contact-container {
