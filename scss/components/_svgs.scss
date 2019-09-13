@@ -9,8 +9,25 @@
   justify-content: space-around;
 }
 
-.footer-contact a {
+footer a {
   text-decoration: none;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  color: $succulent-green;
+  &:hover {
+    color: $white;
+    background: $succulent-green;
+  }
+  &:active {
+    color: $white;
+    background: $succulent-green;
+  }
+}
+
+footer a svg {
+  width: 50px;
+  height: 50px;
 }
 
 .footer-contact {

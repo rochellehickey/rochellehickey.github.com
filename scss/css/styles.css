@@ -60,7 +60,7 @@ section ul {
 
 footer {
   width: 85%;
-  padding: 10px;
+  padding: 20px 10px 10px 10px;
   margin: 40px auto 20px auto;
   text-align: center;
   display: flex;
@@ -129,7 +129,9 @@ p {
 }
 
 .web-project-description {
+  font-size: 1rem;
   font-style: italic;
+  line-height: 1.2rem;
 }
 
 .copyright {
@@ -190,6 +192,14 @@ button {
 .project {
   display: block;
   text-decoration: none;
+  padding: 0;
+}
+
+.web-project-title-description {
+  width: 85%;
+  height: auto;
+  min-height: 100px;
+  margin: 0 auto;
 }
 
 .profile-image {
@@ -200,7 +210,7 @@ button {
 }
 
 .thumbnail {
-  width: 200px;
+  width: 100%;
   height: 200px;
   object-fit: cover;
   margin: 0 auto;
@@ -213,8 +223,25 @@ button {
   justify-content: space-around;
 }
 
-.footer-contact a {
+footer a {
   text-decoration: none;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  color: #92A67F;
+}
+footer a:hover {
+  color: #FFF;
+  background: #92A67F;
+}
+footer a:active {
+  color: #FFF;
+  background: #92A67F;
+}
+
+footer a svg {
+  width: 50px;
+  height: 50px;
 }
 
 .footer-contact {

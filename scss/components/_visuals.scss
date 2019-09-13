@@ -22,12 +22,12 @@
 .project {
   display: block;
   text-decoration: none;
-}
-
-.web-project-description {
-
+  padding: 0;
 }
 
 .web-project-title-description {
-
+  width: 85%;
+  height: auto;
+  min-height: 100px;
+  margin: 0 auto;
 }

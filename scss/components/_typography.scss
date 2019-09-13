@@ -64,7 +64,9 @@ p {
 }
 
 .web-project-description {
+  font-size: $description-size;
   font-style: italic;
+  line-height: $description-line-height;
 }
 
 .copyright {
