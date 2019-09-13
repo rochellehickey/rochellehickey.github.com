@@ -131,7 +131,8 @@ p {
 .web-project-description {
   font-size: 1rem;
   font-style: italic;
-  line-height: 1.2rem;
+  line-height: 1.4rem;
+  padding: 10px 0 20px 0;
 }
 
 .copyright {
@@ -239,9 +240,22 @@ footer a:active {
   background: #92A67F;
 }
 
-footer a svg {
-  width: 50px;
-  height: 50px;
+.footer-svg {
+  text-decoration: none;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  fill: #92A67F;
+}
+.footer-svg:hover {
+  color: #FFF;
+  fill: #FFF;
+  background: #92A67F;
+}
+.footer-svg:active {
+  color: #FFF;
+  fill: #FFF;
+  background: #92A67F;
 }
 
 .footer-contact {

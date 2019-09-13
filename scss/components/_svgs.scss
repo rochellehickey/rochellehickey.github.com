@@ -25,9 +25,22 @@ footer a {
   }
 }
 
-footer a svg {
-  width: 50px;
-  height: 50px;
+.footer-svg {
+  text-decoration: none;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  fill: $succulent-green;
+  &:hover {
+    color: $white;
+    fill: $white;
+    background: $succulent-green;
+  }
+  &:active {
+    color: $white;
+    fill: $white;
+    background: $succulent-green;
+  }
 }
 
 .footer-contact {
