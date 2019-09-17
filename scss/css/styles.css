@@ -38,6 +38,11 @@ button a {
   background: #EBA2A0;
 }
 
+pre {
+  font-size: 0.7rem;
+  margin: 0;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
