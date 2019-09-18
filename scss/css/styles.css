@@ -38,11 +38,6 @@ button a {
   background: #EBA2A0;
 }
 
-pre {
-  font-size: 0.7rem;
-  margin: 0;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -241,12 +236,6 @@ button {
 }
 
 .project-page-image {
-  width: 100%;
-  height: auto;
-  max-height: 500px;
-}
-
-.project-long-image {
   width: 100%;
   height: auto;
 }
