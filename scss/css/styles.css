@@ -2,21 +2,21 @@
   font-size: 2rem;
   font-weight: 700;
   margin: 40px;
-  color: #A57B86;
+  color: #6A5D93;
 }
 
 .headline--secondary {
   font-size: 1.5rem;
   font-weight: 500;
   margin: 20px 0;
-  color: #6C2E3F;
+  color: #0F6489;
 }
 
 .link {
-  color: #92A67F;
+  color: #AA84A9;
   font-weight: 500;
   text-decoration: none;
-  border-bottom: 1px dotted #92A67F;
+  border-bottom: 1px dotted #AA84A9;
 }
 
 button a {
@@ -26,16 +26,16 @@ button a {
 
 .list-navigation a {
   text-decoration: none;
-  color: #EBA2A0;
+  color: #77BDB5;
   padding: 8px 16px;
 }
 .list-navigation a:hover {
   color: #FFF;
-  background: #EBA2A0;
+  background: #77BDB5;
 }
 .list-navigation a:active {
   color: #FFF;
-  background: #EBA2A0;
+  background: #77BDB5;
 }
 
 * {
@@ -70,7 +70,7 @@ footer {
   text-align: center;
   display: flex;
   flex-direction: column;
-  border-top: 1px solid #6C2E3F;
+  border-top: 1px solid #77BDB5;
 }
 
 /* ------------------------------------- */
@@ -80,14 +80,14 @@ h1 {
   font-family: "Meddon", cursive;
   font-size: 3rem;
   line-height: 3.4rem;
-  color: #A57B86;
+  color: #6A5D93;
 }
 
 h2 {
   font-family: "Meddon", cursive;
   font-size: 1.8rem;
   line-height: 2rem;
-  color: #6C2E3F;
+  color: #0F6489;
   margin: 60px 0 10px 0;
 }
 
@@ -95,7 +95,7 @@ h3 {
   font-family: "Halant", serif;
   font-size: 1.3rem;
   line-height: 1.8rem;
-  color: #6C2E3F;
+  color: #0F6489;
   margin: 20px 0 0 0;
 }
 
@@ -105,7 +105,7 @@ li {
   font-weight: 500;
   font-size: 1.3rem;
   line-height: 1.8rem;
-  color: #382929;
+  color: #29291F;
 }
 
 p {
@@ -118,7 +118,7 @@ p {
   text-transform: uppercase;
   padding-top: 10px;
   margin: 6px auto 40px auto;
-  border-top: 1px solid #382929;
+  border-top: 1px solid #29291F;
   width: 80%;
 }
 
@@ -150,7 +150,7 @@ p {
   font-style: italic;
   font-size: 0.9rem;
   line-height: 1rem;
-  color: #6C2E3F;
+  color: #0F6489;
 }
 
 .form__input[placeholder] {
@@ -165,8 +165,8 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  border-top: 1px solid #EBA2A0;
-  border-bottom: 1px solid #EBA2A0;
+  border-top: 1px solid #77BDB5;
+  border-bottom: 1px solid #77BDB5;
 }
 
 .sub-navigation {
@@ -185,12 +185,27 @@ button {
   border: none;
   width: 100%;
   color: #FFF;
-  background: #92A67F;
+  background: #AA84A9;
   text-transform: uppercase;
 }
 
+.contact-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact {
+  margin: 10px 0;
+}
+
+.contact a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+}
+
 .card {
-  background: #EDE0DD;
+  background: #CFECCE;
   padding: 5px 20px;
   margin: 20px 0;
 }
@@ -198,7 +213,7 @@ button {
 .project-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .project {
@@ -226,6 +241,11 @@ button {
   height: 200px;
   object-fit: cover;
   margin: 0 auto;
+  transition: filter 1s;
+}
+
+.thumbnail:hover {
+  filter: grayscale(0);
 }
 
 .project-header-image {
@@ -240,6 +260,26 @@ button {
   height: auto;
 }
 
+.black-and-white {
+  filter: grayscale(100%);
+}
+
+.contact svg {
+  height: 100px;
+  margin-right: 20px;
+  fill: #CFECCE;
+}
+.contact svg:hover {
+  fill: #FFF;
+}
+.contact svg:active {
+  fill: #FFF;
+}
+
+.contact svg circle {
+  fill: #77BDB5;
+}
+
 .footer-contact-container {
   margin: 0 auto;
   display: flex;
@@ -249,40 +289,29 @@ button {
 
 footer a {
   text-decoration: none;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  color: #92A67F;
-}
-footer a:hover {
-  color: #FFF;
-  background: #92A67F;
-}
-footer a:active {
-  color: #FFF;
-  background: #92A67F;
 }
 
 .footer-svg {
   text-decoration: none;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  fill: #92A67F;
+  width: 50%;
+  fill: #FFF;
+  transition: transform 0.5s;
 }
+
+.footer-svg circle {
+  fill: #6A5D93;
+}
+
 .footer-svg:hover {
-  color: #FFF;
-  fill: #FFF;
-  background: #92A67F;
+  transform: rotate(0.1turn);
 }
+
 .footer-svg:active {
-  color: #FFF;
-  fill: #FFF;
-  background: #92A67F;
+  transform: rotate(0.1turn);
 }
 
 .footer-contact {
-  width: 25%;
+  width: 50%;
   height: auto;
 }
 

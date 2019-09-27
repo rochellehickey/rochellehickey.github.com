@@ -2,6 +2,22 @@
 //              SVGS
 // -------------------------------------
 
+.contact svg {
+  height: 100px;
+  margin-right: 20px;
+  fill: $contact-svg-color;
+  &:hover {
+    fill: $contact-svg-hover-color;
+  }
+  &:active {
+    fill: $contact-svg-hover-color;
+  }
+}
+
+.contact svg circle {
+  fill: $contact-circle-color;
+}
+
 .footer-contact-container {
   margin: 0 auto;
   display: flex;
@@ -11,39 +27,28 @@
 
 footer a {
   text-decoration: none;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  color: $succulent-green;
-  &:hover {
-    color: $white;
-    background: $succulent-green;
-  }
-  &:active {
-    color: $white;
-    background: $succulent-green;
-  }
 }
 
 .footer-svg {
   text-decoration: none;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  fill: $succulent-green;
-  &:hover {
-    color: $white;
-    fill: $white;
-    background: $succulent-green;
-  }
-  &:active {
-    color: $white;
-    fill: $white;
-    background: $succulent-green;
-  }
+  width: 50%;
+  fill: $footer-svg-color;
+  transition: transform 0.5s;
+}
+
+.footer-svg circle {
+  fill: $footer-svg-bg-color;
+}
+
+.footer-svg:hover {
+  transform: rotate(0.1turn);
+}
+
+.footer-svg:active {
+  transform: rotate(0.1turn);
 }
 
 .footer-contact {
-  width: 25%;
+  width: 50%;
   height: auto;
 }

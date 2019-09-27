@@ -3,7 +3,26 @@
 // -------------------------------------
 
 
+// ------- Home Page Contact -------
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact {
+  margin: 10px 0;
+}
+
+.contact a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+}
+
+
 // ---------- Experience -----------
+
 .card {
   background: $card-color;
   padding: 5px 20px;
@@ -16,7 +35,7 @@
 .project-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .project {
