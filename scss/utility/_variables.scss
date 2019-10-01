@@ -26,6 +26,7 @@ $secondary-hdln-line-height : 2rem;
 $tertiary-hdln-line-height  : 1.8rem;
 $copy-size-line-height      : 1.8rem;
 $date-size-line-height      : 1.2rem;
+$contact-line-height        : 0;
 $copyright-line-height      : 1rem;
 $logo-title-line-height     : 1.4rem;
 $description-line-height    : 1.4rem;
@@ -54,6 +55,7 @@ $secondary-hdln-color      : $sunset-blue;
 $tertiary-hdln-color       : $sunset-blue;
 $font-color                : $brown;
 $font-nav-color            : $evergreen;
+$contact-name-color        : $rosy-pink;
 $button-text-color         : $white;
 $breadcrumb-color          : $thistle;
 $footer-text-color         : $sunset-blue;
@@ -62,6 +64,7 @@ $link-color                : $rosy-pink;
 
 $contact-svg-color         : $thistle;
 $contact-circle-color      : $evergreen;
+$contact-border-color      : $rosy-pink;
 $contact-svg-hover-color   : $white;
 
 $footer-svg-color          : $white;

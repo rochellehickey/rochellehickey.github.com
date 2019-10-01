@@ -63,6 +63,12 @@ p {
   margin: 0;
 }
 
+.contact-home-icon-name {
+  font-family: $font-stack-header;
+  line-height: $contact-line-height;
+  color: $contact-name-color;
+}
+
 .web-project-description {
   font-size: $description-size;
   font-style: italic;

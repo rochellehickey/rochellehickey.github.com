@@ -11,13 +11,20 @@
 }
 
 .contact {
+  padding: 10px;
   margin: 10px 0;
+  border: 1px solid $contact-border-color;
 }
 
 .contact a {
   text-decoration: none;
   display: flex;
   flex-direction: row;
+  align-items: center;
+}
+
+.contact a:hover {
+
 }
 
 
