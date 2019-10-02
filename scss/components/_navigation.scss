@@ -26,3 +26,7 @@
 .list-navigation a {
   @extend %nav__item--link;
 }
+
+.page-selected a {
+  @extend %nav__item--selected;
+}

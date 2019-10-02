@@ -32,6 +32,7 @@ footer a {
 .footer-svg {
   text-decoration: none;
   width: 50%;
+  max-width: 75px;
   fill: $footer-svg-color;
   transition: transform 0.5s;
 }

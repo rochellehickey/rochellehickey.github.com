@@ -15,3 +15,8 @@
     background: $nav-bg-color;
   }
 }
+
+%nav__item--selected {
+  color: $white;
+  background: $nav-bg-color;
+}
