@@ -331,4 +331,17 @@ footer a {
   height: auto;
 }
 
+#overlay {
+  visibility: visible;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  color: #CFECCE;
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 /*# sourceMappingURL=styles.css.map */
