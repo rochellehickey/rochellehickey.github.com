@@ -331,17 +331,22 @@ footer a {
   height: auto;
 }
 
+.skills {
+  margin: 20px auto;
+}
+
 #overlay {
-  visibility: visible;
+  visibility: hidden;
   display: flex;
   flex-direction: column;
   position: fixed;
-  color: #CFECCE;
+  background: #CFECCE;
   justify-content: center;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 10;
 }
 
 /*# sourceMappingURL=styles.css.map */

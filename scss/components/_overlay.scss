@@ -2,16 +2,21 @@
 //                OVERLAY
 // -------------------------------------
 
+
+.skills {
+  margin: 20px auto;
+}
+
 #overlay {
-  visibility: visible;
+  visibility: hidden;
   display: flex;
   flex-direction: column;
   position: fixed;
-  color: $overlay-bg-color;
+  background: $overlay-bg-color;
   justify-content: center;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 10;
 }
-
