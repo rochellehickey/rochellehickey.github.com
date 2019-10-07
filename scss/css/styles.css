@@ -15,8 +15,6 @@
 .link {
   color: #AA84A9;
   font-weight: 500;
-  text-decoration: none;
-  border-bottom: 1px dotted #AA84A9;
 }
 
 button a {
@@ -255,6 +253,7 @@ button {
   width: 100%;
   height: 200px;
   object-fit: cover;
+  object-position: 50% 0;
   margin: 0 auto;
   transition: filter 1s;
 }
