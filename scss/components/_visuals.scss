@@ -23,8 +23,10 @@
   align-items: center;
 }
 
-.contact a:hover {
-
+.contact a:hover{
+  .contact-home-icon-name {
+    font-family: $font-stack;
+}
 }
 
 

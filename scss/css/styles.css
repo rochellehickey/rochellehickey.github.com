@@ -216,6 +216,10 @@ button {
   align-items: center;
 }
 
+.contact a:hover .contact-home-icon-name {
+  font-family: "Halant", serif;
+}
+
 .card {
   background: #CFECCE;
   padding: 5px 20px;
@@ -283,10 +287,11 @@ button {
   margin-right: 20px;
   fill: #CFECCE;
 }
-.contact svg:hover {
+.contact svg:active {
   fill: #FFF;
 }
-.contact svg:active {
+
+.contact a:hover .contact svg {
   fill: #FFF;
 }
 

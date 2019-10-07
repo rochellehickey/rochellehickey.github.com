@@ -6,10 +6,14 @@
   height: 100px;
   margin-right: 20px;
   fill: $contact-svg-color;
-  &:hover {
+
+  &:active {
     fill: $contact-svg-hover-color;
   }
-  &:active {
+}
+
+.contact a:hover{
+  .contact svg {
     fill: $contact-svg-hover-color;
   }
 }
