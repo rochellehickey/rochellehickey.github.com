@@ -12,10 +12,8 @@
   }
 }
 
-.contact a:hover{
-  .contact svg {
-    fill: $contact-svg-hover-color;
-  }
+.contact a:hover path {
+  fill: $contact-svg-hover-color;
 }
 
 .contact svg circle {
