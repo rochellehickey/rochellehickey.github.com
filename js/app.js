@@ -1,7 +1,13 @@
+// sticky header
 const body = document.body;
 const scrollUp = "scroll-up";
 const scrollDown = "scroll-down";
 let lastScroll = 0;
+// filter button
+const button = document.button;
+const cssFilter = document.getElementById('cssFilter');
+const jsFilter = document.getElementById('jsFilter');
+const reactFilter = document.getElementById('reactFilter');
 
 
 // STICKY HEADER
@@ -32,3 +38,33 @@ window.addEventListener("scroll", () => {
   // update the lastScroll to equal the currentScroll
   lastScroll = currentScroll;
 });
+
+
+// FILTER BUTTONS
+
+button.addEventListener('click', function() {
+  if(cssFilter) {
+
+  }
+
+    // example what I need to do
+    var title = $(this).find('a').attr('data-filter')
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
