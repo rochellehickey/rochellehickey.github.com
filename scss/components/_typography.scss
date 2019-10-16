@@ -69,11 +69,16 @@ p {
   color: $contact-name-color;
 }
 
-.web-project-description {
+.project-description {
   font-size: $description-size;
   font-style: italic;
   line-height: $description-line-height;
   padding: 10px 0 20px 0;
+}
+
+.project-intro p {
+  font-size: $project-intro-size;
+  line-height: $project-intro-line-height;
 }
 
 .breadcrumb {

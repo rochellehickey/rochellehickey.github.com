@@ -142,11 +142,16 @@ p {
   color: #AA84A9;
 }
 
-.web-project-description {
+.project-description {
   font-size: 1rem;
   font-style: italic;
   line-height: 1.4rem;
   padding: 10px 0 20px 0;
+}
+
+.project-intro p {
+  font-size: 1.4rem;
+  line-height: 2rem;
 }
 
 .breadcrumb {
@@ -212,6 +217,11 @@ button {
   text-transform: uppercase;
 }
 
+button:hover,
+button:active {
+  background: linear-gradient(180deg, #AA84A9 15%, #6A5D93 100%);
+}
+
 .contact-container {
   display: flex;
   flex-direction: column;
@@ -248,11 +258,16 @@ button {
   padding: 0;
 }
 
-.web-project-title-description {
+.project-title-description {
   width: 85%;
   height: auto;
   min-height: 100px;
   margin: 0 auto;
+}
+
+.project-intro {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #77BDB5;
 }
 
 .profile-image {

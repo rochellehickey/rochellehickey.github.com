@@ -19,6 +19,7 @@ $date-size           : 1rem;
 $copyright-size      : .9rem;
 $logo-title-size     : 1.1rem;
 $description-size    : 1rem;
+$project-intro-size  : 1.4rem;
 $breadcrumb-size     : .9rem;
 
 $primary-hdln-line-height   : 3.4rem;
@@ -30,6 +31,7 @@ $contact-line-height        : 0;
 $copyright-line-height      : 1rem;
 $logo-title-line-height     : 1.4rem;
 $description-line-height    : 1.4rem;
+$project-intro-line-height  : 2rem;
 $breadcrumb-line-height     : 1.8rem;
 
 
@@ -75,8 +77,11 @@ $header-bg-color           : $white;
 $nav-bg-color              : $evergreen;
 $contact-bg-color          : $thistle;
 $button-color              : $rosy-pink;
+$button-gradient-top       : $rosy-pink;
+$button-gradient-bottom    : $aster-purple;
 $card-color                : $thistle;
 
+$project-intro-border-color: $evergreen;
 $nav-border-color          : $evergreen;
 $footer-line-color         : $evergreen;
 

@@ -13,6 +13,11 @@ button {
   text-transform: uppercase;
 }
 
+button:hover,
+button:active {
+  background: linear-gradient(180deg, $button-gradient-top 15%, $button-gradient-bottom 100%);
+}
+
 button a {
   @extend %button-link;
 }
