@@ -4,10 +4,14 @@ const scrollUp = "scroll-up";
 const scrollDown = "scroll-down";
 let lastScroll = 0;
 // filter button
-const button = document.button;
+const resetWebFilter = document.getElementById('webReset');
+const resetPrintFilter = document.getElementById('printReset');
 const cssFilter = document.getElementById('cssFilter');
 const jsFilter = document.getElementById('jsFilter');
 const reactFilter = document.getElementById('reactFilter');
+const reportsFilter = document.getElementById('reportsFilter');
+const multipleComponentsFilter = document.getElementById('multipleComponentsFilter');
+const infographicsFilter = document.getElementById('infographicsFilter');
 
 
 // STICKY HEADER
@@ -42,16 +46,84 @@ window.addEventListener("scroll", () => {
 
 // FILTER BUTTONS
 
-button.addEventListener('click', function() {
-  if(cssFilter) {
-
+// Web reset button
+resetWebFilter.addEventListener('click', function() {
+  // find the all the projects with the class project
+  let projects = document.querySelectorAll('.project');
+  // loop through each project found
+  for (let i = 0; i < projects.length; i++) {
+    // remove hidden class to all projects
+    // add show class to all projects
+    projects[i].classList.remove('hidden');
+    projects[i].classList.add('show');
   }
+});
 
-    // example what I need to do
-    var title = $(this).find('a').attr('data-filter')
-};
+// When CSS/SASS button is clicked
+cssFilter.addEventListener('click', function() {
+  // find the all the projects with the class project
+  let projects = document.querySelectorAll('.project');
+  // loop through each project found
+  for (let i = 0; i < projects.length; i++) {
+    // if the project does not have the data-filter attribute of css
+    if (projects[i].getAttribute('data-filter') !== "css") {
+      // remove show class
+      // add hidden class
+      projects[i].classList.remove('show');
+      projects[i].classList.add('hidden');
+    } else {
+      // if the project does have the data-filter attribute of css
+      // remove hidden class
+      // add show class
+      projects[i].classList.remove('hidden');
+      projects[i].classList.add('show');
+    }
+  }
+});
 
+// When JavaScript buton is clicked
+jsFilter.addEventListener('click', function() {
+  // find the all the projects with the class project
+  let projects = document.querySelectorAll('.project');
+  // loop through each project found
+  for (let i = 0; i < projects.length; i++) {
+    // if the project does not have the data-filter attribute of javascript
+    if (projects[i].getAttribute('data-filter') !== "javascript") {
+      // remove show class
+      // add hidden class
+      projects[i].classList.remove('show');
+      projects[i].classList.add('hidden');
+    } else {
+      // if the project does have the data-filter attribute of javascript
+      // remove hidden class
+      // add show class
+      projects[i].classList.remove('hidden');
+      projects[i].classList.add('show');
+    }
+  }
+});
 
+// When React buton is clicked
+reactFilter.addEventListener('click', function() {
+  // find the all the projects with the class project
+  let projects = document.querySelectorAll('.project');
+  // loop through each project found
+  for (let i = 0; i < projects.length; i++) {
+    // if the project does not have the data-filter attribute of react
+    if (projects[i].getAttribute('data-filter') !== "react") {
+      // remove show class
+      // add hidden class
+      projects[i].classList.remove('show');
+      projects[i].classList.add('hidden');
+    } else {
+      // if the project does have the data-filter attribute of react
+      // remove hidden class
+      // add show class
+      projects[i].classList.remove('hidden');
+      projects[i].classList.add('show');
+    }
+  }
+});
 
 
 

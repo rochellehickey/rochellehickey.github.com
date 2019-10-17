@@ -60,3 +60,11 @@
   margin-bottom: 40px;
   border-bottom: 1px solid $project-intro-border-color;
 }
+
+.show {
+  visibility: visible;
+}
+
+.hidden {
+  display: none;
+}
