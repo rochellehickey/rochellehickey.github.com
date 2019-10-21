@@ -47,9 +47,12 @@ window.addEventListener("scroll", () => {
 
 // FILTER BUTTONS
 
-button.addEventListener('click', function() {
-  for (let i=0; i < button.length; i++) {
-    if (resetWebFilter) {
+for (let i=0; i < button.length; i++) {
+  console.log('1');
+  button[i].addEventListener('click', function() {
+  console.log('2')
+
+    if (button[i] === resetWebFilter) {
       // find the all the projects with the class project
       let projects = document.querySelectorAll('.project');
       // loop through each project found
@@ -59,7 +62,17 @@ button.addEventListener('click', function() {
         projects[i].classList.remove('hidden');
         projects[i].classList.add('show');
       }
-    } else if (cssFilter) {
+    } else if (button[i] === resetPrintFilter) {
+      // find the all the projects with the class project
+      let projects = document.querySelectorAll('.project');
+      // loop through each project found
+      for (let i = 0; i < projects.length; i++) {
+        // remove hidden class to all projects
+        // add show class to all projects
+        projects[i].classList.remove('hidden');
+        projects[i].classList.add('show');
+      }
+    } else if (button[i] === cssFilter) {
       // find the all the projects with the class project
       let projects = document.querySelectorAll('.project');
       // loop through each project found
@@ -78,7 +91,7 @@ button.addEventListener('click', function() {
           projects[i].classList.add('show');
         }
       }
-    } else if (jsFilter) {
+    } else if (button[i] === jsFilter) {
       // find the all the projects with the class project
       let projects = document.querySelectorAll('.project');
       // loop through each project found
@@ -97,7 +110,7 @@ button.addEventListener('click', function() {
           projects[i].classList.add('show');
         }
       }
-    } else if (reactFilter) {
+    } else if (button[i] === reactFilter) {
       // find the all the projects with the class project
       let projects = document.querySelectorAll('.project');
       // loop through each project found
@@ -116,9 +129,66 @@ button.addEventListener('click', function() {
           projects[i].classList.add('show');
         }
       }
+    } else if (button[i] === reportsFilter) {
+      // find the all the projects with the class project
+      let projects = document.querySelectorAll('.project');
+      // loop through each project found
+      for (let i = 0; i < projects.length; i++) {
+        // if the project does not have the data-filter attribute of reports
+        if (projects[i].getAttribute('data-filter') !== "reports") {
+          // remove show class
+          // add hidden class
+          projects[i].classList.remove('show');
+          projects[i].classList.add('hidden');
+        } else {
+          // if the project does have the data-filter attribute of reports
+          // remove hidden class
+          // add show class
+          projects[i].classList.remove('hidden');
+          projects[i].classList.add('show');
+        }
+      }
+    } else if (button[i] === multipleComponentsFilter) {
+      // find the all the projects with the class project
+      let projects = document.querySelectorAll('.project');
+      // loop through each project found
+      for (let i = 0; i < projects.length; i++) {
+        // if the project does not have the data-filter attribute of multiple
+        if (projects[i].getAttribute('data-filter') !== "multiple") {
+          // remove show class
+          // add hidden class
+          projects[i].classList.remove('show');
+          projects[i].classList.add('hidden');
+        } else {
+          // if the project does have the data-filter attribute of multiple
+          // remove hidden class
+          // add show class
+          projects[i].classList.remove('hidden');
+          projects[i].classList.add('show');
+        }
+      }
+    } else if (button[i] === infographicsFilter) {
+      // find the all the projects with the class project
+      let projects = document.querySelectorAll('.project');
+      // loop through each project found
+      for (let i = 0; i < projects.length; i++) {
+        // if the project does not have the data-filter attribute of infographics
+        if (projects[i].getAttribute('data-filter') !== "infographics") {
+          // remove show class
+          // add hidden class
+          projects[i].classList.remove('show');
+          projects[i].classList.add('hidden');
+        } else {
+          // if the project does have the data-filter attribute of infographics
+          // remove hidden class
+          // add show class
+          projects[i].classList.remove('hidden');
+          projects[i].classList.add('show');
+        }
+      }
     }
-  }
-});
+  })
+};
 
 
 
