@@ -38,3 +38,10 @@ footer {
   flex-direction: column;
   border-top: 1px solid $footer-line-color;
 }
+
+// ---------- Media Queries -------------
+@media (min-width: 768px) {
+  header {
+    margin-top: 60px;
+  }
+}

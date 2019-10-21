@@ -27,3 +27,16 @@ button:active {
 button a {
   @extend %button-link;
 }
+
+
+// --------- Media Queries -----------
+@media (min-width: 768px) {
+  .filter-buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  button.filter {
+    width: 49%;
+  }
+}

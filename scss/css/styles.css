@@ -76,6 +76,11 @@ footer {
   border-top: 1px solid #77BDB5;
 }
 
+@media (min-width: 768px) {
+  header {
+    margin-top: 60px;
+  }
+}
 /* ------------------------------------- */
 /*           COMPONENTS INDEX            */
 /* ------------------------------------- */
@@ -239,6 +244,17 @@ button:active {
   border: 1px solid #AA84A9;
 }
 
+@media (min-width: 768px) {
+  .filter-buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  button.filter {
+    width: 49%;
+  }
+}
 .contact-container {
   display: flex;
   flex-direction: column;
