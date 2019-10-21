@@ -5,8 +5,7 @@ const scrollDown = "scroll-down";
 let lastScroll = 0;
 // filter button
 const button = document.getElementsByTagName('BUTTON');
-const resetWebFilter = document.getElementById('webReset');
-const resetPrintFilter = document.getElementById('printReset');
+const resetFilter = document.getElementById('reset');
 const cssFilter = document.getElementById('cssFilter');
 const jsFilter = document.getElementById('jsFilter');
 const reactFilter = document.getElementById('reactFilter');
@@ -49,17 +48,7 @@ window.addEventListener("scroll", () => {
 
 for (let i=0; i < button.length; i++) {
   button[i].addEventListener('click', function() {
-    if (button[i] === resetWebFilter) {
-      // find the all the projects with the class project
-      let projects = document.querySelectorAll('.project');
-      // loop through each project found
-      for (let i = 0; i < projects.length; i++) {
-        // remove hidden class to all projects
-        // add show class to all projects
-        projects[i].classList.remove('hidden');
-        projects[i].classList.add('show');
-      }
-    } else if (button[i] === resetPrintFilter) {
+    if (button[i] === resetFilter) {
       // find the all the projects with the class project
       let projects = document.querySelectorAll('.project');
       // loop through each project found
