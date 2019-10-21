@@ -18,6 +18,12 @@ button:active {
   background: linear-gradient(180deg, $button-gradient-top 15%, $button-gradient-bottom 100%);
 }
 
+.buttonSelected {
+  color: $button-text-chosen-color;
+  background: $button-chosen-bg-color;
+  border: 1px solid $button-chosen-line-color;
+}
+
 button a {
   @extend %button-link;
 }

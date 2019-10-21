@@ -222,6 +222,12 @@ button:active {
   background: linear-gradient(180deg, #AA84A9 15%, #6A5D93 100%);
 }
 
+.buttonSelected {
+  color: #AA84A9;
+  background: #FFF;
+  border: 1px solid #AA84A9;
+}
+
 .contact-container {
   display: flex;
   flex-direction: column;

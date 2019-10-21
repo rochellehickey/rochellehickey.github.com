@@ -57,6 +57,10 @@ for (let i=0; i < button.length; i++) {
         // add show class to all projects
         projects[i].classList.remove('hidden');
         projects[i].classList.add('show');
+        // go through each button and remove the button Selected class
+        for (let i=0; i < button.length; i++) {
+          button[i].classList.remove('buttonSelected');
+        }
       }
     } else if (button[i] === cssFilter) {
       // find the all the projects with the class project
@@ -75,6 +79,12 @@ for (let i=0; i < button.length; i++) {
           // add show class
           projects[i].classList.remove('hidden');
           projects[i].classList.add('show');
+          // go through each button and remove the buttonSelected class
+          // add buttonSelected class to cssFilter
+          for (let i=0; i < button.length; i++) {
+            button[i].classList.remove('buttonSelected');
+          }
+          cssFilter.classList.add('buttonSelected');
         }
       }
     } else if (button[i] === jsFilter) {
@@ -94,6 +104,12 @@ for (let i=0; i < button.length; i++) {
           // add show class
           projects[i].classList.remove('hidden');
           projects[i].classList.add('show');
+          // go through each button and remove the buttonSelected class
+          // add buttonSelected class to jsFilter
+          for (let i=0; i < button.length; i++) {
+            button[i].classList.remove('buttonSelected');
+          }
+          jsFilter.classList.add('buttonSelected');
         }
       }
     } else if (button[i] === reactFilter) {
@@ -113,6 +129,12 @@ for (let i=0; i < button.length; i++) {
           // add show class
           projects[i].classList.remove('hidden');
           projects[i].classList.add('show');
+          // go through each button and remove the buttonSelected class
+          // add buttonSelected class to reactFilter
+          for (let i=0; i < button.length; i++) {
+            button[i].classList.remove('buttonSelected');
+          }
+          reactFilter.classList.add('buttonSelected');
         }
       }
     } else if (button[i] === reportsFilter) {
@@ -132,6 +154,12 @@ for (let i=0; i < button.length; i++) {
           // add show class
           projects[i].classList.remove('hidden');
           projects[i].classList.add('show');
+          // go through each button and remove the buttonSelected class
+          // add buttonSelected class to reportsFilter
+          for (let i=0; i < button.length; i++) {
+            button[i].classList.remove('buttonSelected');
+          }
+          reportsFilter.classList.add('buttonSelected');
         }
       }
     } else if (button[i] === multipleComponentsFilter) {
@@ -151,6 +179,12 @@ for (let i=0; i < button.length; i++) {
           // add show class
           projects[i].classList.remove('hidden');
           projects[i].classList.add('show');
+          // go through each button and remove the buttonSelected class
+          // add buttonSelected class to multipleComponentsFilter
+          for (let i=0; i < button.length; i++) {
+            button[i].classList.remove('buttonSelected');
+          }
+          multipleComponentsFilter.classList.add('buttonSelected');
         }
       }
     } else if (button[i] === infographicsFilter) {
@@ -170,6 +204,12 @@ for (let i=0; i < button.length; i++) {
           // add show class
           projects[i].classList.remove('hidden');
           projects[i].classList.add('show');
+          // go through each button and remove the buttonSelected class
+          // add buttonSelected class to infographicsFilter
+          for (let i=0; i < button.length; i++) {
+            button[i].classList.remove('buttonSelected');
+          }
+          infographicsFilter.classList.add('buttonSelected');
         }
       }
     }
