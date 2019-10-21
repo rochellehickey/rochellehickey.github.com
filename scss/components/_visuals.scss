@@ -23,7 +23,12 @@
   align-items: center;
 }
 
-
+.image-and-about-container {
+  height: auto;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid $project-intro-border-color;
+}
 
 
 // ---------- Experience -----------
@@ -67,4 +72,19 @@
 
 .hidden {
   display: none;
+}
+
+
+// ------- Media Queries -------------
+
+@media (min-width: 768px) {
+  .contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .contact {
+    padding: 10px 40px;
+  }
 }

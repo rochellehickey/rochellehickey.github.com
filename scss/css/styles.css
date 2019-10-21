@@ -25,7 +25,7 @@ button a {
 .list-navigation a {
   text-decoration: none;
   color: #77BDB5;
-  padding: 8px 16px;
+  padding: 10px 16px;
 }
 .list-navigation a:hover {
   color: #FFF;
@@ -107,7 +107,7 @@ li {
   font-family: "Halant", serif;
   font-weight: 500;
   font-size: 1.3rem;
-  line-height: 1.8rem;
+  line-height: 2rem;
   color: #29291F;
 }
 
@@ -123,6 +123,12 @@ p {
   margin: 6px auto 40px auto;
   border-top: 1px solid #29291F;
   width: 80%;
+}
+
+.about-me-intro {
+  margin-bottom: 0;
+  font-size: 1.4rem;
+  line-height: 2rem;
 }
 
 .job-dates {
@@ -171,6 +177,11 @@ p {
   font-family: "Halant", serif;
 }
 
+@media (min-width: 768px) {
+  .about-me-intro {
+    margin-top: 0;
+  }
+}
 .navigation,
 .sub-navigation {
   list-style-type: none;
@@ -246,6 +257,13 @@ button:active {
   align-items: center;
 }
 
+.image-and-about-container {
+  height: auto;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #77BDB5;
+}
+
 .card {
   background: #CFECCE;
   padding: 5px 20px;
@@ -284,6 +302,18 @@ button:active {
   display: none;
 }
 
+@media (min-width: 768px) {
+  .contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .contact {
+    padding: 10px 40px;
+  }
+}
 .profile-image {
   margin: 0 30px 0 0;
   display: inline-block;
@@ -321,6 +351,17 @@ button:active {
   filter: grayscale(100%);
 }
 
+@media (min-width: 768px) {
+  .image-and-about-container {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+  }
+
+  .profile-image {
+    max-width: 250px;
+  }
+}
 .contact svg {
   height: 100px;
   margin-right: 20px;

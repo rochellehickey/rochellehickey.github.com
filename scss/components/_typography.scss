@@ -52,6 +52,12 @@ p {
   width: 80%;
 }
 
+.about-me-intro {
+  margin-bottom: 0;
+  font-size: $project-intro-size;
+  line-height: $project-intro-line-height;
+}
+
 .job-dates {
   font-style: italic;
   font-size: $date-size;
@@ -110,4 +116,11 @@ p {
 
 .link {
   @extend %link;
+}
+
+// --------- Media Queries ----------
+@media (min-width: 768px) {
+  .about-me-intro {
+    margin-top: 0;
+  }
 }

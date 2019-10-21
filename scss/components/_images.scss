@@ -38,3 +38,15 @@
 .black-and-white {
   filter: grayscale(100%);
 }
+
+// ---------- Media Queries -------------
+@media (min-width: 768px) {
+  .image-and-about-container {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+  }
+  .profile-image {
+    max-width: 250px;
+  }
+}
