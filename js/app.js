@@ -48,10 +48,7 @@ window.addEventListener("scroll", () => {
 // FILTER BUTTONS
 
 for (let i=0; i < button.length; i++) {
-  console.log('1');
   button[i].addEventListener('click', function() {
-  console.log('2')
-
     if (button[i] === resetWebFilter) {
       // find the all the projects with the class project
       let projects = document.querySelectorAll('.project');
