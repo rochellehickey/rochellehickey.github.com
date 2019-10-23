@@ -229,6 +229,12 @@ p {
     margin-top: 0;
   }
 }
+@media print {
+  /* All your print styles go here */
+  #header, #footer, #nav {
+    display: none !important;
+  }
+}
 .navigation,
 .sub-navigation {
   list-style-type: none;
