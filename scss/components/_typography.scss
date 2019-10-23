@@ -104,8 +104,11 @@ p {
   color: $footer-text-color;
 }
 
-.form__input[placeholder] {
-  font-family: $font-stack;
+.experience-bullet {
+  border-left: 2px solid $experience-bullet-line;
+  padding-left: 10px;
+  list-style: none;
+  margin-bottom: 10px;
 }
 
 // --------- Extends ------------

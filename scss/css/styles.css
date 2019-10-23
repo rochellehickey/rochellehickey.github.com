@@ -182,8 +182,11 @@ p {
   color: #0F6489;
 }
 
-.form__input[placeholder] {
-  font-family: "Halant", serif;
+.experience-bullet {
+  border-left: 2px solid #0F6489;
+  padding-left: 10px;
+  list-style: none;
+  margin-bottom: 10px;
 }
 
 @media (min-width: 768px) {
