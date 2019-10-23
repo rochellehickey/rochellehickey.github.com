@@ -56,7 +56,15 @@
   }
   .img-center {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $media-screen-lg) {
+  .project-page-image {
+    width: auto;
+    max-width: 750px;
+    max-height: 500px;
   }
 }

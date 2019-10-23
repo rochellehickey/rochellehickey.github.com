@@ -81,6 +81,24 @@ footer {
     margin-top: 60px;
   }
 }
+@media (min-width: 1024px) {
+  header {
+    margin-top: 80px;
+  }
+
+  main {
+    width: 75%;
+  }
+}
+@media (min-width: 1200px) {
+  header {
+    margin-top: 100px;
+  }
+
+  main {
+    width: 60%;
+  }
+}
 /* ------------------------------------- */
 /*           COMPONENTS INDEX            */
 /* ------------------------------------- */
@@ -401,8 +419,15 @@ a.resume-button {
 
   .img-center {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
+  }
+}
+@media (min-width: 1024px) {
+  .project-page-image {
+    width: auto;
+    max-width: 750px;
+    max-height: 500px;
   }
 }
 .contact svg {

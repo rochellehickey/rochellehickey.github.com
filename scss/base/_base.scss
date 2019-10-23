@@ -45,3 +45,21 @@ footer {
     margin-top: 60px;
   }
 }
+
+@media (min-width: $media-screen-lg) {
+  header {
+    margin-top: 80px;
+  }
+  main {
+    width: 75%;
+  }
+}
+
+@media (min-width: $media-screen-xlg) {
+  header {
+    margin-top: 100px;
+  }
+  main {
+    width: 60%;
+  }
+}
