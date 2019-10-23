@@ -49,4 +49,14 @@
   .profile-image {
     max-width: 250px;
   }
+  .project-page-image {
+    width: auto;
+    max-width: 650px;
+    max-height: 400px;
+  }
+  .img-center {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }

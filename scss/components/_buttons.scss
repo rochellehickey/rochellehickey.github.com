@@ -31,12 +31,16 @@ button a {
 
 // --------- Media Queries -----------
 @media (min-width: 768px) {
-  .filter-buttons {
+  .filter-buttons,
+  .project-view-button-container,
+  .resume-button-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  button.filter {
+  button.filter,
+  a.project-view-button,
+  a.resume-button {
     width: 49%;
   }
 }

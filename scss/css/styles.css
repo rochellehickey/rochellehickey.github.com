@@ -104,7 +104,7 @@ h3 {
   font-size: 1.3rem;
   line-height: 1.8rem;
   color: #0F6489;
-  margin: 20px 0 0 0;
+  margin: 20px 0;
 }
 
 p,
@@ -151,6 +151,10 @@ p {
   font-family: "Meddon", cursive;
   line-height: 0;
   color: #AA84A9;
+}
+
+.project-title-description h3 {
+  margin-bottom: 0;
 }
 
 .project-description {
@@ -245,13 +249,17 @@ button:active {
 }
 
 @media (min-width: 768px) {
-  .filter-buttons {
+  .filter-buttons,
+.project-view-button-container,
+.resume-button-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
 
-  button.filter {
+  button.filter,
+a.project-view-button,
+a.resume-button {
     width: 49%;
   }
 }
@@ -329,6 +337,10 @@ button:active {
   .contact {
     padding: 10px 40px;
   }
+
+  .project-title-description {
+    width: 90%;
+  }
 }
 .profile-image {
   margin: 0 30px 0 0;
@@ -376,6 +388,18 @@ button:active {
 
   .profile-image {
     max-width: 250px;
+  }
+
+  .project-page-image {
+    width: auto;
+    max-width: 650px;
+    max-height: 400px;
+  }
+
+  .img-center {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
 .contact svg {

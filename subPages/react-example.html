@@ -33,17 +33,23 @@
 
     <main>
       <a href="../work-web.html" class="breadcrumb link">&#8592; back to web development examples</a>
-      <img src="../images/react-ex-banner.png" alt="Image of top of image gallery" class="project-header-image" />
-      <h3>React Flickr Gallery Example</h3>
-      <a href="https://github.com/rochellehickey/Techdegree-project-11" target="_blank"><button>View on Github</button></a>
-      <a href="#" target="_blank"><button>View in Browser</button></a>
+      <h2>React Flickr gallery</h2>
+      <div class="project-view-button-container">
+        <a href="https://github.com/rochellehickey/Techdegree-project-11" target="_blank" class="project-view-button"><button>View on Github</button></a>
+        <a href="#" target="_blank" class="project-view-button"><button>View in Browser</button></a>
+      </div>
       <section class="project-intro">
         <p>An image gallery using React and the Flickr API where you can search for any image or choose from one of three image catagories: bears, beets, battlestar galatica.</p>
       </section>
       <section class="project-body">
-        <img src="../images/react-ex.png" alt="Searcing for Bears" class="project-page-image" />
+        <h3>About the Project</h3>
+        <div class="img-center">
+          <img src="../images/react-ex.png" alt="Searcing for Bears" class="project-page-image" />
+        </div>
         <p>When a user clicks on a predetermined search button, the NavLink within the code routes the information from Flickr and displays 12 new images of that specific search term.</p>
-        <img src="../images/react-ex-2.png" alt="Searching for Beets" class="project-page-image" />
+        <div class="img-center">
+          <img src="../images/react-ex-2.png" alt="Searching for Beets" class="project-page-image" />
+        </div>
         <p>The React files are set up with multiple compontents, including:</p>
         <ul>
           <li>Container</li>
@@ -54,11 +60,17 @@
           <li>PhotoContainer</li>
           <li>SearchForm</li>
         </ul>
-        <img src="../images/react-ex-3.png" alt="Searching for Battlestar Galactica" class="project-page-image" />
+        <div class="img-center">
+          <img src="../images/react-ex-3.png" alt="Searching for Battlestar Galactica" class="project-page-image" />
+        </div>
         <p>If there is lag time between a search and the display, a loading indicator appears each time the app fetches new data.</p>
-        <img src="../images/react-ex-4.png" alt="Searching for Brendan Fraser" class="project-page-image" />
+        <div class="img-center">
+          <img src="../images/react-ex-4.png" alt="Searching for Brendan Fraser" class="project-page-image" />
+        </div>
         <p>If a user decides to search for images that are not predetermined, they can search in the search bar for any topic they like.</p>
-        <img src="../images/react-ex-5.png" alt="No Results Found" class="project-page-image" />
+        <div class="img-center">
+          <img src="../images/react-ex-5.png" alt="No Results Found" class="project-page-image" />
+        </div>
         <p>If a user searches for something that does not match any keyword in Flickr, a 404-error "No Results Found" message is displayed.</p>
       </section>
       <section class="skills-learned">

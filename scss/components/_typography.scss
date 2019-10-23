@@ -23,7 +23,7 @@ h3 {
   font-size: $tertiary-hdln-size;
   line-height: $tertiary-hdln-line-height;
   color: $tertiary-hdln-color;
-  margin: 20px 0 0 0;
+  margin: 20px 0;
 }
 
 p,
@@ -73,6 +73,10 @@ p {
   font-family: $font-stack-header;
   line-height: $contact-line-height;
   color: $contact-name-color;
+}
+
+.project-title-description h3 {
+  margin-bottom: 0;
 }
 
 .project-description {
