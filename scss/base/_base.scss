@@ -40,7 +40,7 @@ footer {
 }
 
 // ---------- Media Queries -------------
-@media (min-width: 768px) {
+@media (min-width: $media-screen-med) {
   header {
     margin-top: 60px;
   }

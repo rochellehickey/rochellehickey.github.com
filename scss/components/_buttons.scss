@@ -30,7 +30,7 @@ button a {
 
 
 // --------- Media Queries -----------
-@media (min-width: 768px) {
+@media (min-width: $media-screen-med) {
   .filter-buttons,
   .project-view-button-container,
   .resume-button-container {

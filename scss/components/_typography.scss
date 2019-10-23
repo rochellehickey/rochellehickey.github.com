@@ -126,7 +126,7 @@ p {
 }
 
 // --------- Media Queries ----------
-@media (min-width: 768px) {
+@media (min-width: $media-screen-med) {
   .about-me-intro {
     margin-top: 0;
   }

@@ -40,7 +40,7 @@
 }
 
 // ---------- Media Queries -------------
-@media (min-width: 768px) {
+@media (min-width: $media-screen-med) {
   .image-and-about-container {
     display: flex;
     flex-direction: row;
