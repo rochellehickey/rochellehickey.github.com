@@ -76,6 +76,10 @@ footer {
   border-top: 1px solid #77BDB5;
 }
 
+.print-footer-contact-container {
+  border-top: 1px solid #29291F;
+}
+
 @media (min-width: 768px) {
   header {
     margin-top: 60px;
@@ -200,11 +204,24 @@ p {
   color: #0F6489;
 }
 
+.experience-header {
+  margin-bottom: 0;
+}
+
 .experience-bullet {
   border-left: 2px solid #0F6489;
   padding-left: 10px;
   list-style: none;
   margin-bottom: 10px;
+}
+
+.printer-black {
+  color: #29291F;
+}
+
+.printer-font {
+  font-family: "Halant", serif;
+  margin-top: 10px;
 }
 
 @media (min-width: 768px) {
@@ -359,8 +376,32 @@ a.resume-button {
     padding: 10px 40px;
   }
 
+  .project-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
   .project-title-description {
     width: 90%;
+  }
+
+  .card {
+    width: 49%;
+  }
+
+  .resume {
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .card {
+    width: 32%;
+  }
+
+  .resume {
+    width: 100%;
   }
 }
 .profile-image {

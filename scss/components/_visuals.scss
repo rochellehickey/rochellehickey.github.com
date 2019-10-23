@@ -87,7 +87,28 @@
   .contact {
     padding: 10px 40px;
   }
+  .project-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
   .project-title-description {
     width: 90%;
+  }
+  .card {
+    width: 49%;
+  }
+  .resume {
+    width: 100%;
+  }
+}
+
+@media (min-width: $media-screen-lg) {
+  .card {
+    width: 32%;
+  }
+  .resume {
+    width: 100%;
   }
 }

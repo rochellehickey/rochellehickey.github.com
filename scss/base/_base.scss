@@ -39,6 +39,10 @@ footer {
   border-top: 1px solid $footer-line-color;
 }
 
+.print-footer-contact-container {
+  border-top: 1px solid $print-footer-line-color;
+}
+
 // ---------- Media Queries -------------
 @media (min-width: $media-screen-med) {
   header {

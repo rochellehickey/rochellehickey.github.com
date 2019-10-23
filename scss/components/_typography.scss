@@ -104,12 +104,28 @@ p {
   color: $footer-text-color;
 }
 
+.experience-header {
+  margin-bottom: 0;
+}
+
 .experience-bullet {
   border-left: 2px solid $experience-bullet-line;
   padding-left: 10px;
   list-style: none;
   margin-bottom: 10px;
 }
+
+// -------- Printer Friendly --------
+.printer-black {
+  color: $printer-friendly-color;
+}
+
+.printer-font {
+  font-family: $font-stack;
+  margin-top: 10px;
+}
+
+
 
 // --------- Extends ------------
 
