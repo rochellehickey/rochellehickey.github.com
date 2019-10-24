@@ -39,7 +39,12 @@ footer {
   border-top: 1px solid $footer-line-color;
 }
 
+.printer-header {
+  margin-top: 0;
+}
+
 .print-footer-contact-container {
+  margin: 15px auto 0 auto;
   border-top: 1px solid $print-footer-line-color;
 }
 

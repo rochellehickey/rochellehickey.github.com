@@ -76,7 +76,12 @@ footer {
   border-top: 1px solid #77BDB5;
 }
 
+.printer-header {
+  margin-top: 0;
+}
+
 .print-footer-contact-container {
+  margin: 15px auto 0 auto;
   border-top: 1px solid #29291F;
 }
 
@@ -222,6 +227,24 @@ p {
 .printer-font {
   font-family: "Halant", serif;
   margin-top: 10px;
+}
+
+.list-printer-size {
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+
+p.list-printer-size {
+  margin: 0;
+}
+
+.experience-header {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.skills-ul {
+  padding-bottom: 0;
 }
 
 @media (min-width: 768px) {

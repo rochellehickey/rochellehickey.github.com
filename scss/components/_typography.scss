@@ -125,6 +125,24 @@ p {
   margin-top: 10px;
 }
 
+.list-printer-size {
+  font-size: $printer-copy-size;
+  line-height: $printer-friendly-line-height;
+}
+
+p.list-printer-size {
+  margin: 0;
+}
+
+.experience-header {
+  font-size: $printer-header-size;
+  margin-top: 10px;
+}
+
+.skills-ul {
+  padding-bottom: 0;
+}
+
 
 
 // --------- Extends ------------
