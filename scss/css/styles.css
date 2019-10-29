@@ -22,6 +22,10 @@ button a {
   color: #FFF;
 }
 
+a:focus {
+  outline: 2px solid #0F6489;
+}
+
 .list-navigation a {
   text-decoration: none;
   color: #77BDB5;
@@ -309,6 +313,10 @@ button:active {
   background: linear-gradient(180deg, #AA84A9 15%, #6A5D93 100%);
 }
 
+button:focus {
+  outline: 2px solid #0F6489;
+}
+
 .buttonSelected {
   color: #AA84A9;
   background: #FFF;
@@ -425,10 +433,6 @@ a.resume-button {
   }
 }
 @media (min-width: 1024px) {
-  .card {
-    width: 32%;
-  }
-
   .resume {
     width: 100%;
   }

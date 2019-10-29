@@ -18,6 +18,10 @@ button:active {
   background: linear-gradient(180deg, $button-gradient-top 15%, $button-gradient-bottom 100%);
 }
 
+button:focus {
+  outline: 2px solid $sunset-blue;
+}
+
 .buttonSelected {
   color: $button-text-chosen-color;
   background: $button-chosen-bg-color;

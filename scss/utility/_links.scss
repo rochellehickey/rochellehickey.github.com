@@ -11,3 +11,7 @@
   text-decoration: none;
   color: $button-text-color;
 }
+
+a:focus {
+  outline: 2px solid $sunset-blue;
+}
