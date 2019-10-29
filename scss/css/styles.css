@@ -306,6 +306,7 @@ button {
   color: #FFF;
   background: #AA84A9;
   text-transform: uppercase;
+  border: 1px solid transparent;
 }
 
 button:hover,
