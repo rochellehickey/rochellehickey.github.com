@@ -2,7 +2,10 @@
 //                BUTTONS
 // -------------------------------------
 
-button {
+button,
+.button {
+  @extend %button-link;
+  display: block;
   padding: 10px;
   margin: 8px 0;
   text-align: center;
@@ -15,11 +18,14 @@ button {
 }
 
 button:hover,
-button:active {
+button:active,
+.button:hover,
+.button:active {
   background: linear-gradient(180deg, $button-gradient-top 15%, $button-gradient-bottom 100%);
 }
 
-button:focus {
+button:focus,
+.button:focus {
   outline: 2px solid $sunset-blue;
 }
 
@@ -29,9 +35,7 @@ button:focus {
   border: 1px solid $button-chosen-line-color;
 }
 
-button a {
-  @extend %button-link;
-}
+
 
 
 // --------- Media Queries -----------

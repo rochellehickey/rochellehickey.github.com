@@ -4,14 +4,14 @@
 
 
 h1 {
-  font-family: $font-stack-header;
+  font-family: $header-font;
   font-size: $primary-hdln-size;
   line-height: $primary-hdln-line-height;
   color: $primary-hdln-color;
 }
 
 h2 {
-  font-family: $font-stack-header;
+  font-family: $header-font;
   font-size: $secondary-hdln-size;
   line-height: $secondary-hdln-line-height;
   color: $secondary-hdln-color;
@@ -19,7 +19,7 @@ h2 {
 }
 
 h3 {
-  font-family: $font-stack;
+  font-family: $body-font;
   font-size: $tertiary-hdln-size;
   line-height: $tertiary-hdln-line-height;
   color: $tertiary-hdln-color;
@@ -28,7 +28,7 @@ h3 {
 
 p,
 li {
-  font-family: $font-stack;
+  font-family: $body-font;
   font-weight: $font-weight-regular;
   font-size: $copy-size;
   line-height: $copy-size-line-height;
@@ -37,6 +37,11 @@ li {
 
 p {
   margin: 20px 0;
+}
+
+button {
+  font-family: $button-font;
+  font-size: $button-font-size;
 }
 
 
@@ -58,6 +63,11 @@ p {
   line-height: $project-intro-line-height;
 }
 
+.button {
+  font-family: $button-font;
+  font-size: $button-font-size;
+}
+
 .job-dates {
   font-style: italic;
   font-size: $date-size;
@@ -70,7 +80,7 @@ p {
 }
 
 .contact-home-icon-name {
-  font-family: $font-stack-header;
+  font-family: $header-font;
   line-height: $contact-line-height;
   color: $contact-name-color;
 }
@@ -164,9 +174,4 @@ p.list-printer-size {
   .about-me-intro {
     margin-top: 0;
   }
-}
-
-@media print {
- /* All your print styles go here */
- #header, #footer, #nav { display: none !important; }
 }

@@ -5,11 +5,16 @@
 
 // ---------------- FONTS --------------
 
-$font-stack: 'Halant', serif;
-$font-stack-header: 'Meddon', cursive;
+$font-stack        : 'Halant', serif;
+$font-stack-header : 'Meddon', cursive;
+$font-stack-button : 'Source Sans Pro', sans-serif;
 
 $font-weight-regular : 500;
 $font-weight-bold    : 700;
+
+$body-font           : $font-stack;
+$header-font         : $font-stack-header;
+$button-font         : $font-stack-button;
 
 $primary-hdln-size   : 3rem;
 $secondary-hdln-size : 1.8rem;
@@ -17,6 +22,7 @@ $tertiary-hdln-size  : 1.3rem;
 $copy-size           : 1.3rem;
 $date-size           : 1rem;
 $copyright-size      : .9rem;
+$button-font-size    : .9rem;
 $logo-title-size     : 1.1rem;
 $description-size    : 1rem;
 $project-intro-size  : 1.4rem;

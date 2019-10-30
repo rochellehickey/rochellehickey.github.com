@@ -17,7 +17,8 @@
   font-weight: 500;
 }
 
-button a {
+button,
+.button {
   text-decoration: none;
   color: #FFF;
 }
@@ -164,6 +165,11 @@ p {
   margin: 20px 0;
 }
 
+button {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.9rem;
+}
+
 .logo-title {
   font-size: 1.1rem;
   line-height: 1.4rem;
@@ -178,6 +184,11 @@ p {
   margin-bottom: 0;
   font-size: 1.4rem;
   line-height: 2rem;
+}
+
+.button {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.9rem;
 }
 
 .job-dates {
@@ -269,12 +280,6 @@ p.list-printer-size {
     margin-top: 0;
   }
 }
-@media print {
-  /* All your print styles go here */
-  #header, #footer, #nav {
-    display: none !important;
-  }
-}
 .navigation {
   list-style-type: none;
   padding: 0;
@@ -312,7 +317,9 @@ p.list-printer-size {
     padding: 0 20%;
   }
 }
-button {
+button,
+.button {
+  display: block;
   padding: 10px;
   margin: 8px 0;
   text-align: center;
@@ -325,11 +332,14 @@ button {
 }
 
 button:hover,
-button:active {
+button:active,
+.button:hover,
+.button:active {
   background: linear-gradient(180deg, #AA84A9 15%, #6A5D93 100%);
 }
 
-button:focus {
+button:focus,
+.button:focus {
   outline: 2px solid #0F6489;
 }
 
