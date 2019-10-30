@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 // sticky header
 const body = document.body;
 const scrollUp = "scroll-up";
@@ -213,8 +215,8 @@ for (let i=0; i < button.length; i++) {
         }
       }
     }
-  })
-};
+  });
+}
 
 
 
