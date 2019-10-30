@@ -27,22 +27,35 @@ a:focus {
 }
 
 .list-navigation a {
+  display: block;
   text-decoration: none;
   color: #77BDB5;
   padding: 10px 16px;
 }
 .list-navigation a:hover {
   color: #FFF;
-  background: #77BDB5;
 }
 .list-navigation a:active {
+  color: #FFF;
+}
+
+.list-navigation {
+  display: inline-block;
+}
+.list-navigation:hover {
+  background: #77BDB5;
+}
+.list-navigation:active {
+  background: #77BDB5;
+}
+
+.page-selected {
   color: #FFF;
   background: #77BDB5;
 }
 
 .page-selected a {
   color: #FFF;
-  background: #77BDB5;
 }
 
 * {
@@ -262,25 +275,15 @@ p.list-printer-size {
     display: none !important;
   }
 }
-.navigation,
-.sub-navigation {
+.navigation {
   list-style-type: none;
   padding: 0;
   margin: 0;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   border-top: 1px solid #77BDB5;
   border-bottom: 1px solid #77BDB5;
-}
-
-.sub-navigation {
-  border-top: none;
-}
-
-.nav,
-.sub-nav {
-  padding: 10px 0;
 }
 
 .scroll-down .sticky-header {
@@ -297,6 +300,18 @@ p.list-printer-size {
   z-index: 100;
 }
 
+@media (min-width: 768px) {
+  .navigation {
+    padding: 0 10%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1024px) {
+  .navigation {
+    padding: 0 20%;
+  }
+}
 button {
   padding: 10px;
   margin: 8px 0;

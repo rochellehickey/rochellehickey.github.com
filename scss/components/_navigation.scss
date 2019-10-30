@@ -2,33 +2,33 @@
 //               NAVIGATION
 // -------------------------------------
 
-.navigation,
-.sub-navigation {
+.navigation {
   list-style-type: none;
   padding: 0;
   margin: 0;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   border-top: 1px solid $nav-border-color;
   border-bottom: 1px solid $nav-border-color;
 }
 
-.sub-navigation {
-  border-top: none;
-}
 
-.nav,
-.sub-nav {
-  padding: 10px 0;
-}
 
 .list-navigation a {
   @extend %nav__item--link;
 }
 
-.page-selected a {
+.list-navigation {
+  @extend %nav__item--;
+}
+
+.page-selected {
   @extend %nav__item--selected;
+}
+
+.page-selected a {
+  @extend %nav__item--selected-a;
 }
 
 // ------------ Sticky Header ------------
@@ -45,4 +45,21 @@
   background: $header-bg-color;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
   z-index: 100;
+}
+
+
+// ------------ Media Queries --------------
+
+@media (min-width: $media-screen-med) {
+  .navigation {
+    padding: 0 10%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $media-screen-lg) {
+  .navigation {
+    padding: 0 20%;
+  }
 }

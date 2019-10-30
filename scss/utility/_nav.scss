@@ -3,15 +3,24 @@
 // -------------------------------------
 
 %nav__item--link {
+  display: block;
   text-decoration: none;
   color: $font-nav-color;
   padding: 10px 16px;
   &:hover {
-    color: $white;
+    color: $font-nav-hover-color;
+  }
+  &:active {
+    color: $font-nav-hover-color;
+  }
+}
+
+%nav__item-- {
+  display: inline-block;
+  &:hover {
     background: $nav-bg-color;
   }
   &:active {
-    color: $white;
     background: $nav-bg-color;
   }
 }
@@ -19,4 +28,8 @@
 %nav__item--selected {
   color: $white;
   background: $nav-bg-color;
+}
+
+%nav__item--selected-a {
+  color: $white;
 }
