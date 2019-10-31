@@ -29,13 +29,12 @@ button:focus,
   outline: 2px solid $sunset-blue;
 }
 
-.buttonSelected {
+.buttonSelected,
+.buttonSelected:hover {
   color: $button-text-chosen-color;
   background: $button-chosen-bg-color;
   border: 1px solid $button-chosen-line-color;
 }
-
-
 
 
 // --------- Media Queries -----------

@@ -343,7 +343,8 @@ button:focus,
   outline: 2px solid #0F6489;
 }
 
-.buttonSelected {
+.buttonSelected,
+.buttonSelected:hover {
   color: #AA84A9;
   background: #FFF;
   border: 1px solid #AA84A9;
