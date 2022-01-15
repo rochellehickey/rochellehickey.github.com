@@ -1,0 +1,608 @@
+/* ---------------------------------------- */
+/* -------------- CSS RESET --------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* ---------------------------------------- */
+/* -------------- TYPOGRAPHY -------------- */
+header {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-family: "Sacramento", cursive;
+}
+
+h3,
+h4,
+h5 {
+  font-family: "Halant", serif;
+  color: #0F6489;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 4rem;
+  font-weight: 500;
+  color: #6A5D93;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: 500;
+  color: #0F6489;
+  border-bottom: 1px solid #0F6489;
+  text-transform: lowercase;
+}
+
+h3 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  font-weight: 500;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a {
+  text-decoration: none;
+}
+
+h2 a,
+h3 a,
+h4 a {
+  color: #0F6489;
+}
+
+p,
+li {
+  font-family: "Halant", serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: #29291F;
+}
+
+a {
+  color: #6A5D93;
+  font-weight: 500;
+}
+
+a:focus {
+  outline: 2px solid #0F6489;
+}
+
+figcaption {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  color: #AA84A9;
+  text-align: center;
+}
+
+.about-me-intro {
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.logo-title {
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+  text-transform: uppercase;
+}
+
+.contact-home-icon-name {
+  font-family: "Sacramento", cursive;
+  line-height: 0;
+  color: #AA84A9;
+}
+
+.project-intro-text {
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+}
+
+.button {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 0.9rem;
+  color: #FFF;
+  text-transform: uppercase;
+}
+
+/* ---------------------------------------- */
+/* ----------- GLOBAL STYLES -------------- */
+html,
+body {
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  margin: 40px auto 20px auto;
+}
+
+nav {
+  width: 100%;
+  margin: 0 auto;
+}
+
+section ul {
+  padding-bottom: 15px;
+}
+
+footer {
+  width: 85%;
+  padding: 20px 10px 10px 10px;
+  margin: 40px auto 20px auto;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #77BDB5;
+}
+
+h1 {
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin: 60px 0 10px 0;
+}
+
+h3 {
+  margin: 20px 0 0 0;
+}
+
+p {
+  margin: 20px 0;
+}
+
+.main-content-width-wrapper {
+  width: 75%;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  header {
+    margin-top: 60px;
+  }
+}
+@media (min-width: 1024px) {
+  header {
+    margin-top: 80px;
+  }
+}
+@media (min-width: 1200px) {
+  header {
+    margin-top: 100px;
+  }
+
+  .main-content-width-wrapper {
+    width: 60%;
+  }
+}
+/* ---------------------------------------- */
+/* -------------- PAGE STYLES ------------- */
+/* ------------- HOME PAGE ---------------- */
+.logo-name {
+  margin-bottom: -20px;
+}
+
+.logo-title {
+  padding-top: 10px;
+  margin: 6px auto 40px auto;
+  border-top: 1px solid #29291F;
+  width: 80%;
+}
+
+.image-and-about-container {
+  height: auto;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #77BDB5;
+}
+
+.profile-image {
+  margin: 0 30px 0 0;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  align-self: center;
+}
+
+.about-me-intro {
+  margin-bottom: 0;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #AA84A9;
+}
+
+.contact a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .about-me-intro {
+    margin-top: 0;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .contact {
+    padding: 10px 40px;
+  }
+
+  .image-and-about-container {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+  }
+
+  .profile-image {
+    max-width: 250px;
+  }
+}
+/* ----------- EXPERIENCE PAGE ------------- */
+.job-dates {
+  font-style: italic;
+  font-size: 1rem;
+  padding-top: 0;
+  margin: 0;
+}
+
+/* ------------- PROJECT PAGES ------------- */
+.card {
+  background: #CFECCE;
+  padding: 5px 20px;
+  margin-top: -4px;
+  min-height: 100px;
+}
+
+.card p {
+  margin: 0;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: 50% 0;
+  margin: 0 auto;
+  transition: filter 1s;
+  align-self: center;
+}
+
+.thumbnail:hover {
+  filter: grayscale(0);
+}
+
+.black-and-white {
+  filter: grayscale(100%);
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project {
+  text-decoration: none;
+  padding: 0;
+}
+
+.project-title-description {
+  width: 85%;
+  height: auto;
+  min-height: 100px;
+  margin: 0 auto;
+}
+
+.project-title-description h3 {
+  margin-bottom: 0;
+}
+
+.project-intro {
+  margin-bottom: 40px;
+}
+
+.project-page-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .project-title-description {
+    width: 90%;
+  }
+
+  .project-page-image {
+    width: auto;
+    max-width: 650px;
+    max-height: 100%;
+  }
+
+  .img-center {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1024px) {
+  .project-page-image {
+    width: auto;
+    max-width: 750px;
+    max-height: 100%;
+  }
+
+  .project-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .project {
+    width: 100%;
+  }
+
+  .wp-block-lazyblock-project-landing-page-blocks {
+    display: flex;
+    width: 49%;
+  }
+}
+/* ----------------- FOOTER ---------------- */
+.copyright {
+  font-style: italic;
+  font-size: 0.9rem;
+  line-height: 2rem;
+  color: #0F6489;
+}
+
+.contact svg {
+  height: 100px;
+  margin-right: 20px;
+  fill: #CFECCE;
+}
+
+.contact svg:active {
+  fill: #FFF;
+}
+
+.contact a:hover path {
+  fill: #FFF;
+}
+
+.contact svg circle {
+  fill: #77BDB5;
+}
+
+.footer-contact-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer-svg {
+  text-decoration: none;
+  width: 50%;
+  max-width: 75px;
+  fill: #FFF;
+  transition: transform 0.5s;
+}
+
+.footer-svg circle {
+  fill: #6A5D93;
+}
+
+.footer-svg:hover {
+  transform: rotate(0.1turn) scale(1.1);
+}
+
+.footer-svg:active {
+  transform: rotate(0.1turn);
+}
+
+.footer-contact {
+  width: 50%;
+  height: auto;
+}
+
+/* ---------------------------------------- */
+/* ------------ TEMPLATE STYLES ----------- */
+/* --------------- HIDE/SHOW -------------- */
+.show {
+  visibility: visible;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ---------------- BUTTONS --------------- */
+.button {
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  margin: 8px 0;
+  text-align: center;
+  border: none;
+  width: 100%;
+  background: #AA84A9;
+  border: 2px solid transparent;
+}
+
+.button:hover,
+.button:active {
+  background: linear-gradient(180deg, #AA84A9 15%, #6A5D93 100%);
+}
+
+.button:focus {
+  outline: 2px solid #0F6489;
+}
+
+/* -------------- NAVIGATION -------------- */
+/* Nav Container */
+.main-navigation {
+  margin: 0 auto;
+  border-top: 1px solid #77BDB5;
+  border-bottom: 1px solid #77BDB5;
+}
+
+/* High level menu items */
+.main-list-navigation {
+  display: inline-block;
+}
+
+/* High level menu items on hover and active */
+.main-list-navigation:hover,
+.main-list-navigation:active {
+  background: #77BDB5;
+}
+
+/* High level links */
+.main-list-navigation a {
+  display: block;
+  text-decoration: none;
+  color: #77BDB5;
+  padding: 10px 16px;
+  width: 100%;
+}
+
+/* High level links on hover and active */
+.main-list-navigation a:hover,
+.main-list-navigation a:active {
+  color: #FFF;
+}
+
+/* Hamburger menu: Hides nav when not toggled */
+.main-navigation ul {
+  display: none;
+  list-style: none;
+  margin: 0 auto;
+}
+
+/* Hamburger menu: Hides nav links when not toggled */
+.main-navigation ul ul a {
+  display: none;
+}
+
+/* Hamburger menu: Toggles nav to display high level nav items on small screen */
+.menu-toggle,
+.main-navigation.toggled ul {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #77BDB5;
+  background: #FFF;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  padding: 15px;
+  border: none;
+  /* Removes dropdown items from displaying at a smaller screen */
+}
+.menu-toggle .sub-menu,
+.main-navigation.toggled ul .sub-menu {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  /* Keeps nav items from getting too close to screen edge */
+  .navigation {
+    padding: 0 10%;
+  }
+
+  /* Hamburger menu: Hides hamburger nav at wider screen width */
+  .menu-toggle,
+.main-navigation.toggled ul {
+    display: none;
+  }
+
+  /* Displays nav bar at wider screen width */
+  .main-navigation ul {
+    display: block;
+  }
+
+  /* Dropdown menu */
+  .main-navigation ul ul {
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    float: left;
+    position: absolute;
+    top: 100%;
+    left: -999em;
+    z-index: 99999;
+  }
+
+  /* Dropdown menu links */
+  .main-navigation ul ul a {
+    display: block;
+    color: #FFF;
+    background: #77BDB5;
+    width: 250px;
+  }
+
+  /* Makes dropdown menu drop */
+  .main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
+    left: auto;
+  }
+
+  /* Makes dropdown menu items drop */
+  .main-navigation li:hover {
+    position: relative;
+  }
+
+  /* Keeps high level menu hovered when navigating dropdown */
+  .main-navigation ul li:hover a {
+    color: #FFF;
+  }
+
+  /* Dropdown menu links on hover */
+  .main-navigation ul ul a:hover,
+.main-navigation ul ul a:active {
+    color: #77BDB5;
+    background: #FFF;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
