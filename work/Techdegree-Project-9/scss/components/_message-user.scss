@@ -1,0 +1,41 @@
+/* ------------------------------------------- */
+/* --------------- MESSAGE USER -------------- */
+/* ------------------------------------------- */
+
+.message-user .wrapper {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+#search-for-user {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  padding: 5px 10px;
+  margin: 0 0 10px 0;
+  border-radius: 5px;
+  border: 1px solid $light-grey;
+  background-color: $fields;
+}
+
+#msg {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  padding: 5px 10px;
+  margin: 0 0 10px 0;
+  border-radius: 5px;
+  border: 1px solid $light-grey;
+  background-color: $fields;
+}
+
+@media (min-width: 768px) {
+  .message-user {
+    width: 50%;
+    border-right: 1px solid $light-grey;
+  }
+  .message-user .wrapper {
+    width: 80%;
+  }
+}

@@ -1,0 +1,56 @@
+/* ------------------------------------------- */
+/* ------------- RECENT ACTIVITY ------------- */
+/* ------------------------------------------- */
+
+.recent-activity-block {
+  padding: 20px 40px 20px 0;
+  background-image: url(../icons/icon-arrow-right.svg);
+  background-size: 40px;
+  background-position: center right;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid $light-grey;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.recent-activity-block:last-child {
+  border: none;
+  margin-bottom: 20px;
+}
+
+.recent-activity-list {
+  margin: 10px 0 0 0;
+}
+
+.hour-active {
+  font-size: $hour-active-size;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .recent-activity {
+    width: 50%;
+  }
+  .recent-activity .wrapper {
+    width: 80%;
+  }
+  .recent-activity-block {
+    flex-direction: row;
+  }
+  .recent-activity-list {
+    width: 80%;
+    margin-top: 0;
+  }
+  .hour-active {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hour-active {
+    margin-left: 54px;
+  }
+}

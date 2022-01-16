@@ -1,0 +1,43 @@
+// -------------------------------------
+//            EXAMPLES LIST
+// -------------------------------------
+
+.writing-example-container {
+  margin: 40px 0;
+}
+
+.writing-example {
+  min-height: 230px;
+  padding: 10px 20px;
+  margin: 0;
+  background-color: $examples-bg-color;
+}
+
+.writing-background-copper {
+  background-color: $examples-list-color-1;
+}
+
+.writing-background-red-sun {
+  background-color: $examples-list-color-2;
+}
+
+.writing-background-stormy-seas {
+  background-color: $examples-list-color-3;
+}
+
+.writing-background-moss {
+  background-color: $examples-list-color-4;
+}
+
+
+// ---------- Media Queries -------------
+@media (min-width: $media-screen-lg) {
+  .writing-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .writing-example-container {
+    width: 49%;
+  }
+}

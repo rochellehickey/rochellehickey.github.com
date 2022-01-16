@@ -1,0 +1,16 @@
+/* ------------------------------------------- */
+/* -------------- MOBILE USERS --------------- */
+/* ------------------------------------------- */
+
+.mobile-users {
+  padding-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .mobile-users {
+    width: 50%;
+  }
+  .mobile-users .wrapper {
+    width: 80%;
+  }
+}

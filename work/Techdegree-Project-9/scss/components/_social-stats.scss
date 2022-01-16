@@ -1,0 +1,74 @@
+.twitter-block,
+.facebook-block,
+.googlePlus-block {
+  background: $fields;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  padding: 20px 10px;
+  margin: 20px auto;
+  border: 1px solid $light-grey;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  fill: $white;
+}
+
+.stat-Name-Number {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-align: left;
+}
+
+.stat-name {
+  line-height: 1.1;
+  font-size: $social-stat-title;
+  font-weight: $font-weight-bold;
+  color: $primary-color;
+  margin: 0 auto 0 0;
+}
+
+.stat-numbers {
+  line-height: 1.1;
+  color: $dark-grey;
+  font-size: $social-stat-size;
+  font-weight: $font-weight-light;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .stats-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .stats-group:last-child {
+    margin-bottom: 40px;
+  }
+  .twitter-block,
+  .facebook-block,
+  .googlePlus-block {
+    margin: 0 0 20px 0;
+    display: inline-flex;
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .stats-group {
+    align-items: center;
+    justify-content: space-around;
+  }
+  .twitter-block,
+  .facebook-block,
+  .googlePlus-block {
+    max-width: 325px;
+  }
+}
+
+
+

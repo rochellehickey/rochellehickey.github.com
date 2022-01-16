@@ -1,0 +1,203 @@
+/* ------------------------------------------- */
+/* --------------- NAVIGATION ---------------- */
+/* ------------------------------------------- */
+
+.top-nav {
+  background: $primary-color;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 12px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-nav a p {
+  margin: 0 auto;
+}
+
+.yourApp {
+  font-family: $primary-font;
+  text-decoration: none;
+  color: $white;
+}
+
+.member-profile-and-notifications {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.fas.fa-circle {
+  padding-bottom: 30px;
+  margin-left: -5px;
+  color: $tertiary-color;
+  font-size: 10px;
+}
+
+.member-profile-nav {
+  border-left: 1px solid $light-grey;
+  padding-left: 10px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+
+/* DROPDOWN MENU */
+
+.arrow-up {
+  position: absolute;
+  top: 63px;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 5px solid $fields;
+  visibility: hidden;
+}
+
+.fa-angle-double-right:before {
+  margin-right: 5px;
+  margin-left: -20px;
+}
+
+.fas.fa-angle-double-right {
+  color: $tertiary-color;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  transition: transform .5s cubic-bezier(.41,1.46,.53,-0.56);
+}
+
+.dropdown:hover {
+  transform: rotate(20deg);
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 68px;
+  background-color: $fields;
+  min-width: 180px;
+  z-index: 1;
+  visibility: hidden;
+}
+
+.dropdown-content a {
+  font-family: $primary-font;
+  font-weight: $font-weight-regular;
+  font-size: $paragraph-size;
+  color: $dark-grey;
+  padding: 12px 16px 12px 40px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid $light-grey;
+}
+
+.dropdown-content a:hover {
+  background-color: $primary-transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.side-nav-group {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.side-nav {
+  width: 100%;
+  background: $secondary-color;
+  margin: 0;
+  padding: 12px 10px 0 10px;
+  display: flex;
+}
+
+.side-nav a {
+  display: flex;
+  align-items: center;
+}
+
+.side-nav ul {
+  width: 100%;
+  padding: 0px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.side-nav li {
+  list-style: none;
+}
+
+.dashboard-active {
+  padding-bottom: 5px;
+  opacity: 1;
+  border-bottom: 3px solid $tertiary-color;
+}
+
+.dashboard-inactive {
+  padding-bottom: 5px;
+  opacity: .5;
+  border-bottom: none;
+}
+
+.dashboard-inactive:hover {
+  opacity: 1;
+}
+
+.profileName {
+  text-decoration: none;
+  color: $white;
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .top-nav {
+    padding: 12px 20px;
+  }
+  .member-profile-nav {
+    padding-left: 20px;
+    margin-left: 20px;
+  }
+  .side-nav-group {
+    width: 80px;
+    margin: 0;
+  }
+  .side-nav {
+    width: 80px;
+    height: 100%;
+    padding: 10px 0 0 0;
+    align-items: flex-start;
+  }
+  .side-nav ul {
+    flex-direction: column;
+  }
+  .dashboard-active {
+    border-bottom: none;
+    border-left: 3px solid $tertiary-color;
+  }
+  .dashboard-inactive {
+    padding-bottom: 0;
+  }
+}

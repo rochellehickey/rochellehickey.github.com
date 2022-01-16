@@ -1,0 +1,31 @@
+// -------------------------------------
+//            SERVICES LIST
+// -------------------------------------
+
+.services-list {
+  color: $services-color;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0;
+  font-size: 0;
+  text-align: center;
+}
+
+.services-list li {
+  display: inline-block;
+  width: 200px;
+  font-size: 16px;
+  font-size: 1rem;
+  vertical-align: top;
+  padding: 0 5px;
+  line-height: 1.6;
+}
+
+.services-list li:hover {
+  .circle-container {
+    background-color: $circle-container-hover;
+  }
+  .circle-letter {
+    color: $circle-letter-color-hover;
+  }
+}

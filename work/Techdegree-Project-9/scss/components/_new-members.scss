@@ -1,0 +1,81 @@
+/* ------------------------------------------- */
+/* --------------- NEW MEMBERS --------------- */
+/* ------------------------------------------- */
+
+.new-member-block {
+  padding: 20px 0;
+  border-bottom: 1px solid $light-grey;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.new-member-block:last-child {
+  border: none;
+  margin-bottom: 20px;
+}
+
+.member-name-and-contact {
+  margin: 10px 0 0 0;
+  flex-direction: column;
+}
+
+.member-name-and-contact p {
+  margin: 0 auto;
+}
+
+.member-name-and-contact a {
+  font-size: $email-size;
+  margin: 0 auto;
+  line-height: 1;
+  text-decoration: none;
+  color: $primary-color;
+}
+
+.joined-date {
+  font-size: $date-joined-size;
+  margin: 20px 0 0 0;
+}
+
+@media (min-width: 768px) {
+  .new-members {
+    width: 50%;
+    border-right: 1px solid $light-grey;
+  }
+  .new-members .wrapper {
+    width: 80%;
+  }
+  .new-member-block {
+    flex-direction: column;
+  }
+  .member-name-and-contact {
+    margin-top: 0;
+  }
+  .picture-and-contact-info {
+    display: inline-flex;
+    flex-direction: row;
+  }
+  .picture-and-contact-info img {
+    width: 44px;
+    height: 44px;
+  }
+  .joined {
+    margin-left: 54px;
+    margin-top: 10px;
+  }
+  .joined-date {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .new-member-block {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  p.hour-active {
+    margin-top: 0;
+  }
+}
+

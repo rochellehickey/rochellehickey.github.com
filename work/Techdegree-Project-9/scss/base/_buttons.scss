@@ -1,0 +1,114 @@
+/* ------------------------------------------- */
+/* ------------------ BUTTONS ---------------- */
+/* ------------------------------------------- */
+
+
+
+.close-button {
+  width: 16px;
+  height: auto;
+  margin: auto 0;
+  border: none;
+  background-color: $primary-color;
+}
+
+span.fas.fa-times.close-button {
+  margin: auto 10px;
+}
+
+.fas.fa-times {
+  color: $white;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.traffic-button-group {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.traffic-button {
+  color: $dark-grey;
+  width: 100px;
+  padding: 5px 15px;
+  margin: 10px 0;
+  border: none;
+  text-transform: none;
+}
+
+.traffic-button:hover {
+  color: $white;
+  background-color: $tertiary-color;
+  border: none;
+  border-radius: 20px;
+  text-transform: none;
+}
+
+.traffic-button-active {
+  color: $white;
+  background-color: $tertiary-color;
+  width: 100px;
+  padding: 5px 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 20px;
+  text-transform: none;
+}
+
+.traffic-button-inactive {
+  color: $dark-grey;
+  width: 100px;
+  padding: 5px 15px;
+  margin: 10px 0;
+  border: none;
+  text-transform: none;
+}
+
+.save-cancel {
+  width: 100%;
+  margin: 0 5px;
+}
+
+.save,
+.cancel,
+.send {
+  width: 100%;
+  height: 40px;
+  margin: 10px 0 40px 0;
+  background-color: $primary-color;
+  border-radius: 5px;
+  border: 1px solid $secondary-color;
+  transition: box-shadow .5s ease-in-out;
+}
+
+.save:hover,
+.cancel:hover,
+.send:hover {
+  box-shadow: 0 0 10px $secondary-color;
+}
+
+.cancel {
+  background-color: $light-grey;
+  border: 1px solid $dark-grey;
+}
+
+.slider-on-off {
+  width: 100px;
+  margin: auto 0 auto auto;
+}
+
+
+@media (min-width: 768px) {
+  .traffic-button-group {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+}

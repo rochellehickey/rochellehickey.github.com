@@ -1,0 +1,95 @@
+// -------------------------------------
+//           VARIABLES PARTIAL
+// -------------------------------------
+
+
+// ---------------- FONTS --------------
+
+$font-stack        : 'Libre Baskerville', serif;
+$font-stack-header : 'Rosario', sans-serif;
+$font-stack-button : 'Rosario', sans-serif;
+
+$font-weight-regular : 400;
+$font-weight-bold    : 700;
+
+$body-font           : $font-stack;
+$header-font         : $font-stack-header;
+$button-font         : $font-stack-button;
+$block-title-letter  : $font-stack;
+
+$primary-hdln-size       : 3rem;
+$secondary-hdln-size     : 1.8rem;
+$tertiary-hdln-size      : 1.3rem;
+$copy-size               : 1.2rem;
+$quote-author-size       : .9rem;
+$copyright-size          : .9rem;
+$button-font-size        : .9rem;
+$footer-font-size        : .9rem;
+$circle-letter-font-size : 4rem;
+$block-title-letter-size : 8rem;
+
+$primary-hdln-line-height       : 3.4rem;
+$secondary-hdln-line-height     : 2.6rem;
+$tertiary-hdln-line-height      : 1.8rem;
+$copy-size-line-height          : 2rem;
+$quote-author-line-height       : 1.2rem;
+$footer-line-height             : 1.3rem;
+$block-title-letter-line-height : 5.5rem;
+
+
+
+// ------------- BREAKPOINTS -----------
+
+$media-screen-med : 768px;
+$media-screen-lg  : 1024px;
+$media-screen-xlg : 1200px;
+
+
+// --------------- COLORS --------------
+
+$stormy-seas  : #537880;
+$into-the-deep: #214b54;
+$storm-clouds : #b4bfc1;
+$canvas       : #dfdccd;
+$brown        : #200000;
+$red-sun      : #8d332a;
+$copper       : #a16d33;
+$moss         : #7e8744;
+$white        : #FFF;
+
+$primary-hdln-color        : $brown;
+$secondary-hdln-color      : $brown;
+$tertiary-hdln-color       : $brown;
+$font-color                : $brown;
+$font-nav-color            : $brown;
+$button-text-color         : $brown;
+$blockquotes-color         : $red-sun;
+$blockquote-quotemark-color: $red-sun;
+$services-color            : $moss;
+$footer-text-color         : $white;
+
+$circle-letter-color       : $moss;
+$circle-letter-color-hover : $canvas;
+$circle-container-hover    : $moss;
+$circle-container-border   : $moss;
+$block-title-letter-color  : $storm-clouds;
+
+$link-color                : $stormy-seas;
+$link-focus-color          : $into-the-deep;
+
+$services-color-hover      : $canvas;
+
+$body-base-bg-color        : $stormy-seas;
+$header-bg-color           : $storm-clouds;
+$section-bg-color          : $canvas;
+$services-bg-color         : $moss;
+$examples-bg-color         : $storm-clouds;
+$footer-bg-color           : $copper;
+
+$services-line-color       : $moss;
+
+$examples-list-color-1     : $copper;
+$examples-list-color-2     : $red-sun;
+$examples-list-color-3     : $stormy-seas;
+$examples-list-color-4     : $moss;
+

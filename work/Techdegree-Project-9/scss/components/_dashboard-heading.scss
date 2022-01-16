@@ -1,0 +1,81 @@
+/* ------------------------------------------- */
+/* ------------- DASHBOARD HEADING ----------- */
+/* ------------------------------------------- */
+
+.wrapper-heading {
+  margin: 0 auto;
+  display: flex;
+}
+
+.dashboard-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  background-color: $white;
+}
+
+.dashboard-tab {
+  width: 100%;
+  padding: 20px;
+  background-color: $white;
+}
+
+.search {
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.searchContainer {
+  width: 100%;
+  padding: 0 0.5em;
+  margin: 0;
+  background-color: $white;
+  display: inline-flex;
+  align-items: center;
+  flex: 1 1 300px;
+  border: 1px solid $light-grey;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.searchIcon {
+  padding: 0.5em;
+  color: $primary-color;
+}
+
+.searchBox {
+  border: 0;
+  padding: 0.5em 0.5em 0.5em 0;
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .dashboard-wrapper {
+    width: 100%;
+    background-color: $primary-transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .dashboard-tab {
+    width: 175px;
+    padding: 0 20px;
+  }
+  .search {
+    width: 100%;
+    max-width: 350px;
+    margin-right: 20px;
+  }
+  .searchContainer {
+     width: 100%;
+  }
+}
+
+
+
+
+
+
+
+

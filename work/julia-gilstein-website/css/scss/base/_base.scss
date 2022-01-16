@@ -1,0 +1,59 @@
+// -------------------------------------
+//              BASE STYLES
+// -------------------------------------
+
+
+// ---------------- * ------------------
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  background: $body-base-bg-color url("../../../img/wallpaper.png");
+}
+
+header {
+  width: 100%;
+  margin: 0;
+  background-color: $header-bg-color;
+}
+
+section {
+  background-color: $section-bg-color;
+}
+
+footer {
+  background: $footer-bg-color;
+  width: 100%;
+  margin: 0;
+}
+
+footer p,
+footer a {
+  color: $footer-text-color;
+  font-family: $font-stack-header;
+  font-size: $footer-font-size;
+  line-height: $footer-line-height;
+  text-align: center;
+  margin: 10px auto;
+}
+
+footer .container {
+  flex-direction: column;
+}
+
+
+// ---------- Media Queries -------------
+@media (min-width: $media-screen-med) {
+  nav {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

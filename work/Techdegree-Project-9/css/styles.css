@@ -1,0 +1,1626 @@
+@charset "UTF-8";
+/* ------------------------------------------- */
+/* ------------------ MAIN ------------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ----------------- VARIABLES --------------- */
+/* ------------------------------------------- */
+/* ------------------- COLOR ----------------- */
+/* --------------- TYPOGRAPHY ---------------- */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet');
+/* ------------------------------------------- */
+/* --------------- TYPOGRAPHY ---------------- */
+/* ------------------------------------------- */
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-size: 1.4em;
+  font-weight: 400;
+  color: #707070;
+}
+
+h2 {
+  font-size: 1em;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #707070;
+  margin-top: 40px;
+}
+
+p,
+ul,
+li,
+input,
+form,
+textarea,
+select,
+div {
+  font-size: 1em;
+  font-weight: 400;
+  color: #707070;
+}
+
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+button {
+  color: #FFF;
+  font-size: 0.7em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.switch-light .switch-ios {
+  color: #FFF;
+  font-family: inherit;
+  font-size: 0.7em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+::placeholder {
+  font: 300 0.9em "Open Sans", sans-serif;
+  color: #B3B2B6;
+}
+
+/* ------------------------------------------- */
+/* ------------------- SVGS ------------------ */
+/* ------------------------------------------- */
+/* ----------------- DASHBOARD --------------- */
+.iconDashboardPath,
+.iconMembersPath,
+.iconVisitsPath,
+.iconSettingsPath {
+  fill: #FFF;
+}
+
+.notificationBell {
+  width: 30px;
+  height: auto;
+  border-radius: 0;
+}
+
+#iconDashboard,
+#iconMembers,
+#iconVisits,
+#iconSettings {
+  width: 50px;
+  height: auto;
+  padding: 10px;
+  margin: auto 5px;
+}
+
+/* --------------- SOCIAL STATS --------------- */
+#twitter-icon,
+#facebook-icon,
+#googlePlus-icon {
+  width: 80px;
+  height: 80px;
+  margin: auto 10px;
+}
+
+#twitter-icon circle,
+#facebook-icon circle,
+#googlePlus-icon circle {
+  fill: #7576BE;
+}
+
+@media (min-width: 768px) {
+  .dashboard-active {
+    border-bottom: none;
+  }
+
+  #iconDashboard,
+#iconMembers,
+#iconVisits,
+#iconSettings {
+    margin: 5px auto;
+  }
+}
+/* ------------------------------------------- */
+/* ------------------ BUTTONS ---------------- */
+/* ------------------------------------------- */
+.close-button {
+  width: 16px;
+  height: auto;
+  margin: auto 0;
+  border: none;
+  background-color: #7576BE;
+}
+
+span.fas.fa-times.close-button {
+  margin: auto 10px;
+}
+
+.fas.fa-times {
+  color: #FFF;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.traffic-button-group {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.traffic-button {
+  color: #707070;
+  width: 100px;
+  padding: 5px 15px;
+  margin: 10px 0;
+  border: none;
+  text-transform: none;
+}
+
+.traffic-button:hover {
+  color: #FFF;
+  background-color: #84CD94;
+  border: none;
+  border-radius: 20px;
+  text-transform: none;
+}
+
+.traffic-button-active {
+  color: #FFF;
+  background-color: #84CD94;
+  width: 100px;
+  padding: 5px 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 20px;
+  text-transform: none;
+}
+
+.traffic-button-inactive {
+  color: #707070;
+  width: 100px;
+  padding: 5px 15px;
+  margin: 10px 0;
+  border: none;
+  text-transform: none;
+}
+
+.save-cancel {
+  width: 100%;
+  margin: 0 5px;
+}
+
+.save,
+.cancel,
+.send {
+  width: 100%;
+  height: 40px;
+  margin: 10px 0 40px 0;
+  background-color: #7576BE;
+  border-radius: 5px;
+  border: 1px solid #4D4A77;
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+.save:hover,
+.cancel:hover,
+.send:hover {
+  box-shadow: 0 0 10px #4D4A77;
+}
+
+.cancel {
+  background-color: #B3B2B6;
+  border: 1px solid #707070;
+}
+
+.slider-on-off {
+  width: 100px;
+  margin: auto 0 auto auto;
+}
+
+@media (min-width: 768px) {
+  .traffic-button-group {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+/* ------------------------------------------- */
+/* --------------- NAVIGATION ---------------- */
+/* ------------------------------------------- */
+.top-nav {
+  background: #7576BE;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 12px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-nav a p {
+  margin: 0 auto;
+}
+
+.yourApp {
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  color: #FFF;
+}
+
+.member-profile-and-notifications {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.fas.fa-circle {
+  padding-bottom: 30px;
+  margin-left: -5px;
+  color: #84CD94;
+  font-size: 10px;
+}
+
+.member-profile-nav {
+  border-left: 1px solid #B3B2B6;
+  padding-left: 10px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* DROPDOWN MENU */
+.arrow-up {
+  position: absolute;
+  top: 63px;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 5px solid #FBFBFB;
+  visibility: hidden;
+}
+
+.fa-angle-double-right:before {
+  margin-right: 5px;
+  margin-left: -20px;
+}
+
+.fas.fa-angle-double-right {
+  color: #84CD94;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.5s cubic-bezier(0.41, 1.46, 0.53, -0.56);
+}
+
+.dropdown:hover {
+  transform: rotate(20deg);
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 68px;
+  background-color: #FBFBFB;
+  min-width: 180px;
+  z-index: 1;
+  visibility: hidden;
+}
+
+.dropdown-content a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  color: #707070;
+  padding: 12px 16px 12px 40px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #B3B2B6;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(117, 118, 190, 0.3);
+}
+
+.side-nav-group {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.side-nav {
+  width: 100%;
+  background: #4D4A77;
+  margin: 0;
+  padding: 12px 10px 0 10px;
+  display: flex;
+}
+
+.side-nav a {
+  display: flex;
+  align-items: center;
+}
+
+.side-nav ul {
+  width: 100%;
+  padding: 0px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.side-nav li {
+  list-style: none;
+}
+
+.dashboard-active {
+  padding-bottom: 5px;
+  opacity: 1;
+  border-bottom: 3px solid #84CD94;
+}
+
+.dashboard-inactive {
+  padding-bottom: 5px;
+  opacity: 0.5;
+  border-bottom: none;
+}
+
+.dashboard-inactive:hover {
+  opacity: 1;
+}
+
+.profileName {
+  text-decoration: none;
+  color: #FFF;
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .top-nav {
+    padding: 12px 20px;
+  }
+
+  .member-profile-nav {
+    padding-left: 20px;
+    margin-left: 20px;
+  }
+
+  .side-nav-group {
+    width: 80px;
+    margin: 0;
+  }
+
+  .side-nav {
+    width: 80px;
+    height: 100%;
+    padding: 10px 0 0 0;
+    align-items: flex-start;
+  }
+
+  .side-nav ul {
+    flex-direction: column;
+  }
+
+  .dashboard-active {
+    border-bottom: none;
+    border-left: 3px solid #84CD94;
+  }
+
+  .dashboard-inactive {
+    padding-bottom: 0;
+  }
+}
+/* ------------------------------------------- */
+/* ------------- DASHBOARD HEADING ----------- */
+/* ------------------------------------------- */
+.wrapper-heading {
+  margin: 0 auto;
+  display: flex;
+}
+
+.dashboard-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #FFF;
+}
+
+.dashboard-tab {
+  width: 100%;
+  padding: 20px;
+  background-color: #FFF;
+}
+
+.search {
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.searchContainer {
+  width: 100%;
+  padding: 0 0.5em;
+  margin: 0;
+  background-color: #FFF;
+  display: inline-flex;
+  align-items: center;
+  flex: 1 1 300px;
+  border: 1px solid #B3B2B6;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.searchIcon {
+  padding: 0.5em;
+  color: #7576BE;
+}
+
+.searchBox {
+  border: 0;
+  padding: 0.5em 0.5em 0.5em 0;
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .dashboard-wrapper {
+    width: 100%;
+    background-color: rgba(117, 118, 190, 0.3);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .dashboard-tab {
+    width: 175px;
+    padding: 0 20px;
+  }
+
+  .search {
+    width: 100%;
+    max-width: 350px;
+    margin-right: 20px;
+  }
+
+  .searchContainer {
+    width: 100%;
+  }
+}
+/* ------------------------------------------- */
+/* ---------------- ALERT BOX ---------------- */
+/* ------------------------------------------- */
+.alert-box p {
+  color: #FFF;
+  margin: 0 10px;
+  font-weight: 300;
+}
+
+.alert {
+  height: auto;
+  background-color: #7576BE;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* ------------------------------------------- */
+/* -------------- MOBILE USERS --------------- */
+/* ------------------------------------------- */
+.mobile-users {
+  padding-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .mobile-users {
+    width: 50%;
+  }
+
+  .mobile-users .wrapper {
+    width: 80%;
+  }
+}
+/* ------------------------------------------- */
+/* -------------- DAILY TRAFFIC -------------- */
+/* ------------------------------------------- */
+.traffic {
+  padding-bottom: 40px;
+}
+
+.daily-traffic {
+  padding-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .daily-traffic {
+    width: 50%;
+    border-right: 1px solid #B3B2B6;
+  }
+
+  .daily-traffic .wrapper {
+    width: 80%;
+  }
+}
+.twitter-block,
+.facebook-block,
+.googlePlus-block {
+  background: #FBFBFB;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  padding: 20px 10px;
+  margin: 20px auto;
+  border: 1px solid #B3B2B6;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  fill: #FFF;
+}
+
+.stat-Name-Number {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-align: left;
+}
+
+.stat-name {
+  line-height: 1.1;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #7576BE;
+  margin: 0 auto 0 0;
+}
+
+.stat-numbers {
+  line-height: 1.1;
+  color: #707070;
+  font-size: 3em;
+  font-weight: 300;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .stats-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .stats-group:last-child {
+    margin-bottom: 40px;
+  }
+
+  .twitter-block,
+.facebook-block,
+.googlePlus-block {
+    margin: 0 0 20px 0;
+    display: inline-flex;
+    max-width: 300px;
+  }
+}
+@media (min-width: 1024px) {
+  .stats-group {
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .twitter-block,
+.facebook-block,
+.googlePlus-block {
+    max-width: 325px;
+  }
+}
+/* ------------------------------------------- */
+/* --------------- NEW MEMBERS --------------- */
+/* ------------------------------------------- */
+.new-member-block {
+  padding: 20px 0;
+  border-bottom: 1px solid #B3B2B6;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.new-member-block:last-child {
+  border: none;
+  margin-bottom: 20px;
+}
+
+.member-name-and-contact {
+  margin: 10px 0 0 0;
+  flex-direction: column;
+}
+
+.member-name-and-contact p {
+  margin: 0 auto;
+}
+
+.member-name-and-contact a {
+  font-size: 0.9em;
+  margin: 0 auto;
+  line-height: 1;
+  text-decoration: none;
+  color: #7576BE;
+}
+
+.joined-date {
+  font-size: 0.9em;
+  margin: 20px 0 0 0;
+}
+
+@media (min-width: 768px) {
+  .new-members {
+    width: 50%;
+    border-right: 1px solid #B3B2B6;
+  }
+
+  .new-members .wrapper {
+    width: 80%;
+  }
+
+  .new-member-block {
+    flex-direction: column;
+  }
+
+  .member-name-and-contact {
+    margin-top: 0;
+  }
+
+  .picture-and-contact-info {
+    display: inline-flex;
+    flex-direction: row;
+  }
+
+  .picture-and-contact-info img {
+    width: 44px;
+    height: 44px;
+  }
+
+  .joined {
+    margin-left: 54px;
+    margin-top: 10px;
+  }
+
+  .joined-date {
+    margin: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .new-member-block {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  p.hour-active {
+    margin-top: 0;
+  }
+}
+/* ------------------------------------------- */
+/* ------------- RECENT ACTIVITY ------------- */
+/* ------------------------------------------- */
+.recent-activity-block {
+  padding: 20px 40px 20px 0;
+  background-image: url(../icons/icon-arrow-right.svg);
+  background-size: 40px;
+  background-position: center right;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid #B3B2B6;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.recent-activity-block:last-child {
+  border: none;
+  margin-bottom: 20px;
+}
+
+.recent-activity-list {
+  margin: 10px 0 0 0;
+}
+
+.hour-active {
+  font-size: 0.9em;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .recent-activity {
+    width: 50%;
+  }
+
+  .recent-activity .wrapper {
+    width: 80%;
+  }
+
+  .recent-activity-block {
+    flex-direction: row;
+  }
+
+  .recent-activity-list {
+    width: 80%;
+    margin-top: 0;
+  }
+
+  .hour-active {
+    margin-top: 10px;
+  }
+}
+@media (min-width: 1024px) {
+  .hour-active {
+    margin-left: 54px;
+  }
+}
+/* ------------------------------------------- */
+/* --------------- MESSAGE USER -------------- */
+/* ------------------------------------------- */
+.message-user .wrapper {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+#search-for-user {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  padding: 5px 10px;
+  margin: 0 0 10px 0;
+  border-radius: 5px;
+  border: 1px solid #B3B2B6;
+  background-color: #FBFBFB;
+}
+
+#msg {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  padding: 5px 10px;
+  margin: 0 0 10px 0;
+  border-radius: 5px;
+  border: 1px solid #B3B2B6;
+  background-color: #FBFBFB;
+}
+
+/* Autocomplete */
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.autocomplete-items div:hover {
+  background-color: #e9e9e9;
+}
+
+.autocomplete-active {
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .message-user {
+    width: 50%;
+    border-right: 1px solid #B3B2B6;
+  }
+
+  .message-user .wrapper {
+    width: 80%;
+  }
+}
+/* ------------------------------------------- */
+/* ----------------- SETTINGS ---------------- */
+/* ------------------------------------------- */
+.settings .wrapper {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.toggle-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .settings {
+    width: 50%;
+  }
+
+  .settings .wrapper {
+    width: 80%;
+  }
+}
+@media (min-width: 1024px) {
+  .toggle-group {
+    max-width: 325px;
+  }
+}
+/*
+* CSS TOGGLE SWITCH
+*
+* Ionuț Colceriu - ghinda.net
+* https://github.com/ghinda/css-toggle-switch
+*
+*/
+/* supported values are px, rem-calc, em-calc */
+/* imports */
+/* Functions */
+/* Shared */
+/* Hide by default */
+.switch-toggle a,
+.switch-light span span {
+  display: none;
+}
+
+/* We can't test for a specific feature, so we only target browsers with support for media queries. */
+@media only screen {
+  /* Checkbox */
+  .switch-light {
+    position: relative;
+    display: block;
+    /* simulate default browser focus outlines on the switch, when the inputs are focused. */
+  }
+
+  .switch-light::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+
+  .switch-light *,
+.switch-light *:before,
+.switch-light *:after {
+    box-sizing: border-box;
+  }
+
+  .switch-light a {
+    display: block;
+    transition: all 0.2s ease-out;
+  }
+
+  .switch-light label,
+.switch-light > span {
+    /* breathing room for bootstrap/foundation classes.*/
+    line-height: 1em;
+  }
+
+  .switch-light input:focus ~ span a,
+.switch-light input:focus + label {
+    outline-width: 2px;
+    outline-style: solid;
+    outline-color: Highlight;
+    /* Chrome/Opera gets its native focus styles.*/
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 0) {
+  .switch-light input:focus ~ span a,
+.switch-light input:focus + label {
+    outline-color: -webkit-focus-ring-color;
+    outline-style: auto;
+  }
+}
+@media only screen {
+  /* don't hide the input from screen-readers and keyboard access */
+  .switch-light input {
+    position: absolute;
+    opacity: 0;
+    z-index: 3;
+  }
+
+  .switch-light input:checked ~ span a {
+    right: 0%;
+  }
+
+  /* inherit from label */
+  .switch-light strong {
+    font-weight: inherit;
+  }
+
+  .switch-light > span {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    min-height: 2em;
+    /* overwrite 3rd party classes padding eg. bootstrap .alert */
+    padding: 0;
+    text-align: left;
+  }
+
+  .switch-light span span {
+    position: relative;
+    z-index: 2;
+    display: block;
+    float: left;
+    width: 50%;
+    text-align: center;
+    user-select: none;
+  }
+
+  .switch-light a {
+    position: absolute;
+    right: 50%;
+    top: 0;
+    z-index: 1;
+    display: block;
+    width: 50%;
+    height: 100%;
+    padding: 0;
+  }
+
+  /* bootstrap 4 tweaks */
+  .switch-light.row {
+    display: flex;
+  }
+
+  .switch-light .alert-light {
+    color: #333;
+  }
+
+  /* --------------- Radio Switch --------------- */
+  .switch-toggle {
+    position: relative;
+    display: block;
+    /* simulate default browser focus outlines on the switch, when the inputs are focused. */
+    /* For callout panels in foundation */
+    padding: 0 !important;
+    /* 2 items */
+    /* 3 items */
+    /* 4 items */
+    /* 5 items */
+    /* 6 items */
+  }
+
+  .switch-toggle::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+
+  .switch-toggle *,
+.switch-toggle *:before,
+.switch-toggle *:after {
+    box-sizing: border-box;
+  }
+
+  .switch-toggle a {
+    display: block;
+    transition: all 0.2s ease-out;
+  }
+
+  .switch-toggle label,
+.switch-toggle > span {
+    /* breathing room for bootstrap/foundation classes. */
+    line-height: 2em;
+  }
+
+  .switch-toggle input:focus ~ span a,
+.switch-toggle input:focus + label {
+    outline-width: 2px;
+    outline-style: solid;
+    outline-color: Highlight;
+    /* Chrome/Opera gets its native focus styles.
+    */
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 0) {
+  .switch-toggle input:focus ~ span a,
+.switch-toggle input:focus + label {
+    outline-color: -webkit-focus-ring-color;
+    outline-style: auto;
+  }
+}
+@media only screen {
+  .switch-toggle input {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+  }
+
+  .switch-toggle input + label {
+    position: relative;
+    z-index: 2;
+    display: block;
+    float: left;
+    padding: 0 0.5em;
+    margin: 0;
+    text-align: center;
+  }
+
+  .switch-toggle a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    z-index: 1;
+    width: 10px;
+    height: 100%;
+  }
+
+  .switch-toggle label:nth-child(2):nth-last-child(4),
+.switch-toggle label:nth-child(2):nth-last-child(4) ~ label,
+.switch-toggle label:nth-child(2):nth-last-child(4) ~ a {
+    width: 50%;
+  }
+
+  .switch-toggle label:nth-child(2):nth-last-child(4) ~ input:checked:nth-child(3) + label ~ a {
+    left: 50%;
+  }
+
+  .switch-toggle label:nth-child(2):nth-last-child(6),
+.switch-toggle label:nth-child(2):nth-last-child(6) ~ label,
+.switch-toggle label:nth-child(2):nth-last-child(6) ~ a {
+    width: 33.33%;
+  }
+
+  .switch-toggle label:nth-child(2):nth-last-child(6) ~ input:checked:nth-child(3) + label ~ a {
+    left: 33.33%;
+  }
+
+  .switch-toggle label:nth-child(2):nth-last-child(6) ~ input:checked:nth-child(5) + label ~ a {
+    left: 66.66%;
+  }
+
+  .switch-toggle label:nth-child(2):nth-last-child(8),
+.switch-toggle label:nth-child(2):nth-last-child(8) ~ label,
+.switch-toggle label:nth-child(2):nth-last-child(8) ~ a {
+    width: 25%;
+  }
+
+  .switch-toggle label:nth-child(2):nth-last-child(8) ~ input:checked:nth-child(3) + label ~ a {
+    left: 25%;
+  }
+
+  .switch-toggle label:nth-child(2):nth-last-child(8) ~ input:checked:nth-child(5) + label ~ a {
+    left: 50%;
+  }
+
+  .switch-toggle label:nth-child(2):nth-last-child(8) ~ input:checked:nth-child(7) + label ~ a {
+    left: 75%;
+  }
+
+  .switch-toggle label:nth-child(2):nth-last-child(10),
+.switch-toggle label:nth-child(2):nth-last-child(10) ~ label,
+.switch-toggle label:nth-child(2):nth-last-child(10) ~ a {
+    width: 20%;
+  }
+
+  .switch-toggle label:nth-child(2):nth-last-child(10) ~ input:checked:nth-child(3) + label ~ a {
+    left: 20%;
+  }
+
+  .switch-toggle label:nth-child(2):nth-last-child(10) ~ input:checked:nth-child(5) + label ~ a {
+    left: 40%;
+  }
+
+  .switch-toggle label:nth-child(2):nth-last-child(10) ~ input:checked:nth-child(7) + label ~ a {
+    left: 60%;
+  }
+
+  .switch-toggle label:nth-child(2):nth-last-child(10) ~ input:checked:nth-child(9) + label ~ a {
+    left: 80%;
+  }
+
+  .switch-toggle label:nth-child(2):nth-last-child(12),
+.switch-toggle label:nth-child(2):nth-last-child(12) ~ label,
+.switch-toggle label:nth-child(2):nth-last-child(12) ~ a {
+    width: 16.6%;
+  }
+
+  .switch-toggle label:nth-child(2):nth-last-child(12) ~ input:checked:nth-child(3) + label ~ a {
+    left: 16.6%;
+  }
+
+  .switch-toggle label:nth-child(2):nth-last-child(12) ~ input:checked:nth-child(5) + label ~ a {
+    left: 33.2%;
+  }
+
+  .switch-toggle label:nth-child(2):nth-last-child(12) ~ input:checked:nth-child(7) + label ~ a {
+    left: 49.8%;
+  }
+
+  .switch-toggle label:nth-child(2):nth-last-child(12) ~ input:checked:nth-child(9) + label ~ a {
+    left: 66.4%;
+  }
+
+  .switch-toggle label:nth-child(2):nth-last-child(12) ~ input:checked:nth-child(11) + label ~ a {
+    left: 83%;
+  }
+
+  /* --------------- Candy Theme ---------------
+  * Based on the "Sort Switches / Toggles (PSD)" by Ormal Clarck
+  * http://www.premiumpixels.com/freebies/sort-switches-toggles-psd/ */
+  .switch-toggle.switch-candy,
+.switch-light.switch-candy > span {
+    background-color: #2d3035;
+    border-radius: 3px;
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.2);
+  }
+
+  .switch-light.switch-candy span span,
+.switch-light.switch-candy input:checked ~ span span:first-child,
+.switch-toggle.switch-candy label {
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 1px #191b1e;
+  }
+
+  .switch-light.switch-candy input ~ span span:first-child,
+.switch-light.switch-candy input:checked ~ span span:nth-child(2),
+.switch-candy input:checked + label {
+    color: #333;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  }
+
+  .switch-candy a {
+    border: 1px solid #333;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.45);
+    background-color: #70c66b;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), transparent);
+  }
+
+  .switch-candy-blue a {
+    background-color: #38a3d4;
+  }
+
+  .switch-candy-yellow a {
+    background-color: #f5e560;
+  }
+
+  /* --------------- iOS Theme --------------- */
+  /* Text inside slider */
+  .switch-ios.switch-light span span {
+    color: #FFF;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.7em;
+  }
+
+  /* Circle slider */
+  .switch-ios.switch-light a {
+    left: 0;
+    top: 0;
+    width: 2em;
+    height: 2em;
+    background-color: #FFF;
+    border-radius: 100%;
+    border: 0.25em solid #B3B2B6;
+    transition: all 0.2s ease-out;
+  }
+
+  /* Background of off position */
+  .switch-ios.switch-light > span {
+    display: block;
+    width: 100%;
+    height: 2em;
+    background-color: #707070;
+    border-radius: 1.75em;
+    transition: all 0.4s ease-out;
+  }
+
+  .switch-ios.switch-light > span span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    line-height: 2.875em;
+    vertical-align: middle;
+    transition: all 0.2s ease-out;
+  }
+
+  .switch-ios.switch-light > span span:first-of-type {
+    opacity: 1;
+    padding-left: 1.875em;
+  }
+
+  .switch-ios.switch-light > span span:last-of-type {
+    padding-right: 1.875em;
+  }
+
+  .switch-ios.switch-light input:checked ~ span a {
+    left: 100%;
+    border-color: #B3B2B6;
+    margin-left: -2em;
+  }
+
+  /* Background of on position */
+  .switch-ios.switch-light input:checked ~ span {
+    border-color: #7576BE;
+    box-shadow: inset 0 0 0 30px #7576BE;
+  }
+
+  .switch-ios.switch-light input:checked ~ span span:first-of-type {
+    opacity: 0;
+  }
+
+  .switch-ios.switch-light input:checked ~ span span:last-of-type {
+    opacity: 1;
+    color: #FFF;
+  }
+
+  .switch-ios.switch-toggle {
+    background-color: #7576BE;
+    border-radius: 30px;
+    box-shadow: inset rgba(0, 0, 0, 0.1) 0 1px 0;
+  }
+
+  .switch-ios.switch-toggle a {
+    background-color: #7576BE;
+    border: 0.125em solid #7576BE;
+    border-radius: 1.75em;
+    transition: all 0.12s ease-out;
+  }
+
+  .switch-ios.switch-toggle label {
+    height: 2.4em;
+    color: #B3B2B6;
+    line-height: 2.4em;
+    vertical-align: middle;
+  }
+
+  .switch-ios input:checked + label {
+    color: #primary-color;
+  }
+
+  /* --------------- Holo Theme --------------- */
+  .switch-toggle.switch-holo,
+.switch-light.switch-holo > span {
+    background-color: #464747;
+    border-radius: 1px;
+    box-shadow: inset rgba(0, 0, 0, 0.1) 0 1px 0;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  .switch-holo label {
+    color: #fff;
+  }
+
+  .switch-holo > span span {
+    opacity: 0;
+    transition: all 0.1s;
+  }
+
+  .switch-holo > span span:first-of-type {
+    opacity: 1;
+  }
+
+  .switch-holo > span span,
+.switch-holo label {
+    font-size: 85%;
+    line-height: 2.15625em;
+  }
+
+  .switch-holo a {
+    background-color: #666;
+    border-radius: 1px;
+    box-shadow: inset rgba(255, 255, 255, 0.2) 0 1px 0, inset rgba(0, 0, 0, 0.3) 0 -1px 0;
+  }
+
+  /* --------------- Selected ON switch-light --------------- */
+  .switch-holo.switch-light input:checked ~ span a {
+    background-color: #0E88B1;
+  }
+
+  .switch-holo.switch-light input:checked ~ span span:first-of-type {
+    opacity: 0;
+  }
+
+  .switch-holo.switch-light input:checked ~ span span:last-of-type {
+    opacity: 1;
+  }
+
+  /* --------------- Material Theme --------------- */
+  /* --------------- switch-light --------------- */
+  .switch-light.switch-material a {
+    top: -0.1875em;
+    width: 1.75em;
+    height: 1.75em;
+    border-radius: 50%;
+    background: #fafafa;
+    box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.14), 0 0.1875em 0.125em -0.125em rgba(0, 0, 0, 0.2), 0 0.125em 0.25em 0 rgba(0, 0, 0, 0.12);
+    transition: right 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .switch-material.switch-light {
+    overflow: visible;
+  }
+
+  .switch-material.switch-light::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+
+  .switch-material.switch-light > span {
+    overflow: visible;
+    position: relative;
+    top: 0.1875em;
+    width: 3.25em;
+    height: 1.5em;
+    min-height: auto;
+    border-radius: 1em;
+    background: rgba(0, 0, 0, 0.26);
+  }
+
+  .switch-material.switch-light span span {
+    position: absolute;
+    clip: rect(0 0 0 0);
+  }
+
+  .switch-material.switch-light input:checked ~ span a {
+    right: 0;
+    background: #3f51b5;
+    box-shadow: 0 0.1875em 0.25em 0 rgba(0, 0, 0, 0.14), 0 0.1875em 0.1875em -0.125em rgba(0, 0, 0, 0.2), 0 0.0625em 0.375em 0 rgba(0, 0, 0, 0.12);
+  }
+
+  .switch-material.switch-light input:checked ~ span {
+    background: rgba(63, 81, 181, 0.5);
+  }
+
+  /* --------------- switch-toggle --------------- */
+  .switch-toggle.switch-material {
+    overflow: visible;
+  }
+
+  .switch-toggle.switch-material::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+
+  .switch-toggle.switch-material a {
+    top: 48%;
+    width: 0.375em !important;
+    height: 0.375em;
+    margin-left: 0.25em;
+    background: #3f51b5;
+    border-radius: 100%;
+    transform: translateY(-50%);
+    transition: transform 0.4s ease-in;
+  }
+
+  .switch-toggle.switch-material label {
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 1em;
+  }
+
+  .switch-toggle.switch-material label:before {
+    content: "";
+    position: absolute;
+    top: 48%;
+    left: 0;
+    display: block;
+    width: 0.875em;
+    height: 0.875em;
+    border-radius: 100%;
+    border: 0.125em solid rgba(0, 0, 0, 0.54);
+    transform: translateY(-50%);
+  }
+
+  .switch-toggle.switch-material input:checked + label:before {
+    border-color: #3f51b5;
+  }
+
+  /* --------------- ripple --------------- */
+  .switch-light.switch-material > span:before,
+.switch-light.switch-material > span:after,
+.switch-toggle.switch-material label:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    display: block;
+    width: 4em;
+    height: 4em;
+    border-radius: 100%;
+    background: #3f51b5;
+    opacity: 0.4;
+    margin-left: -1.25em;
+    margin-top: -1.25em;
+    transform: scale(0);
+    transition: opacity 0.4s ease-in;
+  }
+
+  .switch-light.switch-material > span:after {
+    left: auto;
+    right: 0;
+    margin-left: 0;
+    margin-right: -1.25em;
+  }
+
+  .switch-toggle.switch-material label:after {
+    width: 3.25em;
+    height: 3.25em;
+    margin-top: -0.75em;
+  }
+
+  @keyframes materialRipple {
+    0% {
+      transform: scale(0);
+    }
+    20% {
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(1);
+    }
+  }
+  .switch-material.switch-light input:not(:checked) ~ span:after,
+.switch-material.switch-light input:checked ~ span:before,
+.switch-toggle.switch-material input:checked + label:after {
+    animation: materialRipple 0.4s ease-in;
+  }
+
+  /* trick to prevent the default checked ripple animation from showing when the page loads. The ripples are hidden by default, and shown only when the input is focused. */
+  .switch-light.switch-material.switch-light input ~ span:before,
+.switch-light.switch-material.switch-light input ~ span:after,
+.switch-material.switch-toggle input + label:after {
+    visibility: hidden;
+  }
+
+  .switch-light.switch-material.switch-light input:focus:checked ~ span:before,
+.switch-light.switch-material.switch-light input:focus:not(:checked) ~ span:after,
+.switch-material.switch-toggle input:focus:checked + label:after {
+    visibility: visible;
+  }
+}
+/* Bugfix for older Webkit, including mobile Webkit. Adapted from http://css-tricks.com/webkit-sibling-bug/ */
+@media only screen and (-webkit-max-device-pixel-ratio: 2) and (max-device-width: 80em) {
+  .switch-light,
+.switch-toggle {
+    -webkit-animation: webkitSiblingBugfix infinite 1s;
+  }
+}
+@-webkit-keyframes webkitSiblingBugfix {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+/*# sourceMappingURL=toggle-switch.css.map */
+/* ----------------- GLOBAL ------------------ */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0 auto;
+  height: 100%;
+}
+
+img {
+  border-radius: 50%;
+}
+
+select {
+  width: 100%;
+  height: 40px;
+  margin: 40px 0 10px 0;
+  background-color: #FBFBFB;
+}
+
+.member-profile-picture {
+  width: 44px;
+  height: 44px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.division {
+  border-top: 1px solid #B3B2B6;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.show {
+  visibility: visible;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+.error-message,
+.success-message {
+  width: 100%;
+  border-radius: 4px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.error-message {
+  border: 1px solid #BE7576;
+}
+
+.success-message {
+  border: 1px solid #84CD94;
+}
+
+@media (min-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+
+  .main-wrapper {
+    width: calc(100% - 80px);
+    flex-direction: column;
+  }
+
+  .daily-traffic-and-mobile-user-group,
+.members-section,
+.message-setting-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

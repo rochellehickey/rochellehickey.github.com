@@ -1,0 +1,116 @@
+// -------------------------------------
+//                VISUALS
+// -------------------------------------
+
+
+// ------------ Header --------------
+
+.container {
+  width: 90%;
+  padding: 20px;
+  margin: 10px auto;
+}
+
+// ------------ Contact --------------
+
+.contact {
+  width: 90%;
+  padding: 20px;
+  margin: 10px auto;
+}
+
+// ------------ Services --------------
+
+.services {
+  width: 90%;
+  padding: 20px;
+  margin: 10px auto;
+}
+
+.circle-container {
+  width: 140px;
+  height: 140px;
+  margin: 40px auto 5px auto;
+  border: 5px solid $circle-container-border;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// ------------ Editorial --------------
+
+.editorial {
+  width: 90%;
+  padding: 20px;
+  margin: 10px auto;
+}
+
+.colored-header-block {
+  height: 150px;
+  background-color: $examples-list-color-1;
+  padding: 0 5px 0 0;
+  margin: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+// ------------ Writing --------------
+
+.writing {
+  width: 90%;
+  padding: 20px;
+  margin: 10px auto;
+}
+
+
+
+
+
+
+// ------- Media Queries -------------
+
+@media (min-width: $media-screen-med) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .nav-and-intro {
+    width: 55%;
+    margin: 0;
+  }
+  .about {
+    margin: 0;
+  }
+  .contact,
+  .services,
+  .editorial,
+  .writing {
+    width: 85%;
+    padding: 20px 40px;
+  }
+  .contact-container {
+    width: 100%;
+  }
+}
+
+@media (min-width: $media-screen-lg) {
+  .container {
+    width: 75%;
+  }
+  .nav-and-intro {
+    width: 50%;
+    margin: 0;
+  }
+  .contact,
+  .services,
+  .editorial,
+  .writing {
+    width: 75%;
+    padding: 20px 40px;
+  }
+}

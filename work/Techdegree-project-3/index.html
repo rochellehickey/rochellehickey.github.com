@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Code Review Newsletter Sign Up</title>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <header>
+      <h1>The Code Review</h1>
+    </header>
+
+    <div class="container">
+
+      <section class="intro">
+        <h2>Sign up for our newsletter</h2>
+        <p class="intro-text"> Get the latest news on how your code is doing right in your inbox</p>
+      </section>
+
+      <form action="#" method="post">
+        <fieldset class="subscriber-info">
+          <legend class="legend">Contact Information</legend>
+          <div class="input-wrapper clearfix">
+            <label class="label" for="name">Full Name</label>
+            <input id="name" name="name" type="text" placeholder="Required" required>
+          </div>
+          <div class="input-wrapper clearfix">
+            <label class="label" for="email">Email Address</label>
+            <input id="email" name="email" type="email" placeholder="Required" required>
+          </div>
+          <div class="input-wrapper clearfix">
+            <label class="label" for="phone">Phone Number</label>
+            <input id="phone" name="phone" type="tel" placeholder="Optional">
+          </div>
+          <div class="input-wrapper clearfix">
+            <label class="label" for="street">Street Address</label>
+            <input id="street" name="street" type="text" placeholder="Optional">
+          </div>
+          <div class="input-wrapper clearfix">
+            <label class="label" for="city">City</label>
+            <input id="city" name="city" type="text" placeholder="Optional">
+          </div>
+          <div class="input-wrapper clearfix">
+            <label class="label" for="state">State</label>
+            <select id="state" name="state">
+              <option>Choose State</option>
+              <optgroup label="A">
+                <option>Alabama</option>
+                <option>Alaska</option>
+                <option>Arizona</option>
+                <option>Arkansas</option>
+              </optgroup>
+              <optgroup label="C">
+                <option>California</option>
+                <option>Colorado</option>
+                <option>Connecticut</option>
+              </optgroup>
+              <optgroup label="D">
+                <option>Deleware</option>
+                <option>District of Columbia</option>
+              </optgroup>
+              <optgroup label="F">
+                <option>Florida</option>
+              </optgroup>
+              <optgroup label="G">
+                <option>Georgia</option>
+              </optgroup>
+              <optgroup label="H">
+                <option>Hawaii</option>
+              </optgroup>
+              <optgroup label="I">
+                <option>Idaho</option>
+                <option>Illinois</option>
+                <option>Indiana</option>
+                <option>Iowa</option>
+              </optgroup>
+              <optgroup label="K">
+                <option>Kansas</option>
+                <option>Kentucky</option>
+              </optgroup>
+              <optgroup label="L">
+                <option>Louisiana</option>
+              </optgroup>
+              <optgroup label="M">
+                <option>Maine</option>
+                <option>Maryland</option>
+                <option>Massachusetts</option>
+                <option>Michigan</option>
+                <option>Minnesota</option>
+                <option>Mississippi</option>
+                <option>Missouri</option>
+                <option>Montana</option>
+              </optgroup>
+              <optgroup label="N">
+                <option>Nebraska</option>
+                <option>Nevada</option>
+                <option>New Hampshire</option>
+                <option>New Jersey</option>
+                <option>New Mexico</option>
+                <option>North Carolina</option>
+                <option>North Dakota</option>
+              </optgroup>
+              <optgroup label="O">
+                <option>Ohio</option>
+                <option>Oklahoma</option>
+                <option>Oregon</option>
+              </optgroup>
+              <optgroup label="P">
+                <option>Pennsylvania</option>
+              </optgroup>
+              <optgroup label="R">
+                <option>Rhode Island</option>
+              </optgroup>
+              <optgroup label="S">
+                <option>South Carolina</option>
+                <option>South Dakota</option>
+              </optgroup>
+              <optgroup label="T">
+                <option>Tennessee</option>
+                <option>Texas</option>
+              </optgroup>
+              <optgroup label="U">
+                <option>Utah</option>
+              </optgroup>
+              <optgroup label="V">
+                <option>Vermont</option>
+                <option>Virginia</option>
+              </optgroup>
+              <optgroup label="W">
+                <option>Washington</option>
+                <option>West Virginia</option>
+                <option>Wisconsin</option>
+                <option>Wyoming</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="input-wrapper zip clearfix">
+            <label class="label" for="zip-code">Zip Code</label>
+            <input id="zip-code" name="zip-code" type="text" placeholder="Optional">
+          </div>
+        </fieldset>
+
+        <fieldset class="newsletter-preferences">
+          <legend class="legend">Newsletter</legend>
+          <fieldset class="input-wrapper checkbox">
+            <legend class="label">Select the newsletter you would like to receive</legend>
+            <div class="checkbox-wrapper">
+              <input id="html-news" name="newsletter" type="checkbox" value="HTML News" checked><label class="label" for="html-news">HTML News</label>
+            </div>
+            <div class="checkbox-wrapper">
+              <input id="css-news" name="newsletter" type="checkbox" value="CSS News"><label class="label" for="css-news">CSS News</label>
+            </div>
+            <div class="checkbox-wrapper">
+              <input id="javascript-news" name="newsletter" type="checkbox" value="Javascript News"><label class="label" for="javascript-news">Javascript News</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="input-wrapper radio-button">
+            <legend class="label">Newsletter format</legend>
+            <div class="radio-button-wrapper">
+              <input id="html-format" name="format" type="radio" value="HTML" checked><label class="label" for="html-format">HTML</label>
+            </div>
+            <div class="radio-button-wrapper">
+              <input id="plain-text-format" name="format" type="radio" value="Plain text"><label class="label" for="plain-text-format">Plain text</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="input-wrapper">
+            <label for="fill-text-box" class="label">Other topics you'd like to hear about</label>
+            <textarea id="fill-text-box" name="fill-text-box" ></textarea>
+          </fieldset>
+        </fieldset>
+        <button class="sign-up-button" type="submit">Sign Up</button>
+      </form>
+      <footer>
+        <p class="footer-text"><em>Copyright The Code Review</em></p>
+      </footer>
+    </div>
+  </body>
+</html>

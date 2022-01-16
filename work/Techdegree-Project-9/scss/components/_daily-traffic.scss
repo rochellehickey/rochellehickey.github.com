@@ -1,0 +1,21 @@
+/* ------------------------------------------- */
+/* -------------- DAILY TRAFFIC -------------- */
+/* ------------------------------------------- */
+
+.traffic {
+  padding-bottom: 40px;
+}
+
+.daily-traffic {
+  padding-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .daily-traffic {
+    width: 50%;
+    border-right: 1px solid $light-grey;
+  }
+  .daily-traffic .wrapper {
+    width: 80%;
+  }
+}

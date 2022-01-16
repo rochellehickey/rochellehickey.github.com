@@ -1,0 +1,62 @@
+/* ------------------------------------------- */
+/* --------------- TYPOGRAPHY ---------------- */
+/* ------------------------------------------- */
+
+body {
+  font-family: $primary-font;
+}
+
+h1 {
+  font-size: $headerOne-size;
+  font-weight: $font-weight-regular;
+  color: $dark-grey;
+}
+
+h2 {
+  font-size: $headerTwo-size;
+  font-weight: $font-weight-regular;
+  text-transform: uppercase;
+  color: $dark-grey;
+  margin-top: 40px;
+}
+
+p,
+ul,
+li,
+input,
+form,
+textarea,
+select,
+div {
+  font-size: $paragraph-size;
+  font-weight: $font-weight-regular;
+  color: $dark-grey;
+}
+
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+button {
+  color: $white;
+  font-size: $button-size;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+}
+
+.switch-light .switch-ios {
+  color: $white;
+  font-family: inherit;
+  font-size: $button-size;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+}
+
+::placeholder {
+  font: 300 $placeholder-size $primary-font;
+  color: $light-grey;
+}
+
+

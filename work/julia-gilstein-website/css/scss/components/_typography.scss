@@ -1,0 +1,102 @@
+// -------------------------------------
+//              TYPOGRAPHY
+// -------------------------------------
+
+
+h1 {
+  font-family: $header-font;
+  font-size: $primary-hdln-size;
+  line-height: $primary-hdln-line-height;
+  color: $primary-hdln-color;
+}
+
+h2 {
+  font-family: $header-font;
+  font-size: $secondary-hdln-size;
+  line-height: $secondary-hdln-line-height;
+  color: $secondary-hdln-color;
+  margin: 20px 0 10px 0;
+}
+
+h3 {
+  font-family: $body-font;
+  font-size: $tertiary-hdln-size;
+  line-height: $tertiary-hdln-line-height;
+  color: $tertiary-hdln-color;
+  margin: 40px 0 20px 0;
+}
+
+p,
+li {
+  font-family: $body-font;
+  font-weight: $font-weight-regular;
+  font-size: $copy-size;
+  line-height: $copy-size-line-height;
+  color: $brown;
+}
+
+p {
+  margin: 20px 0;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  border-bottom: 2px dotted;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: $link-focus-color;
+}
+
+button {
+  font-family: $button-font;
+  font-size: $button-font-size;
+}
+
+blockquote p {
+  font-style: italic;
+  color: $blockquotes-color;
+  padding: 0;
+  margin: 10px 0;
+}
+
+
+// ---------- Classes -----------
+
+.circle-letter {
+  color: $circle-letter-color;
+  font-size: $circle-letter-font-size;
+}
+
+.quote-author {
+  font-size: $quote-author-size;
+  line-height: $quote-author-line-height;
+  text-align: right;
+}
+
+.block-title-letter {
+  color: $block-title-letter-color;
+  font-family: $block-title-letter;
+  font-size: $block-title-letter-size;
+  line-height: $block-title-letter-line-height;
+  padding-top: 30px;
+  margin: 20px 0 0 0;
+}
+
+// --------- Extends ------------
+
+.headline--primary {
+  @extend %headline--primary;
+}
+
+.headline--secondary {
+  @extend %headline--secondary;
+}
+
+.link {
+  @extend %link;
+}
+

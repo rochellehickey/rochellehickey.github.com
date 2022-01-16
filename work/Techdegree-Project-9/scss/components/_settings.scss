@@ -1,0 +1,30 @@
+/* ------------------------------------------- */
+/* ----------------- SETTINGS ---------------- */
+/* ------------------------------------------- */
+
+.settings .wrapper {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.toggle-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .settings {
+    width: 50%;
+  }
+  .settings .wrapper {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .toggle-group {
+    max-width: 325px;
+  }
+}

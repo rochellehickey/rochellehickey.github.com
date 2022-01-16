@@ -1,0 +1,122 @@
+/* ------------------------------------------- */
+/* ------------------ MAIN ------------------- */
+/* ------------------------------------------- */
+
+@import 'helpers/variables';
+@import 'base/typography';
+@import 'base/svg';
+@import 'base/buttons';
+@import 'components/navigation';
+@import 'components/dashboard-heading';
+@import 'components/alert-box';
+@import 'components/mobile-users';
+@import 'components/daily-traffic';
+@import 'components/social-stats';
+@import 'components/new-members';
+@import 'components/recent-activity';
+@import 'components/message-user';
+@import 'components/settings';
+@import 'helpers/toggle-switch';
+
+
+
+/* ----------------- GLOBAL ------------------ */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0 auto;
+  height: 100%;
+}
+
+img {
+  border-radius: 50%;
+}
+
+select {
+  width: 100%;
+  height: 40px;
+  margin: 40px 0 10px 0;
+  background-color: $fields;
+}
+
+.member-profile-picture {
+  width: 44px;
+  height: 44px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.division {
+  border-top: 1px solid $light-grey;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.show {
+  visibility: visible;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+.error-message,
+.success-message {
+  width: 100%;
+  border-radius: 4px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.error-message {
+  border: 1px solid $error;
+}
+.success-message {
+  border: 1px solid $tertiary-color;
+}
+
+@media (min-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+  .main-wrapper {
+    width: calc(100% - 80px);
+    flex-direction: column;
+  }
+  .daily-traffic-and-mobile-user-group,
+  .members-section,
+  .message-setting-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}

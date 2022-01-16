@@ -1,0 +1,20 @@
+/* ------------------------------------------- */
+/* ---------------- ALERT BOX ---------------- */
+/* ------------------------------------------- */
+
+.alert-box p {
+  color: $white;
+  margin: 0 10px;
+  font-weight: $font-weight-light;
+}
+
+.alert {
+  height: auto;
+  background-color: $primary-color;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

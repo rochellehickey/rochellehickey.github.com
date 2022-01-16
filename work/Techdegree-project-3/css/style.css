@@ -1,0 +1,227 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  margin: 0 auto;
+}
+
+header {
+  background: #0f6586;
+  padding: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+h2 {
+  color: #aa85a9;
+  text-align: center;
+  font-size: 1.2rem;
+  padding-top: 20px;
+  margin-bottom: 0;
+}
+
+p {
+  color: #9c9c9c;
+  font-size: 1rem;
+}
+
+form {
+  border-top: 2px solid #0f6586;
+  margin-top: 3px;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+footer {
+  margin-bottom: 100px;
+}
+
+.legend {
+  color: #aa85a9;
+  text-align: left;
+  font-size: 1.2rem;
+  padding-top: 20px;
+  margin-bottom: 0;
+}
+
+.label {
+  color: #9c9c9c;
+  font-size: 1rem;
+  text-align: left;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.radio-button .label,
+.checkbox .label {
+  display: inline-block;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  margin: 0 10px 0 0;
+  position: relative;
+  top: -2px;
+}
+
+.container {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.intro {
+  background: #efefef;
+  padding: 10px;
+  border-bottom: 4px solid #0f6586;
+}
+
+.intro-text {
+  text-align: center;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+
+.subscriber-info {
+  border-bottom: 2px solid #0f6586;
+  padding-bottom: 30px;
+}
+
+.input-wrapper {
+  margin-top: 23px;
+}
+
+.zip {
+  width: 50%;
+}
+
+.footer-text {
+  font-size: .9rem;
+  text-align: center;
+}
+
+.sign-up-button {
+  font-size: 1.2rem;
+  font-family: inherit;
+  width: 100%;
+  height: 60px;
+  margin: 30px 0;
+  border-radius: 5px;
+  background: #aa85a9;
+  color: #fff;
+  outline: none;
+  border: 2px solid transparent;
+  transition-property: border-color;
+  transition-duration: 1s;
+}
+
+.sign-up-button:hover {
+  background: #0f6586;
+  transition-property: background;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+.sign-up-button:active {
+  box-shadow: 5px 5px 10px #aa85a9;
+}
+
+.sign-up-button:focus {
+  outline: none;
+  border: 2px solid #0f6586;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+select,
+textarea {
+  background: rgba(207, 236, 206, .4);
+  border: 2px solid transparent;
+  width: 100%;
+  height: 48px;
+  padding: 0 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #9c9c9c;
+  transition-property: border-color;
+  transition-duration: 1s;
+}
+
+textarea {
+  height: 100px;
+  padding: 10px;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+textarea:focus,
+select:focus {
+  background: #fff;
+  outline: none;
+  border: 2px solid #0f6586;
+  transition-property: background;
+  transition-duration: .6s;
+}
+
+input::placeholder {
+  color: #9c9c9c;
+  text-align: right;
+  font-size: .8rem;
+  font-style: italic;
+}
+
+
+/* ------ MEDIA QUERIES ------ */
+
+@media (min-width: 768px) {
+
+  header {
+    padding: 10px;
+  }
+
+  .container {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .subscriber-info .input-wrapper {
+    width: 100%;
+  }
+
+  .subscriber-info .input-wrapper label {
+    width: 30%;
+    float: left;
+    margin-top: 15px;
+  }
+
+  .subscriber-info .input-wrapper input,
+  .subscriber-info .input-wrapper select {
+    width: 70%;
+    float: right;
+  }
+
+  .zip input[type=text] {
+    width: 30%;
+    float: left;
+  }
+
+  .clearfix {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+}

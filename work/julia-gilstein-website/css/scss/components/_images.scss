@@ -1,0 +1,29 @@
+// -------------------------------------
+//              IMAGES
+// -------------------------------------
+
+.julia-gilstein-logo {
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.quotemarks {
+  display: block;
+  margin-top: 60px;
+  margin-bottom: -80px;
+}
+
+// ---------- Media Queries -------------
+@media (min-width: $media-screen-med) {
+  .julia-gilstein-logo {
+    width: 40%;
+    height: auto;
+  }
+}
+
+@media (min-width: $media-screen-lg) {
+  .julia-gilstein-logo {
+    width: 45%;
+  }
+}

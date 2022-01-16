@@ -1,0 +1,59 @@
+/* ------------------------------------------- */
+/* ------------------- SVGS ------------------ */
+/* ------------------------------------------- */
+
+
+/* ----------------- DASHBOARD --------------- */
+
+.iconDashboardPath,
+.iconMembersPath,
+.iconVisitsPath,
+.iconSettingsPath {
+  fill: $white;
+}
+
+.notificationBell {
+  width: 30px;
+  height: auto;
+  border-radius: 0;
+}
+
+#iconDashboard,
+#iconMembers,
+#iconVisits,
+#iconSettings {
+  width: 50px;
+  height: auto;
+  padding: 10px;
+  margin: auto 5px;
+}
+
+
+
+/* --------------- SOCIAL STATS --------------- */
+
+#twitter-icon,
+#facebook-icon,
+#googlePlus-icon {
+  width: 80px;
+  height: 80px;
+  margin: auto 10px;
+}
+
+#twitter-icon circle,
+#facebook-icon circle,
+#googlePlus-icon circle {
+  fill: $primary-color;
+}
+
+@media (min-width: 768px) {
+  .dashboard-active {
+    border-bottom: none;
+  }
+  #iconDashboard,
+  #iconMembers,
+  #iconVisits,
+  #iconSettings {
+    margin: 5px auto;
+  }
+}

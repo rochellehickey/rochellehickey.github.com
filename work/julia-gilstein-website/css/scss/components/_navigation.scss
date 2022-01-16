@@ -1,0 +1,74 @@
+// -------------------------------------
+//               NAVIGATION
+// -------------------------------------
+
+.horizontal-list {
+  width: 100%;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.horizontal-list li {
+  list-style: none;
+  text-decoration: none;
+  padding: 5px 0;
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+.horizontal-list li a {
+  display: block;
+  margin: 0;
+  text-align: center;
+}
+
+.button.nav {
+  text-align: center;
+  font-size: 19px;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+// ------------ Sticky Header ------------
+
+.scroll-down .sticky-header {
+  transition: .5s;
+}
+
+.scroll-up .sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 30px;
+  margin: 0;
+  transform: none;
+  transition: .5s;
+  background: $header-bg-color;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+  z-index: 100;
+}
+
+.scroll-down .sticky-header {
+  transition: 0.5s;
+}
+
+
+// ------------ Media Queries --------------
+
+@media (min-width: $media-screen-med) {
+  .horizontal-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .contact-container .horizontal-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .scroll-up .sticky-header {
+    padding: 0 150px;
+  }
+}
