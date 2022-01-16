@@ -9,174 +9,168 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Halant:wght@500;700&family=Noto+Sans&family=Sacramento&display=swap" rel="stylesheet">
 </head>
+<body>
 
-  <body>
+  <header class="header">
+    <div class="logo">
+      <h1 class="logo-name">Rochelle Hickey</h1>
+      <p class="logo-title">Front-End Web Developer &#38; Graphic Designer</p>
+    </div>
 
-    <header class="header">
-      <div class="logo">
-        <h1 class="logo-name">Rochelle Hickey</h1>
-        <p class="logo-title">Front-End Web Developer &#38; Graphic Designer</p>
-      </div>
+    <nav id="site-navigation" class="main-navigation">
+      <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">&#x2630;</button>
+      <div class="menu-primary-menu-container">
+        <ul id="menu-primary-menu" class="navigation">
+          <li class="main-list-navigation menu-item"><a href="/index.html">About Me</a></li>
+          <li class="main-list-navigation menu-item"><a href="/web-development.html">Web Development</a>
+            <ul class="sub-menu">
+              <li class="sub-list-navigation menu-item"><a href="/work/julia-gilstein-website-example.html">Julia Gilstein&#8217;s Editorial Website</a></li>
+              <li class="sub-list-navigation menu-item"><a href="/work/form-example.html">Form</a></li>
+              <li class="sub-list-navigation menu-item"><a href="/work/game-show-app-example.html">Game Show App</a></li>
+              <li class="sub-list-navigation menu-item"><a href="/work/interactive-video-example.html">Interactive Video</a></li>
+              <li class="sub-list-navigation menu-item"><a href="/work/dashboard-app-example.html">Web App Dashboard</a></li>
+              <li class="sub-list-navigation menu-item"><a href="/work/react-example.html">React Flickr Gallery</a></li>
+            </ul>
+          </li>
+          <li class="main-list-navigation menu-item"><a href="/graphic-design.html">Graphic Design</a>
+            <ul class="sub-menu">
+              <li class="sub-list-navigation menu-item"><a href="/work/impact-report.html">Impact Report 2014</a></li>
+              <li class="sub-list-navigation menu-item"><a href="/work/blueprint-SAP.html">A Blueprint for SAP Initiatives</a></li>
+              <li class="sub-list-navigation menu-item"><a href="/work/national-fund.html">Learn. Share. Partner.</a></li>
+              <li class="sub-list-navigation menu-item"><a href="/work/brainy-approaches-infographic.html">Brainy Approaches to Learning</a></li>
+              <li class="sub-list-navigation menu-item"><a href="/work/potato-frog.html">Potato Frog Protection Society</a></li>
+              <li class="sub-list-navigation menu-item"><a href="/work/wedding-invites.html">Wedding Invitations</a></li>
+            </ul>
+          </li>
+          <li class="main-list-navigation menu-item"><a href="/experience.html">Experience</a></li>
+          <li class="main-list-navigation menu-item"><a href="/contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </div>      
+    </nav><!-- #site-navigation -->
+  </header>
 
-      <nav id="site-navigation" class="main-navigation">
-        <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">&#x2630;</button>
-        <div class="menu-primary-menu-container">
-          <ul id="menu-primary-menu" class="navigation">
-            <li class="main-list-navigation menu-item"><a href="/index.html">About Me</a></li>
-            <li class="main-list-navigation menu-item"><a href="/web-development.html">Web Development</a>
-              <ul class="sub-menu">
-                <li class="sub-list-navigation menu-item"><a href="/work/julia-gilstein-website-example.html">Julia Gilstein&#8217;s Editorial Website</a></li>
-                <li class="sub-list-navigation menu-item"><a href="/work/form-example.html">Form</a></li>
-                <li class="sub-list-navigation menu-item"><a href="/work/game-show-app-example.html">Game Show App</a></li>
-                <li class="sub-list-navigation menu-item"><a href="/work/interactive-video-example.html">Interactive Video</a></li>
-                <li class="sub-list-navigation menu-item"><a href="/work/dashboard-app-example.html">Web App Dashboard</a></li>
-                <li class="sub-list-navigation menu-item"><a href="/work/react-example.html">React Flickr Gallery</a></li>
-              </ul>
-            </li>
-            <li class="main-list-navigation menu-item"><a href="/graphic-design.html">Graphic Design</a>
-              <ul class="sub-menu">
-                <li class="sub-list-navigation menu-item"><a href="/work/impact-report.html">Impact Report 2014</a></li>
-                <li class="sub-list-navigation menu-item"><a href="/work/blueprint-SAP.html">A Blueprint for SAP Initiatives</a></li>
-                <li class="sub-list-navigation menu-item"><a href="/work/national-fund.html">Learn. Share. Partner.</a></li>
-                <li class="sub-list-navigation menu-item"><a href="/work/brainy-approaches-infographic.html">Brainy Approaches to Learning</a></li>
-                <li class="sub-list-navigation menu-item"><a href="/work/potato-frog.html">Potato Frog Protection Society</a></li>
-                <li class="sub-list-navigation menu-item"><a href="/work/wedding-invites.html">Wedding Invitations</a></li>
-              </ul>
-            </li>
-            <li class="main-list-navigation menu-item"><a href="/experience.html">Experience</a></li>
-            <li class="main-list-navigation menu-item"><a href="/contact.html" aria-current="page">Contact</a></li>
-          </ul>
-        </div>      
-      </nav><!-- #site-navigation -->
-    </header>
-    
-<div class="main-content-width-wrapper">
-  <h1>Experience</h1>
-  <main class="main-content">
+  <div class="main-content-width-wrapper">
+    <main class="main-content">
+      <h1>Experience</h1>
 
-      <!-- Start the Loop. -->
-       
-        <!-- Display the Post's content. -->
+      <section class="work-experience">
+        <h2>Work Experience</h2>
 
-          <div class="wp-block-lazyblock-experience lazyblock-experience-Z1JrK2b"><section class="resume">
-      <h2>Work Experience</h2>
         <h3>Bookish Crafting, Owner and Proprietor</h3>
-    <p class="job-dates">August 2020 – present</p>
-    <p><ul>
-<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Keep clear and organized expense sheets</span></li>
-<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Create and produce book sleeves, bookmarks, and eyeglass cases</span></li>
-<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Maintain social media presence</span></li>
-<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Work with individuals for custom orders</span></li>
-<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Purchase supplies on a budget</span></li>
-</ul></p>
+        <p class="job-dates">August 2020 – present</p>
+        <ul>
+          <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Keep clear and organized expense sheets</span></li>
+          <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Create and produce book sleeves, bookmarks, and eyeglass cases</span></li>
+          <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Maintain social media presence</span></li>
+          <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Work with individuals for custom orders</span></li>
+          <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Purchase supplies on a budget</span></li>
+        </ul>
 
-  
-    <h3>Freelance, Graphic Designer / Developer / Consultant</h3>
-    <p class="job-dates">June 2008 – present</p>
-    <p><ul>
-<li class="experience-bullet">Meg Flanagan Education Solutions (formerly MilKids Education Consultant)</li>
-<li class="experience-bullet">Julia Gilstein Editing</li>
-<li class="experience-bullet">Deborah Ann Chainmaille</li>
-<li class="experience-bullet">Custom House Coffee</li>
-<li class="experience-bullet">Cei Builders Inc.</li>
-</ul></p>
+        <h3>Freelance, Graphic Designer / Developer / Consultant</h3>
+        <p class="job-dates">June 2008 – present</p>
+        <ul>
+          <li class="experience-bullet">Meg Flanagan Education Solutions (formerly MilKids Education Consultant)</li>
+          <li class="experience-bullet">Julia Gilstein Editing</li>
+          <li class="experience-bullet">Deborah Ann Chainmaille</li>
+          <li class="experience-bullet">Custom House Coffee</li>
+          <li class="experience-bullet">Cei Builders Inc.</li>
+        </ul>
 
-  
-    <h3>Jobs for the Future, Graphic Designer</h3>
-    <p class="job-dates">September 2011 – December 2015</p>
-    <p><ul class="rich-text block-editor-rich-text__editable" role="textbox" contenteditable="true" aria-multiline="true" aria-label="Write list…">
-<li>Conceptualize and create print, web, and email products</li>
-<li>Adhere to JFF branding standards in print, web, and email products</li>
-<li>Write clean HTML code and keep consistency throughout www.jff.org pages maintained in Drupal CMS</li>
-</ul></p>
+        <h3>Jobs for the Future, Graphic Designer</h3>
+        <p class="job-dates">September 2011 – December 2015</p>
+        <ul class="rich-text block-editor-rich-text__editable" role="textbox" contenteditable="true" aria-multiline="true" aria-label="Write list…">
+          <li>Conceptualize and create print, web, and email products</li>
+          <li>Adhere to JFF branding standards in print, web, and email products</li>
+          <li>Write clean HTML code and keep consistency throughout www.jff.org pages maintained in Drupal CMS</li>
+        </ul>
 
-  
-    <h3>Jobs for the Future, Design Assistant</h3>
-    <p class="job-dates">March 2009 – September 2011</p>
-    <p><ul class="rich-text block-editor-rich-text__editable" role="textbox" contenteditable="true" aria-multiline="true" aria-label="Write list…">
-<li>Collaborate in creation of print and web products</li>
-<li>Provide general administrative and production support</li>
-<li>Organize and keep data on the publication inventory room</li>
-</ul></p>
+        <h3>Jobs for the Future, Design Assistant</h3>
+        <p class="job-dates">March 2009 – September 2011</p>
+        <ul class="rich-text block-editor-rich-text__editable" role="textbox" contenteditable="true" aria-multiline="true" aria-label="Write list…">
+          <li>Collaborate in creation of print and web products</li>
+          <li>Provide general administrative and production support</li>
+          <li>Organize and keep data on the publication inventory room</li>
+        </ul>
 
-  
-    <h3>Claire T. Carney Library, Assistant Librarian</h3>
-    <p class="job-dates">August 2004 – June 2008</p>
-    <p><ul class="rich-text block-editor-rich-text__editable" role="textbox" contenteditable="true" aria-multiline="true" aria-label="Write list…">
-<li>Maintain Electronic Reserves System</li>
-<li>Manage money transactions with patrons</li>
-<li>Organize shelving sections for University Library</li>
-</ul></p>
-      <h2>Education</h2>
+        <h3>Claire T. Carney Library, Assistant Librarian</h3>
+        <p class="job-dates">August 2004 – June 2008</p>
+        <ul class="rich-text block-editor-rich-text__editable" role="textbox" contenteditable="true" aria-multiline="true" aria-label="Write list…">
+          <li>Maintain Electronic Reserves System</li>
+          <li>Manage money transactions with patrons</li>
+          <li>Organize shelving sections for University Library</li>
+        </ul>
+      </section>
+
+      <section class="education">
+        <h2>Education</h2>
+
         <h3>Treehouse</h3>
-    <p class="job-dates">January 2018 – Completed November 2019</p>
-    <p><p>Techdegree in Front-End Web Development</p>
-<ul>
-<li><a href="https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/14112497">Certificate</a></li>
-</ul></p>
+        <p class="job-dates">January 2018 – Completed November 2019</p>
+        <p>Techdegree in Front-End Web Development</p>
+        <ul>
+          <li><a href="https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/14112497">Certificate</a></li>
+        </ul>
 
-  
-    <h3>University of Massachusetts Dartmouth</h3>
-    <p class="job-dates">September 2004 – Completed May 2008</p>
-    <p><p>BFA in Visual Design/Letterform with an Art History Minor</p>
-<ul class="rich-text block-editor-rich-text__editable" role="textbox" contenteditable="true" aria-multiline="true" aria-label="Write list…">
-<li>GPA 3.717</li>
-<li>Magna Cum Laude</li>
-</ul></p>
-      <h2>Skills</h2>
+        <h3>University of Massachusetts Dartmouth</h3>
+        <p class="job-dates">September 2004 – Completed May 2008</p>
+        <p>BFA in Visual Design/Letterform with an Art History Minor</p>
+        <ul class="rich-text block-editor-rich-text__editable" role="textbox" contenteditable="true" aria-multiline="true" aria-label="Write list…">
+          <li>GPA 3.717</li>
+          <li>Magna Cum Laude</li>
+        </ul>
+      </section>
+
+      <section class="skills">
+        <h2>Skills</h2>
+
         <h3>Web Development</h3>
-    <p class="job-dates"></p>
-    <p><ul class="rich-text block-editor-rich-text__editable" role="textbox" aria-multiline="true" aria-label="Write list…">
-<li>HTML</li>
-<li>CSS/SASS</li>
-<li>JavaScript/ES6/React</li>
-<li>WordPress</li>
-</ul></p>
+        <ul class="rich-text block-editor-rich-text__editable" role="textbox" aria-multiline="true" aria-label="Write list…">
+          <li>HTML</li>
+          <li>CSS/SASS</li>
+          <li>JavaScript/ES6/React</li>
+          <li>WordPress</li>
+        </ul>
 
-  
-    <h3>Print Design</h3>
-    <p class="job-dates"></p>
-    <p><ul>
-<li>Adobe Creative Suite
-<ul>
-<li>InDesign</li>
-<li>Illustrator</li>
-<li>Photoshop</li>
-<li>Adobe Acrobat Reader</li>
-</ul>
-</li>
-</ul></p>
+        <h3>Print Design</h3>
+        <ul>
+          <li>Adobe Creative Suite
+            <ul>
+              <li>InDesign</li>
+              <li>Illustrator</li>
+              <li>Photoshop</li>
+              <li>Adobe Acrobat Reader</li>
+            </ul>
+          </li>
+        </ul>
 
-  
-    <h3>Office</h3>
-    <p class="job-dates"></p>
-    <p><ul>
-<li>Microsoft Office
-<ul>
-<li>Word</li>
-<li>PowerPoint</li>
-<li>Outlook</li>
-<li>basic Excel</li>
-</ul>
-</li>
-</ul></p>
+        <h3>Office</h3>
+        <ul>
+          <li>Microsoft Office
+            <ul>
+              <li>Word</li>
+              <li>PowerPoint</li>
+              <li>Outlook</li>
+              <li>basic Excel</li>
+            </ul>
+          </li>
+        </ul>
 
-  
-    <h3>Worth Ethic</h3>
-    <p class="job-dates"></p>
-    <p><ul class="rich-text block-editor-rich-text__editable" role="textbox" aria-multiline="true" aria-label="Write list…">
-<li>Strong organizational skills</li>
-<li>Excellent verbal and communication skills</li>
-<li>Attention to detail in a fast-paced work environment</li>
-</ul></p>
-      <h2>Awards</h2>
+        <h3>Work Ethic</h3>
+        <ul class="rich-text block-editor-rich-text__editable" role="textbox" aria-multiline="true" aria-label="Write list…">
+          <li>Strong organizational skills</li>
+          <li>Excellent verbal and communication skills</li>
+          <li>Attention to detail in a fast-paced work environment</li>
+        </ul>
+      </section>
+
+      <section class="awards">
+        <h2>Awards</h2>
+
         <h3>Girl Scout Silver Award</h3>
-    <p class="job-dates">Summer 2003</p>
-    <p><p>Collected and donated over 5,000 books to St. Vincent’s Children’s Treatment Center and a women and children&#8217;s family shelter in New Bedford, MA.</p></p>
-</section></div>
-        <!-- Stop The Loop (but note the "else:" - see next line). -->
+        <p class="job-dates">Summer 2003</p>
+        <p>Collected and donated over 5,000 books to St. Vincent’s Children’s Treatment Center and a women and children&#8217;s family shelter in New Bedford, MA.</p>
+      </section>
 
-       
     </main><!-- end .main-content -->
   </div><!-- end .main-content-width-wrapper -->
 

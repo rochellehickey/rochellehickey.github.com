@@ -50,7 +50,7 @@ h2 {
 h3 {
   font-size: 1.4rem;
   line-height: 2rem;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 h4 {
@@ -250,6 +250,10 @@ p {
   align-items: center;
 }
 
+.contact-image img {
+  width: 100%;
+}
+
 @media (min-width: 768px) {
   .about-me-intro {
     margin-top: 0;
@@ -285,6 +289,17 @@ p {
 }
 
 /* ------------- PROJECT PAGES ------------- */
+.project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project {
+  text-decoration: none;
+  padding: 0;
+}
+
 .card {
   background: #CFECCE;
   padding: 5px 20px;
@@ -312,17 +327,6 @@ p {
 
 .black-and-white {
   filter: grayscale(100%);
-}
-
-.project-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.project {
-  text-decoration: none;
-  padding: 0;
 }
 
 .project-title-description {
@@ -365,6 +369,10 @@ p {
   }
 }
 @media (min-width: 1024px) {
+  .project {
+    width: 49%;;
+  }
+
   .project-page-image {
     width: auto;
     max-width: 750px;
@@ -376,15 +384,6 @@ p {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-
-  .project {
-    width: 100%;
-  }
-
-  .wp-block-lazyblock-project-landing-page-blocks {
-    display: flex;
-    width: 49%;
   }
 }
 /* ----------------- FOOTER ---------------- */

@@ -9,95 +9,88 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Halant:wght@500;700&family=Noto+Sans&family=Sacramento&display=swap" rel="stylesheet">
 </head>
+<body>
 
-  <body>
+  <header class="header">
+    <div class="logo">
+      <h1 class="logo-name">Rochelle Hickey</h1>
+      <p class="logo-title">Front-End Web Developer &#38; Graphic Designer</p>
+    </div>
 
-    <header class="header">
-      <div class="logo">
-        <h1 class="logo-name">Rochelle Hickey</h1>
-        <p class="logo-title">Front-End Web Developer &#38; Graphic Designer</p>
-      </div>
+    <nav id="site-navigation" class="main-navigation">
+      <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">&#x2630;</button>
+      <div class="menu-primary-menu-container">
+        <ul id="menu-primary-menu" class="navigation">
+          <li class="main-list-navigation menu-item"><a href="/index.html">About Me</a></li>
+          <li class="main-list-navigation menu-item"><a href="/web-development.html">Web Development</a>
+            <ul class="sub-menu">
+              <li class="sub-list-navigation menu-item"><a href="/work/julia-gilstein-website-example.html">Julia Gilstein&#8217;s Editorial Website</a></li>
+              <li class="sub-list-navigation menu-item"><a href="/work/form-example.html">Form</a></li>
+              <li class="sub-list-navigation menu-item"><a href="/work/game-show-app-example.html">Game Show App</a></li>
+              <li class="sub-list-navigation menu-item"><a href="/work/interactive-video-example.html">Interactive Video</a></li>
+              <li class="sub-list-navigation menu-item"><a href="/work/dashboard-app-example.html">Web App Dashboard</a></li>
+              <li class="sub-list-navigation menu-item"><a href="/work/react-example.html">React Flickr Gallery</a></li>
+            </ul>
+          </li>
+          <li class="main-list-navigation menu-item"><a href="/graphic-design.html">Graphic Design</a>
+            <ul class="sub-menu">
+              <li class="sub-list-navigation menu-item"><a href="/work/impact-report.html">Impact Report 2014</a></li>
+              <li class="sub-list-navigation menu-item"><a href="/work/blueprint-SAP.html">A Blueprint for SAP Initiatives</a></li>
+              <li class="sub-list-navigation menu-item"><a href="/work/national-fund.html">Learn. Share. Partner.</a></li>
+              <li class="sub-list-navigation menu-item"><a href="/work/brainy-approaches-infographic.html">Brainy Approaches to Learning</a></li>
+              <li class="sub-list-navigation menu-item"><a href="/work/potato-frog.html">Potato Frog Protection Society</a></li>
+              <li class="sub-list-navigation menu-item"><a href="/work/wedding-invites.html">Wedding Invitations</a></li>
+            </ul>
+          </li>
+          <li class="main-list-navigation menu-item"><a href="/experience.html">Experience</a></li>
+          <li class="main-list-navigation menu-item"><a href="/contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </div>      
+    </nav><!-- #site-navigation -->
+  </header>
 
-      <nav id="site-navigation" class="main-navigation">
-        <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">&#x2630;</button>
-        <div class="menu-primary-menu-container">
-          <ul id="menu-primary-menu" class="navigation">
-            <li class="main-list-navigation menu-item"><a href="/index.html">About Me</a></li>
-            <li class="main-list-navigation menu-item"><a href="/web-development.html">Web Development</a>
-              <ul class="sub-menu">
-                <li class="sub-list-navigation menu-item"><a href="/work/julia-gilstein-website-example.html">Julia Gilstein&#8217;s Editorial Website</a></li>
-                <li class="sub-list-navigation menu-item"><a href="/work/form-example.html">Form</a></li>
-                <li class="sub-list-navigation menu-item"><a href="/work/game-show-app-example.html">Game Show App</a></li>
-                <li class="sub-list-navigation menu-item"><a href="/work/interactive-video-example.html">Interactive Video</a></li>
-                <li class="sub-list-navigation menu-item"><a href="/work/dashboard-app-example.html">Web App Dashboard</a></li>
-                <li class="sub-list-navigation menu-item"><a href="/work/react-example.html">React Flickr Gallery</a></li>
-              </ul>
-            </li>
-            <li class="main-list-navigation menu-item"><a href="/graphic-design.html">Graphic Design</a>
-              <ul class="sub-menu">
-                <li class="sub-list-navigation menu-item"><a href="/work/impact-report.html">Impact Report 2014</a></li>
-                <li class="sub-list-navigation menu-item"><a href="/work/blueprint-SAP.html">A Blueprint for SAP Initiatives</a></li>
-                <li class="sub-list-navigation menu-item"><a href="/work/national-fund.html">Learn. Share. Partner.</a></li>
-                <li class="sub-list-navigation menu-item"><a href="/work/brainy-approaches-infographic.html">Brainy Approaches to Learning</a></li>
-                <li class="sub-list-navigation menu-item"><a href="/work/potato-frog.html">Potato Frog Protection Society</a></li>
-                <li class="sub-list-navigation menu-item"><a href="/work/wedding-invites.html">Wedding Invitations</a></li>
-              </ul>
-            </li>
-            <li class="main-list-navigation menu-item"><a href="/experience.html">Experience</a></li>
-            <li class="main-list-navigation menu-item"><a href="/contact.html" aria-current="page">Contact</a></li>
-          </ul>
-        </div>      
-      </nav><!-- #site-navigation -->
-    </header>
-    
-<div class="main-content-width-wrapper">
-  <h1>Graphic Design</h1>
-  <main class="main-content">
+  <div class="main-content-width-wrapper">
+    <main class="main-content">
+      <h1>Graphic Design</h1>
+      
+      <div class="project-container">
+        
+        <a href="https://rochellehickey.com/graphic-design/impact-report-2014/" class="project" alt="Impact Report 2014 link">
+          <h2>Impact Report 2014</h2>
+          <img src="https://rochellehickey.com/wp-content/uploads/2020/05/JFF-Impact-Report-banner.png" class="thumbnail black-and-white"/>
+          <p class="project-description card">A highlight of Jobs for the Future&#8217;s social and economic accomplishments with young people who were on the path to college success, adults who earned a labour market credential, and adults who went on to a family-supporting career across the nation in 2014.</p>
+        </a>
 
-      <!-- Start the Loop. -->
-       
-        <!-- Display the Post's content in a div box. -->
+        <a href="https://rochellehickey.com/graphic-design/a-blueprint-for-sap-initiatives/" class="project" alt="A Blueprint for SAP Education Initiatives link">
+          <h2>A Blueprint for SAP Education Initiatives</h2>
+          <img src="https://rochellehickey.com/wp-content/uploads/2020/05/A-Blueprint-for-SAP-Education-Initiatives-banner.png" class="thumbnail black-and-white"/>
+          <p class="project-description card">How BTECH in Queens, NY, along with other schools, brought STEM into the classroom.</p>
+        </a>
 
-        <div class="project-container">
-          <div class="wp-block-lazyblock-project-landing-page-blocks lazyblock-project-landing-page-blocks-QEg0b"><a href="https://rochellehickey.com/graphic-design/impact-report-2014/" class="project" alt="Impact Report 2014 link">
-  <h2>Impact Report 2014</h2>
-  <img   data-src="https://rochellehickey.com/wp-content/uploads/2020/05/JFF-Impact-Report-banner.png" class="thumbnail black-and-white lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img src="https://rochellehickey.com/wp-content/uploads/2020/05/JFF-Impact-Report-banner.png" class="thumbnail black-and-white"/></noscript>
-  <p class="project-description card">A highlight of Jobs for the Future&#8217;s social and economic accomplishments with young people who were on the path to college success, adults who earned a labour market credential, and adults who went on to a family-supporting career across the nation in 2014.</p>
-</a></div>
+        <a href="https://rochellehickey.com/graphic-design/learn-share-partner/" class="project" alt="Learn. Share. Partner. link">
+          <h2>Learn. Share. Partner.</h2>
+          <img src="https://rochellehickey.com/wp-content/uploads/2020/05/national-fund-banner.png" class="thumbnail black-and-white"/>
+          <p class="project-description card">The National Fund for Workforce Solutions 5th Annual meeting program booklet including information about the National Fund, the agenda for the three day conference, employer and frontline champion biographies, and biographies of conference attendees.</p>
+        </a>
 
-<div class="wp-block-lazyblock-project-landing-page-blocks lazyblock-project-landing-page-blocks-Z2hriwU"><a href="https://rochellehickey.com/graphic-design/a-blueprint-for-sap-initiatives/" class="project" alt="A Blueprint for SAP Education Initiatives link">
-  <h2>A Blueprint for SAP Education Initiatives</h2>
-  <img   data-src="https://rochellehickey.com/wp-content/uploads/2020/05/A-Blueprint-for-SAP-Education-Initiatives-banner.png" class="thumbnail black-and-white lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img src="https://rochellehickey.com/wp-content/uploads/2020/05/A-Blueprint-for-SAP-Education-Initiatives-banner.png" class="thumbnail black-and-white"/></noscript>
-  <p class="project-description card">How BTECH in Queens, NY, along with other schools, brought STEM into the classroom.</p>
-</a></div>
+        <a href="https://rochellehickey.com/graphic-design/brainy-approaches-to-learning/" class="project" alt="Brainy Approaches to Learning link">
+          <h2>Brainy Approaches to Learning</h2>
+          <img src="https://rochellehickey.com/wp-content/uploads/2020/05/brainy-approaches-banner.png" class="thumbnail black-and-white"/>
+          <p class="project-description card">Based on student-focused research, this infographic highlights student-centered approaches to learning.</p>
+        </a>
 
-<div class="wp-block-lazyblock-project-landing-page-blocks lazyblock-project-landing-page-blocks-Z1A3wnY"><a href="https://rochellehickey.com/graphic-design/learn-share-partner/" class="project" alt="Learn. Share. Partner. link">
-  <h2>Learn. Share. Partner.</h2>
-  <img   data-src="https://rochellehickey.com/wp-content/uploads/2020/05/national-fund-banner.png" class="thumbnail black-and-white lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img src="https://rochellehickey.com/wp-content/uploads/2020/05/national-fund-banner.png" class="thumbnail black-and-white"/></noscript>
-  <p class="project-description card">The National Fund for Workforce Solutions 5th Annual meeting program booklet including information about the National Fund, the agenda for the three day conference, employer and frontline champion biographies, and biographies of conference attendees.</p>
-</a></div>
+        <a href="https://rochellehickey.com/graphic-design/wedding-invitations/" class="project" alt="Wedding Invitations link">
+          <h2>Wedding Invitations</h2>
+          <img src="https://rochellehickey.com/wp-content/uploads/2020/05/wedding-invites-banner.png" class="thumbnail black-and-white"/>
+          <p class="project-description card">Two wedding invitation suites designed to match the personalities of the respective bride and groom.</p>
+        </a>
 
-<div class="wp-block-lazyblock-project-landing-page-blocks lazyblock-project-landing-page-blocks-ZCNj1a"><a href="https://rochellehickey.com/graphic-design/brainy-approaches-to-learning/" class="project" alt="Brainy Approaches to Learning link">
-  <h2>Brainy Approaches to Learning</h2>
-  <img   data-src="https://rochellehickey.com/wp-content/uploads/2020/05/brainy-approaches-banner.png" class="thumbnail black-and-white lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img src="https://rochellehickey.com/wp-content/uploads/2020/05/brainy-approaches-banner.png" class="thumbnail black-and-white"/></noscript>
-  <p class="project-description card">Based on student-focused research, this infographic highlights student-centered approaches to learning.</p>
-</a></div>
-
-<div class="wp-block-lazyblock-project-landing-page-blocks lazyblock-project-landing-page-blocks-2vXuXx"><a href="https://rochellehickey.com/graphic-design/wedding-invitations/" class="project" alt="Wedding Invitations link">
-  <h2>Wedding Invitations</h2>
-  <img   data-src="https://rochellehickey.com/wp-content/uploads/2020/05/wedding-invites-banner.png" class="thumbnail black-and-white lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img src="https://rochellehickey.com/wp-content/uploads/2020/05/wedding-invites-banner.png" class="thumbnail black-and-white"/></noscript>
-  <p class="project-description card">Two wedding invitation suites designed to match the personalities of the respective bride and groom.</p>
-</a></div>
-
-<div class="wp-block-lazyblock-project-landing-page-blocks lazyblock-project-landing-page-blocks-Z17Y6sb"><a href="https://rochellehickey.com/graphic-design/potato-frog-protection-society/" class="project" alt="Potato Frog Protection Society link">
-  <h2>Potato Frog Protection Society</h2>
-  <img   data-src="https://rochellehickey.com/wp-content/uploads/2020/05/potato-frog-banner.png" class="thumbnail black-and-white lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img src="https://rochellehickey.com/wp-content/uploads/2020/05/potato-frog-banner.png" class="thumbnail black-and-white"/></noscript>
-  <p class="project-description card">Potato products are in every grocery store nation-wide and are the fourth main staple food for the world. They are grown in 44 countries, all having one thing in common; the Potato Frog. Potato Frogs are being killed by the tens of thousands each year, and as they are being destroyed potato crops have been on the decline … or are they?</p>
-</a></div>        </div><!-- end .project-container -->
-
-        <!-- Stop The Loop (but note the "else:" - see next line). -->
-
-       
+        <a href="https://rochellehickey.com/graphic-design/potato-frog-protection-society/" class="project" alt="Potato Frog Protection Society link">
+          <h2>Potato Frog Protection Society</h2>
+          <img src="https://rochellehickey.com/wp-content/uploads/2020/05/potato-frog-banner.png" class="thumbnail black-and-white"/>
+          <p class="project-description card">Potato products are in every grocery store nation-wide and are the fourth main staple food for the world. They are grown in 44 countries, all having one thing in common; the Potato Frog. Potato Frogs are being killed by the tens of thousands each year, and as they are being destroyed potato crops have been on the decline … or are they?</p>
+        </a>     
+      </div><!-- end .project-container -->
     </main><!-- end .main-content -->
   </div><!-- end .main-content-width-wrapper -->
 
